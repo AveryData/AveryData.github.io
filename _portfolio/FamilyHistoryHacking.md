@@ -2,7 +2,7 @@
 title: "Family History Hacking"
 excerpt: "Rethinking the family tree - just when you thought genealogy couldn't get more exciting."
 header:
-  image: /Images/Family History Hacking/NameCloudTreeSmith.png
+  #image: /Images/Family History Hacking/NameCloudTreeSmith.png
   teaser: /Images/Family History Hacking/NameCloudTreeSmith.png
 gallery:
   - url: /Images/Family History Hacking/WordCloudBirthLat.PNG
@@ -15,6 +15,8 @@ gallery:
     image_path: /Images/Family History Hacking/WordCloudRandoColo.PNG
     alt: "Family Word Cloud colored by Random Colors"
 ---
+{% include figure image_path="/Images/Family History Hacking/NameCloudTreeSmith.png" alt="this is a placeholder image" caption="Typical family tree (taken from FamilySearch.org)" url ="/Images/Family History Hacking/NameCloudTreeSmith.png" %}
+
 
 Genealogy often gets a boring rap, but knowing where you come from and who made you can be fun and exciting. Family history is big in my family, and in my culture so I thought, "This is a lot of data. What else can you do with it? How else can you display it?"
 
@@ -22,7 +24,7 @@ Genealogy is mainly just information. The most important informations are: 1) Na
 
 The fundamental map for understanding genealogy is the family tree. This is a tree that ties you, to your parents, and to their parents, and so forth until you can't go back any more.This is what a family tree usually looks like:
 
-{% include figure image_path="/Images/Family History Hacking/Family Tree Landscape.png" alt="this is a placeholder image" caption="Typical family tree (taken from FamilySearch.org)" %}
+{% include figure image_path="/Images/Family History Hacking/Family Tree Landscape.png" alt="this is a placeholder image" caption="Typical family tree (taken from FamilySearch.org)" url ="/Images/Family History Hacking/Family Tree Landscape.png" %}
 
 There are other versions that look more like a fan, such as this:
 {% include figure image_path="/Images/Family History Hacking/Family Tree Fan Chart.png" alt="this is a placeholder image" caption="Typical family tree fan chart (taken from FamilySearch.org)" %}
