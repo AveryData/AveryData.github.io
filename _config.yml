@@ -269,28 +269,31 @@ compress_html:
 # Defaults
 defaults:
   # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
+ -
+   scope:
+     path: ""
+     type: posts
+  values:
+     layout: single
+     author_profile: true
+     read_time: true
+     comments: # true
+     share: true
+     related: true
 
   # _portfolio
-  - scope:
-    path: ""
-    type: portfolio
-  values:
-    layout: single
-    author_profile: false
-    share: true
+  -
+    scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
     # _about
-    - scope:
+    -
+      scope:
         path: ""
         type: about
       values:
