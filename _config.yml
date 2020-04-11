@@ -97,7 +97,7 @@ author:
   avatar           : #"/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**Very** big fan with data"
   location         : "Houston, TX"
-  email            : #"averyjs@gmail.com"
+  email            : "averyjs@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
