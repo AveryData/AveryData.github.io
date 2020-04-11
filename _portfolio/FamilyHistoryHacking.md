@@ -43,7 +43,11 @@ Once I had the GEDCOM file, I Google-d around more for a GEDCOM reader. I knew s
 
 Here's what the script ended up looking like:
 
-#### Insert Python Script
+#### Python Script
+```python
+s = "Python syntax highlighting"
+print(s)
+```
 
 
 From there, I had an organized CSV where I could perform analysis! Simple and organized.
