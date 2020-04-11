@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Avery Smith"
-  avatar           : "/images/joe exotic and tiger.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/Images/joe exotic and tiger.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "My adventure in Data Science and Analytics"
   location         : "Houston, TX"
   email            : #"averyjs@gmail.com"
@@ -267,43 +267,39 @@ compress_html:
 
 
 # Defaults
-# Defaults
 defaults:
   # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
+  -
+  scope:
+path: ""
+type: posts
+values:
+layout: single
+author_profile: true
+read_time: true
+comments: # true
+share: true
+related: true
 
   # _portfolio
-  - scope:
+  -
+    scope:
       path: ""
       type: portfolio
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
+      author_profile: false
       share: true
-      related: true
 
-  # _about
-  - scope:
-      path: ""
-      type: about
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
+    # _about
+    -
+      scope:
+        path: ""
+        type: about
+      values:
+        layout: single
+        author_profile: true
+        share: true
 
   # Collections
 collections:
