@@ -24,8 +24,8 @@ description              : "My blog / portfolio of Data Science &  Analytics"
 url                      : "https://AveryData.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/VeryData" # the subpath of your site, e.g. "/blog"
 repository               : "AveryData/AveryData.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/88x88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : #"/assets/images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : #"/assets/images/88x88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
