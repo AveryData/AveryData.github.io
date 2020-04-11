@@ -285,17 +285,25 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: false
+      author_profile: true
+      read_time: true
+      comments: # true
       share: true
+      related: true
+
 
     # _about
-    - scope:
-        path: ""
-        type: about
-      values:
-        layout: single
-        author_profile: true
-        share: true
+  - scope:
+      path: ""
+      type: about
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+
 
   # Collections
 collections:
