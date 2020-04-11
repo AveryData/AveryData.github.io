@@ -94,14 +94,14 @@ analytics:
 # Site Author
 author:
   name             : "Avery Smith"
-  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : #"/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**Very** big fan with data"
   location         : "Houston, TX"
   email            : "averyjs@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:averyjs@gmail.com
+      #url: mailto:averyjs@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
