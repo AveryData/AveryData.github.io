@@ -28,7 +28,7 @@ There are other versions that look more like a fan, such as this:
 {% include figure image_path="/Images/Family History Hacking/Family Tree Fan Chart.png" alt="this is a placeholder image" caption="Typical family tree fan chart (taken from FamilySearch.org)" %}
 
 
-[http://familysearch.org]# is the website I use for family history. It is well organized and dependable. It allows you to search records such as church books or government census to find traces of your ancestors and document them. It also serves as a storage location for all your memories of ancestors, and your long lost 4th cousin's memories of their ancestors. It is open-sourced and people can add written stories, audio tapes, pictures, and memorabilia with their ancestors being remembered.
+[FamilySearch.org](http://familysearch.org) is the website I use for family history. It is well organized and dependable. It allows you to search records such as church books or government census to find traces of your ancestors and document them. It also serves as a storage location for all your memories of ancestors, and your long lost 4th cousin's memories of their ancestors. It is open-sourced and people can add written stories, audio tapes, pictures, and memorabilia with their ancestors being remembered.
 
 With that being said, I set off to see if I could scrape FamilySerach.org and pull together my family tree and do somethings with it.
 
