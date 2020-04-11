@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Avery Smith"
-  avatar           : "/Images/PicturesOfMe/ProfPic_Best.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/Images/PicturesOfMe/ProfPic_Best.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "My adventure in Data Science and Analytics"
   location         : "Houston, TX"
   email            : #"averyjs@gmail.com"
