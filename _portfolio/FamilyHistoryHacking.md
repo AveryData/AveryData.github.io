@@ -1,18 +1,19 @@
 ---
 title: "Family History Hacking"
+link: http://familysearch.org
 excerpt: "Rethinking the family tree - just when you thought genealogy couldn't get more exciting."
 header:
   image: /Images/Family History Hacking/NameCloudTreeSmith.png
   teaser: /Images/Family History Hacking/NameCloudTreeSmith.png
 gallery:
-  - url: /Images/Family History Hacking/WordCloudBirthLat.png
-    image_path: /Images/Family History Hacking/WordCloudBirthLat.png
+  - url: /Images/Family History Hacking/WordCloudBirthLat.PNG
+    image_path: /Images/Family History Hacking/WordCloudBirthLat.PNG
     alt: "Family Word Cloud colored by Latitude"
-  - url: /Images/Family History Hacking/WordCloudBirthLat.png
-    image_path: /Images/Family History Hacking/WordCloudYear.png
+  - url: /Images/Family History Hacking/WordCloudBirthLat.PNG
+    image_path: /Images/Family History Hacking/WordCloudYear.PNG
     alt: "Family Word Cloud colored by Year Born"
-  - url: /Images/Family History Hacking/WordCloudBirthLat.png
-    image_path: /Images/Family History Hacking/WordCloudRandoColo.png
+  - url: /Images/Family History Hacking/WordCloudBirthLat.PNG
+    image_path: /Images/Family History Hacking/WordCloudRandoColo.PNG
     alt: "Family Word Cloud colored by Random Colors"
 ---
 
@@ -28,7 +29,7 @@ There are other versions that look more like a fan, such as this:
 {% include figure image_path="/Images/Family History Hacking/Family Tree Fan Chart.png" alt="this is a placeholder image" caption="Typical family tree fan chart (taken from FamilySearch.org)" %}
 
 
-https://FamilySearch.org is the website I use for family history. It is well organized and dependable. It allows you to search records such as church books or government census to find traces of your ancestors and document them. It also serves as a storage location for all your memories of ancestors, and your long lost 4th cousin's memories of their ancestors. It is open-sourced and people can add written stories, audio tapes, pictures, and memorabilia with their ancestors being remembered.
+[link](#) is the website I use for family history. It is well organized and dependable. It allows you to search records such as church books or government census to find traces of your ancestors and document them. It also serves as a storage location for all your memories of ancestors, and your long lost 4th cousin's memories of their ancestors. It is open-sourced and people can add written stories, audio tapes, pictures, and memorabilia with their ancestors being remembered.
 
 With that being said, I set off to see if I could scrape FamilySerach.org and pull together my family tree and do somethings with it.
 
@@ -57,20 +58,20 @@ This was all great. I could see the different names that make me. Who knew I had
 
 But then I thought, well what if I can add some more information to this graph. Instead of arbitrary coloring, I added a color map corresponding to year born. Trying to highlight the older and newer names.
 
-{% include figure image_path="/Images/Family History Hacking/WordCloudYear.png" alt="this is a placeholder image" caption="Word Cloud colored by year born" %}
+{% include figure image_path="/Images/Family History Hacking/WordCloudYear.PNG" alt="this is a placeholder image" caption="Word Cloud colored by year born" %}
 
 
 If you analyze the graph, you'll notice the more orange and yellow names are sometimes the less 'American' sounding: Andreas, Jens, Pedersen, Mathaniel, Erichdatter, Mogensen, Luigi. We're covering a lot of those Scandinavia and Italian lines there. Then you get to names like John and William and Elizabeth and George (the more Brittish). Then finally, you end with my grandparents names, my last name, my mom's last name, ect.
 
 Well, what else could I color map it with? The last one was year history, but I focused on geographic area....so maybe I'll just focus on latitude on where they were born. Because of American history, this doesn't end up so different. We see a lot of the foreign names (higher lat (further east)) names as the older ones. But this picks out the people born in the USA and makes them blue for the most part. Curtis for example, American. Jewel, American. Frederik, Yaughn, Johan, not American.
 
-{% include figure image_path="/Images/Family History Hacking/WordCloudBirthLat.png" alt="this is a placeholder image" caption="Word Cloud colored by latitude of born location" %}
+{% include figure image_path="/Images/Family History Hacking/WordCloudBirthLat.PNG" alt="this is a placeholder image" caption="Word Cloud colored by latitude of born location" %}
 
 
 These figures really inspired me. Here are my ancestors. The Damico's, The Jagger's, Hans, Sarah, Juliana, the Palmer that made me into the guy I am today. Here is the origin of (A)very Smith. I thought, "Wow, I want to remember these people more often." So I set out to make a sticker so I could put it on my laptop (remind me, we need a blog post on my laptop stickers). I ordered it, but when the sent me the digital proof for review, I thought, if a random person sees this, are they going to know what it is? Or just see a bunch of clutter? I thought there had to be a better way to show the data. I ended up finding this website: https://wordart.com/create. They allowed me to put the word cloud into a shape that was representative of the data, so instead of just a cloud, I could make...yes, a TREE!
 
 
-{% include figure image_path="/Images/Family History Hacking/NameCloudTreeSmith.png" alt="this is a placeholder image" caption="New definition of Family Tree" %}
+{% include figure image_path="/Images/Family History Hacking/NameCloudTreeSmith.PNG" alt="this is a placeholder image" caption="New definition of Family Tree" %}
 
 Now that's a way to look at your family tree! A literal, family, tree! Howe beautiful. I love the leaves and different shades of green. I love the trunk and brown of the root of the tree. It just looked great. Loved it so much, I made one for my wife's family as well and decided it was part of their Christmas present this year! I ordered the stickers and they just arrived today. Check them out!
 
