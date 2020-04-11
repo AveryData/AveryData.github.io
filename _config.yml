@@ -299,7 +299,7 @@ defaults:
         share: true
 
   # Collections
-  collections:
+collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
