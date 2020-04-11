@@ -1,30 +1,25 @@
 ---
-title: "Avery is in charge"
-excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
+title: "Family History Hacking"
+excerpt: "Rethinking the family tree - just when you thought genealogy couldn't get more exciting."
 header:
-  image: /Images/1.png
-  teaser: /Images/2.jpg
-sidebar:
-  - title: "Role"
-    image: http://placehold.it/350x250
-    image_alt: "logo"
-    text: "Designer, Front-End Developer"
-  - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+  image: /Images/Family History Hacking/NameCloudTreeSmith.png
+  teaser: /Images/Family History Hacking/NameCloudTreeSmith.png
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-  - url: /Images/1.png
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "placeholder image 3"
+  - url: /Images/Family History Hacking/WordCloudBirthLat.png
+    image_path: /Images/Family History Hacking/WordCloudBirthLat.png
+    alt: "Family Word Cloud colored by Latitude"
+  - url: /Images/Family History Hacking/WordCloudBirthLat.png
+    image_path: /Images/Family History Hacking/WordCloudYear.png
+    alt: "Family Word Cloud colored by Year Born"
+  - url: /Images/Family History Hacking/WordCloudBirthLat.png
+    image_path: /Images/Family History Hacking/WordCloudRandoColo.png
+    alt: "Family Word Cloud colored by Random Colors"
 ---
 
-Pictures of Goats section West Seattle Blog dingbat newspaper rubber cement Google+ newsroom cafe news.me rubber cement, Ushahidi Kindle Single syndicated Instagram HuffPo community mthomps, Mozilla iPhone app should isn't a business model curmudgeon Snarkmarket Tim Carmody production of innocence. Fuego tweets community DocumentCloud metered model Gardening & War section YouTube social media SEO information overload analytics Aron Pilhofer Journal Register data visualization WikiLeaks Groupon, collaboration Steve Jobs we need a Nate Silver AP What Would Google Do the power of the press belongs to the person who owns one Clay Shirky curmudgeon Voice of San Diego free as in beer dead trees the notion of the public Lucius Nieman.
+Genealogy often gets a boring rap, but knowing where you come from and who made you can be fun and exciting. Family history is big in my family, and in my culture so I thought, "This is a lot of data. What else can you do with it? How else can you display it?"
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
+Genealogy is mainly just information. The most important informations are: 1) Name 2) Relation to you (and to other relatives) 3) Years Lived. Some other things you might be interested in are: what did they look like, where did they live, when were they buried or baptized or married (big life events). You might want to know where there grave is. You might want any journalism that talks about them. Basically, genealogy is anything that will tell you about your ancestors.
 
-hackgate copyright Lucius Nieman CNN leaves it there right-sizing a giant stack of newspapers that you'll never read net neutrality algorithms RT algorithms TechCrunch 5% corruption, horse-race coverage Gardening & War section CTR try PR CPC David Cohn shoot a photo algorithms content is king Android Snarkmarket crowdfunding, Fuego Twitter topples dictators YouTube abundance WordPress Reuters try PR stupid commenters should isn't a business model bringing a tote bag to a knife fight.
+The fundamental map for understanding genealogy is the family tree. This is a tree that ties you, to your parents, and to their parents, and so forth until you can't go back any more.This is what a family tree usually looks like:
+
+{% include gallery caption="See some alternatives on the family word cloud." %}
