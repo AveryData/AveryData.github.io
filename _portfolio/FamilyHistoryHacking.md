@@ -32,7 +32,7 @@ There are other versions that look more like a fan, such as this:
 
 With that being said, I set off to see if I could scrape FamilySerach.org and pull together my family tree and do somethings with it.
 
-After some Google-Fu and experimentation, I stubbled upon https://github.com/Linekio/getmyancestors. This Python package allows you to sign into FamilySearch and use their API to pull data. It exports everything as a GEDCOM file. If your'e scratching your head and wondering, 'What's a GEDCOM file?', you're not alone. It's a structured text file that has things in a certain format specifically for genealogy. Here's an example of how GEDCOM files look:
+After some Google-Fu and experimentation, I stubbled upon [https://github.com/Linekio/getmyancestors](https://github.com/Linekio/getmyancestors). This Python package allows you to sign into FamilySearch and use their API to pull data. It exports everything as a GEDCOM file. If your'e scratching your head and wondering, 'What's a GEDCOM file?', you're not alone. It's a structured text file that has things in a certain format specifically for genealogy. Here's an example of how GEDCOM files look:
 
 There are other versions that look more like a fan, such as this:
 {% include figure image_path="/Images/Family History Hacking/GedComExample.png" alt="this is a placeholder image" caption="Example of Gedcom - the typical family history file type" %}
@@ -67,14 +67,14 @@ Well, what else could I color map it with? The last one was year history, but I 
 {% include figure image_path="/Images/Family History Hacking/WordCloudBirthLat.PNG" alt="this is a placeholder image" caption="Word Cloud colored by latitude of born location" %}
 
 
-These figures really inspired me. Here are my ancestors. The Damico's, The Jagger's, Hans, Sarah, Juliana, the Palmer that made me into the guy I am today. Here is the origin of (A)very Smith. I thought, "Wow, I want to remember these people more often." So I set out to make a sticker so I could put it on my laptop (remind me, we need a blog post on my laptop stickers). I ordered it, but when the sent me the digital proof for review, I thought, if a random person sees this, are they going to know what it is? Or just see a bunch of clutter? I thought there had to be a better way to show the data. I ended up finding this website: https://wordart.com/create. They allowed me to put the word cloud into a shape that was representative of the data, so instead of just a cloud, I could make...yes, a TREE!
+These figures really inspired me. Here are my ancestors. The Damico's, The Jagger's, Hans, Sarah, Juliana, the Palmer that made me into the guy I am today. Here is the origin of (A)very Smith. I thought, "Wow, I want to remember these people more often." So I set out to make a sticker so I could put it on my laptop (remind me, we need a blog post on my laptop stickers). I ordered it, but when the sent me the digital proof for review, I thought, if a random person sees this, are they going to know what it is? Or just see a bunch of clutter? I thought there had to be a better way to show the data. I ended up finding this website: [https://wordart.com/create](https://wordart.com/create). They allowed me to put the word cloud into a shape that was representative of the data, so instead of just a cloud, I could make...yes, a TREE!
 
 
-{% include figure image_path="/Images/Family History Hacking/NameCloudTreeSmith.PNG" alt="this is a placeholder image" caption="New definition of Family Tree" %}
+{% include figure image_path="/Images/Family History Hacking/NameCloudTreeSmith.png" alt="this is a placeholder image" caption="New definition of Family Tree" %}
 
 Now that's a way to look at your family tree! A literal, family, tree! Howe beautiful. I love the leaves and different shades of green. I love the trunk and brown of the root of the tree. It just looked great. Loved it so much, I made one for my wife's family as well and decided it was part of their Christmas present this year! I ordered the stickers and they just arrived today. Check them out!
 
-{% include figure image_path="/Images/Family History Hacking/FamilyTreeStickers_with_computer.png" alt="this is a placeholder image" caption="Family tree stickers to give to family" %}
+{% include figure image_path="/Images/Family History Hacking/FamilyTreeStickers_with_computer.jpg" alt="this is a placeholder image" caption="Family tree stickers to give to family" %}
 
 
 I didn't only look at the names, I tried a few other things as well. This included trying to make a family Gannt Chart. If you're unfamiliar with a Gannt Chart, it's basically a way of seeing how events overlap. I wanted to see what ancestors lived with who. It's hard to display because I'm not sure who all these people are but it's interesting to see a lot of them were alive during the same time. 1895 had a lot of my ancestors alive. Of course, I only have 2 parents and hence 4 grandparents, and hence 8 great grandparents and thus each generation has more people. It's interesting to see the anomalies of short lives. There are a few in there that where quite short, although a lot were relatively long.
@@ -83,7 +83,7 @@ I didn't only look at the names, I tried a few other things as well. This includ
 
 
 I also did a graphic on where they were born and in what year.
-{% include figure image_path="/Images/Family History Hacking/FamilyMapByYear.png" alt="this is a placeholder image" caption="Where are my ancestors from?" %}
+{% include figure image_path="/Images/Family History Hacking/FamilyMapByYear.PNG" alt="this is a placeholder image" caption="Where are my ancestors from?" %}
 
 I wasn't lying! Italy, UK, Scandinavia !!!
 
