@@ -15,7 +15,7 @@ gallery:
     image_path: /Images/Family History Hacking/WordCloudRandoColo.PNG
     alt: "Family Word Cloud colored by Random Colors"
 ---
-{% include figure image_path="/Images/Family History Hacking/NameCloudTreeSmith.png" alt="this is a placeholder image" caption="Typical family tree (taken from FamilySearch.org)" url ="/Images/Family History Hacking/NameCloudTreeSmith.png" %}
+{% include figure image_path="/Images/Family History Hacking/NameCloudTreeSmith.png" alt="this is a placeholder image"  url ="/Images/Family History Hacking/NameCloudTreeSmith.png" %}
 
 
 Genealogy often gets a boring rap, but knowing where you come from and who made you can be fun and exciting. Family history is big in my family, and in my culture so I thought, "This is a lot of data. What else can you do with it? How else can you display it?"
@@ -45,8 +45,165 @@ Here's what the script ended up looking like:
 
 #### Python Script
 ```python
-s = "Python syntax highlighting"
-print(s)
+"""
+Created on Thu Dec 12 19:14:55 2019
+
+@author: averysmith
+"""
+
+import pandas as pd
+import numpy as np
+
+
+
+df = pd.read_excel("Avery12GenerationFamily.xlsx")
+
+# Find the inidividuals
+x = df.loc[df['Value'].isin(['INDI','@ INDI', '2@ INDI','3@ INDI', '4@ INDI','5@ INDI','6@ INDI','7@ INDI','8@ INDI','9@ INDI','10@ INDI'])]
+
+
+df['Cat'][x.index] = 'Person Change'
+
+df = df.loc[df['Cat'].isin(['NAME','SEX','BIRT','DATE','LATI','LONG',
+            'RESI','PLAC','DEAT','Person Change', 'CHR', 'BURI','EVEN'])]
+df = df.reset_index(drop=True)
+
+zeros = df.index[df['Nums']==0]
+
+
+# Person Id
+person_id = []
+for j in range(0,len(zeros)-1):
+    length_person = zeros[j+1] - zeros[j]
+    person_id.extend(np.ones(length_person)*j)
+    #print(person_id)
+
+# add the last one
+last_length = len(df) - zeros[-1]
+person_id.extend(np.ones(last_length)*(j+1))
+
+df['Person ID'] = person_id
+
+
+df['Event ID'] = np.zeros(len(df))
+
+# Create blank dataframe
+df_clean = pd.DataFrame(columns=['Name','Gender','Birthday','Birth Place', 'Birth Lat','Birth Lon', 'Deathday', 'Death Place', 'Death Lon', 'Death Lat'])
+
+# Get all names
+df_name = df[df['Cat'] == 'NAME']
+
+#  Go through each person
+unique_people = np.unique(person_id)
+for i in range(0,len(unique_people)):
+    # Make person df
+    df_person = df[df['Person ID'] == unique_people[i]]
+    df_person = df_person.reset_index(drop=True)
+
+    # Find Name
+    if len(df_person[df_person['Cat'] == 'NAME']) > 1:
+
+        name_person = df_person[df_person['Cat'] == 'NAME']['Value'][min(df_person[df_person['Cat'] == 'NAME']['Value'].index)]
+
+    else:
+        name_person = df_person[df_person['Cat'] == 'NAME']['Value'].values[0]
+
+    print(name_person)
+
+    # Find Sex
+    if len(df_person[df_person['Cat'] == 'SEX']) > 0:
+        sex_person = df_person[df_person['Cat'] == 'SEX']['Value'].values[0]
+    else:
+        sex_person = 'NaN'
+
+    # Find Birthday stuff
+    if len(df_person[df_person['Cat'] == 'BIRT']) > 0:
+        ones = df_person.index[df_person['Nums']==1]
+        ones = ones.to_series()
+        ones = ones.reset_index(drop=True)
+        birt_idx_big = df_person.index[df_person['Cat']=='BIRT'].values[0] # find the Birthday
+        birt_idx_small = ones.index[ones == birt_idx_big].values[0]
+
+        if birt_idx_big == max(ones):
+            birt_idx_end = len(df_person)
+        else:
+            birt_idx_end = ones[birt_idx_small+1]
+
+        birht_ID = 1
+        df_person['Event ID'][birt_idx_big:birt_idx_end] = birht_ID
+
+            # Filter down on birthday
+        df_birthday = df_person[df_person['Event ID'] ==birht_ID]
+
+        for subdata in df_birthday['Cat']:
+
+            if subdata == 'BIRT':
+                x = 5
+            if subdata == 'DATE':
+                birth_date = df_birthday[df_birthday['Cat'] == subdata]['Value'].values[0]
+            if subdata == 'PLAC':
+                birth_place = df_birthday[df_birthday['Cat'] == subdata]['Value'].values[0]
+
+            if subdata == 'LATI':
+                birth_lati = df_birthday[df_birthday['Cat'] == subdata]['Value'].values[0]
+
+            if subdata == 'LONG':
+                birth_long = df_birthday[df_birthday['Cat'] == subdata]['Value'].values[0]
+
+
+
+    else:
+        birth_date = 'NaN'
+        birth_place = 'NaN'
+        birth_lati = 'NaN'
+        birth_long = 'NaN'
+
+
+    # Find Death stuff
+    if len(df_person[df_person['Cat'] == 'DEAT']) > 0:
+        ones = df_person.index[df_person['Nums']==1]
+        ones = ones.to_series()
+        ones = ones.reset_index(drop=True)
+        birt_idx_big = df_person.index[df_person['Cat']=='DEAT'].values[0] # find the Birthday
+        birt_idx_small = ones.index[ones == birt_idx_big].values[0]
+
+        if birt_idx_big == max(ones):
+            birt_idx_end = len(df_person)
+        else:
+            birt_idx_end = ones[birt_idx_small+1]
+
+        birht_ID = 1
+        df_person['Event ID'][birt_idx_big:birt_idx_end] = birht_ID
+
+            # Filter down on birthday
+        df_birthday = df_person[df_person['Event ID'] ==birht_ID]
+
+        for subdata in df_birthday['Cat']:
+
+            if subdata == 'DEAT':
+                x = 5
+            if subdata == 'DATE':
+                DEAT_date = df_birthday[df_birthday['Cat'] == subdata]['Value'].values[0]
+            if subdata == 'PLAC':
+                DEAT_place = df_birthday[df_birthday['Cat'] == subdata]['Value'].values[0]
+
+            if subdata == 'LATI':
+                DEAT_lati = df_birthday[df_birthday['Cat'] == subdata]['Value'].values[0]
+
+            if subdata == 'LONG':
+                DEAT_long = df_birthday[df_birthday['Cat'] == subdata]['Value'].values[0]
+
+    else:
+        DEAT_date = 'NaN'
+        DEAT_place = 'NaN'
+        DEAT_lati = 'NaN'
+        DEAT_long = 'NaN'
+
+    df_clean.loc[i] = pd.Series({'Name':name_person,'Gender':sex_person,'Birthday':birth_date,'Birth Place':birth_place, 'Birth Lat':birth_lati,'Birth Lon':birth_long, 'Deathday': DEAT_date, 'Death Place': DEAT_place, 'Death Lat': DEAT_lati, 'Death Lon': DEAT_long})
+
+
+df_clean.to_csv('Avery12GenerationFmaily.csv')       
+
 ```
 
 
