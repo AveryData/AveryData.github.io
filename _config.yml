@@ -303,10 +303,22 @@ defaults:
       comments: # true
       share: true
       related: true
+     # _learning
+  - scope:
+      path: ""
+      type: learning
+    values:
+      layout: archeive
+      author_profile: structured
+      share: true
+      related: true
 
 
   # Collections
 collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
