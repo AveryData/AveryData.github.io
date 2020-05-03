@@ -1,9 +1,10 @@
 ---
+title: Learning
 layout: archive
 permalink: /learning/
-collection: portfolio
-entries_layout: grid
+collection: learning
+#entries_layout: grid
 classes: wide
 header:
-  image: /Images/Free Stock Photos/Nature/DarkDelicateArch.jpg
+  image: /Images/Free Stock Photos/Nature/bryce_black_white_skinny.jpeg
 ---
