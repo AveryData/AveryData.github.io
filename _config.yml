@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+  # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -303,13 +303,14 @@ defaults:
       comments: # true
       share: true
       related: true
+
      # _learning
   - scope:
       path: ""
       type: learning
     values:
-      layout: archive
-      author_profile: structured
+      layout: single
+      author_profile: ture
       share: true
       related: true
 
