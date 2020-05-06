@@ -1,0 +1,22 @@
+
+
+
+
+# Find the indicies for a certain value within a list
+np.where(list == 1)
+see https://stackoverflow.com/questions/6294179/how-to-find-all-occurrences-of-an-element-in-a-list
+
+
+
+# Return list values in indices specified in a list
+if just a list, use list comprehension
+a = [-2,1,5,3,8,5,6]
+b = [1,2,5]
+c = [ a[i] for i in b]
+
+you can use numpy
+a = np.array([-2, 1, 5, 3, 8, 5, 6])
+b = [1, 2, 5]
+print(list(a[b]))
+
+see https://stackoverflow.com/questions/18272160/access-multiple-elements-of-list-knowing-their-index
