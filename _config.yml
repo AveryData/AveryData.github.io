@@ -314,6 +314,16 @@ defaults:
       share: true
       related: true
 
+     # _learning
+  - scope:
+      path: ""
+      type: thingsilike
+    values:
+      layout: single
+      author_profile: ture
+      share: true
+      related: true
+
 
   # Collections
 collections:
