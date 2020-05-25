@@ -1,5 +1,6 @@
----
+kernel---
 title: "Density Estimation"
+excerpt: "Like histograms, only better"
 ---
 
 
@@ -13,8 +14,8 @@ A simple way of showing data shape is histograms. Typically, 1D, marginal histog
 
 If you want to capture two variable shapes at ones, one can make a contour plot on a scatter plot
 
-Parametric Models: Fit a parameter to a distribution to best represent the density distribution. Fitting to bernouli or gaussian distribution are examples.
+Parametric Models: Fit a parameter to a distribution to best represent the density distribution. Fitting to Bernoulli or gaussian distribution are examples.
 
-Nonparametric Models: No assumption of a distribution, but use shapes to describe the data. Histograms or Kernal density estimator are examples.
+Nonparametric Models: No assumption of a distribution, but use shapes to describe the data. Histograms or Kernel density estimator are examples.
 
-Density graphs are pretty much just histograms, but wherever there is a datapoint you draw one unit gaussian curve. You add the curves for each point on the graph. Hence you get pretty, smooth shapes. It's called kernal because because you choose some function to represent a pont, in this case, a gaussian function. 
+Density graphs are pretty much just histograms, but wherever there is a datapoint you draw one unit gaussian curve. You add the curves for each point on the graph. Hence you get pretty, smooth shapes. It's called kernel because because you choose some function to represent a point, in this case, a gaussian function.

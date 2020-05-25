@@ -1,6 +1,6 @@
 ---
 title: "Random Numbers"
-excerpt: "sjlfjljsl"
+excerpt: "1, 4, 7, 2, 9, 8, 2"
 ---
 
 # Random n integers between two values

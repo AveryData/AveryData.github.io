@@ -1,22 +1,22 @@
 ---
 title: "Clustering"
+excerpt: "Finding natural groups within the data"
 ---
 
-# GOAL:
+## GOAL:
 Divide objects into groups
 Objects within group are more similar than out of group
 
 
-# Examples:
+## Examples:
 - Clustering images: dogs from cats, sunsets from trees
 - Clustering flowers: Iris data set
 - Hand written letters: MNIST data set
 
 
-# Kmeans Clustering
+## Kmeans Clustering
 
-### How to do K means in Matlab
-https://www.mathworks.com/help/stats/kmeans.html
+
 
 1) Define k number of groups
 2) Randomly place centers in spaces
@@ -55,9 +55,11 @@ Can vs Man = s, nothing, nothing
 i = insertion | d = deletion | s = substitution
 Can put penalties on each action
 
+### How to do K means in Matlab
+[Matlab Demo](https://www.mathworks.com/help/stats/kmeans.html)
 
 
-# Spectral Clustering
+## Spectral Clustering
 K-means is good at capturing "closeness" of data. However, it fails at capturing geometry. Hence, it cannot properly clustering two coincentric rings.
 Spectral clustering focuses on partitioning graphs and considering connectivity.
 
@@ -71,5 +73,5 @@ Take the Eigen-value decomposition of the L matrix. You'll take the smallest Eig
 
 Then row K-means on the rows of the Z matrix.
 
-Here's a short example/explanation: https://dinh-hung-tu.github.io/spectral-clustering/
-TDS has a good write up as well: https://towardsdatascience.com/spectral-clustering-82d3cff3d3b7
+[Here's a short example/explanation:](https://dinh-hung-tu.github.io/spectral-clustering/)
+[TowardsDataScience(TDS) has a good write up as well:] (https://towardsdatascience.com/spectral-clustering-82d3cff3d3b7)

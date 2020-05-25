@@ -1,22 +1,26 @@
 ---
 title: "matplotlib"
+excerpt: "Python Plots!!!"
 ---
 
-# Color options
+## Color options
 https://matplotlib.org/2.0.2/examples/color/named_colors.html
 
-# Changing the figure sizes
+## Changing the figure sizes
 fig= plt.figure(figsize=(6,3))
-see http://www.learningaboutelectronics.com/Articles/How-to-set-the-size-of-a-figure-in-matplotlib-with-Python.php
+see [http://www.learningaboutelectronics.com/Articles/How-to-set-the-size-of-a-figure-in-matplotlib-with-Python.php]
 
 
-# Changing the boring, lame, stupid defaults
+## Changing the boring, lame, stupid defaults
 find this file
+'''
 >>> import matplotlib
 >>> matplotlib.matplotlib_fname()
 '/home/foo/.config/matplotlib/matplotlibrc'
+'''
 
-Edit and paste this:
+Edit and paste this
+'''
 ### MATPLOTLIBRC FORMAT
 
 # This is a sample matplotlib configuration file - you can find a copy
@@ -512,5 +516,6 @@ ytick.labelsize      : xx-large # fontsize of the tick labels
                                    # On Windows use the full path since convert
                                    # is also the name of a system tool.
 
-see https://matplotlib.org/1.4.1/users/customizing.html#matplotlibrc-sample
-see http://web.stanford.edu/~ymkhan/blog/2015/matplotlib_change_default_font/
+'''
+see [https://matplotlib.org/1.4.1/users/customizing.html#matplotlibrc-sample]
+see [http://web.stanford.edu/~ymkhan/blog/2015/matplotlib_change_default_font/]

@@ -1,9 +1,10 @@
 ---
 title: "Strings in Python"
+excerpt: "Hello, World!"
 ---
 
 
-# Remove spaces at front of a word in python
+## Remove spaces at front of a word in python
 >>> '     hello world!'.lstrip()
 'hello world!'
 

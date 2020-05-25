@@ -1,18 +1,18 @@
 ---
 title: "GitHub Pages"
+excerpt: "How did I make this website?"
 ---
 
 How did I make this website?
 
 
-# Splash Pics
+## Splash Pics
 Good size? 4000 × 1200
 
-# Where to get free stock pics?
+## Where to get free stock pics?
 pexels
 
 
 
-# Learning Markdown?
-
-https://www.monique.tech/the-art-of-markdown
+## Learning Markdown?
+See my markdown page

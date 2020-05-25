@@ -1,6 +1,6 @@
 ---
 title: "Principal Component Analysis"
-excerpt: "Learning about PCA"
+excerpt: "From 100 dimensions to 2 using PCA"
 ---
 
 # Data Dimensionality
@@ -31,7 +31,7 @@ Examples when to use it:
 - Iris Data Set: classifying flowers based on their petals and sepal characteristics.
 
 Good Resources:
-- https://setosa.io/ev/principal-component-analysis/
+- [Setosa] (https://setosa.io/ev/principal-component-analysis/)
 
 
 
@@ -76,7 +76,7 @@ Step 3: Compute leading eigenvectors of the C matrix
 PCA performs singular value decomposition on the data matrix and eigendecomposition on the covariance matrix.
 
 Check out some isomap results:
-https://www.researchgate.net/figure/The-Isomap-algorithm-when-applied-to-a-synthetic-face-database-of-698-images-The-number_fig5_250747602
+[https://www.researchgate.net/figure/The-Isomap-algorithm-when-applied-to-a-synthetic-face-database-of-698-images-The-number_fig5_250747602]
 https://benalexkeen.com/isomap-for-dimensionality-reduction-in-python/
 
 Some other good resources:

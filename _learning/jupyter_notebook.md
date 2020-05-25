@@ -1,5 +1,6 @@
 ---
 title: "Jupyter Notebook"
+excerpt: "Most intuitive Python Environment"
 ---
 
 
