@@ -333,3 +333,6 @@ collections:
   learning:
     output: true
     permalink: /:collection/:path/
+  thingsilike:
+      output: true
+      permalink: /:collection/:path/
