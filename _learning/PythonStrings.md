@@ -10,10 +10,15 @@ excerpt: "Hello, World!"
 
 see [https://stackoverflow.com/questions/959215/how-do-i-remove-leading-whitespace-in-python]
 
+## Splitting A String 
+If it is space split. 
+'''python
+string.split(' ') 
+'''
+see [https://www.geeksforgeeks.org/python-program-convert-string-list/]
 
 
-
-# String to date time
+## String to date time
 from datetime import datetime
 
 datetime_object = datetime.strptime('Jun 1 2005  1:33PM', '%b %d %Y %I:%M%p')
