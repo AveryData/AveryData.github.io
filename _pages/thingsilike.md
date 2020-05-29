@@ -5,5 +5,5 @@ collection: thingsilike
 entries_layout: grid
 classes: wide
 header:
-  image: /Images/Free Stock Photos/Nature/DarkDelicateArch.jpg
+  image: /Images/Free Stock Photos/Nature/StGeorge.jpg
 ---
