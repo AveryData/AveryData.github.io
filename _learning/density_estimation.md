@@ -19,3 +19,7 @@ Parametric Models: Fit a parameter to a distribution to best represent the densi
 Nonparametric Models: No assumption of a distribution, but use shapes to describe the data. Histograms or Kernel density estimator are examples.
 
 Density graphs are pretty much just histograms, but wherever there is a datapoint you draw one unit gaussian curve. You add the curves for each point on the graph. Hence you get pretty, smooth shapes. It's called kernel because because you choose some function to represent a point, in this case, a gaussian function.
+
+## KDE from scratch?
+
+This tutorial has a pretty good explanation of what a kernal density estimator is and how to make one from scratch via Python. [https://www.homeworkhelponline.net/blog/math/tutorial-kde]
