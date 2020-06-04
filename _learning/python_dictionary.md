@@ -1,15 +1,13 @@
 ---
-title = "Dictionaries in Python"
+title: "Dictionaries in Python"
+excerpt: "Words:Important"
 ---
 
 
 
-## Generate a dictionary from a list in Python 
+## Generate a dictionary from a list in Python
 
 '''python
-your_dict = dict(zip(keys, values)) 
+your_dict = dict(zip(keys, values))
 '''
-See [this link](https://www.geeksforgeeks.org/python-convert-two-lists-into-a-dictionary/) 
-
-
-
+See [this link](https://www.geeksforgeeks.org/python-convert-two-lists-into-a-dictionary/)

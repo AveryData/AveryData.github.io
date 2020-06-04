@@ -1,4 +1,4 @@
-likelihood---
+---
 title: "Gaussian Mixture Models"
 excerpt: "Using curves to classify"
 ---

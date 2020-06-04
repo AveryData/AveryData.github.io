@@ -1,4 +1,4 @@
-kernel---
+---
 title: "Density Estimation"
 excerpt: "Like histograms, only better"
 ---

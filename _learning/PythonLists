@@ -1,6 +1,7 @@
-
-
-
+---
+title: "Lists in Python"
+excerpt: "[A, List]"
+---
 
 # Find the indicies for a certain value within a list
 np.where(list == 1)
