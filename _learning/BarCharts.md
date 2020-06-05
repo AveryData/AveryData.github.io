@@ -1,7 +1,8 @@
 ---
 title: "Bar Charts"
-excerpt: "Rectangular Bars"
+excerpt: "Rectangluar Data Nuggets"
 ---
+
 
 ## Bar Charts
 Bar charts represent categorical data with rectangular bars.
