@@ -14,6 +14,9 @@ Input Hex, RGB, or use color picker...then see complementary, triadic, monochrom
 ## Help you find themes, translate
 [My close second favorite color resource](https://htmlcolorcodes.com/)
 
+## Good principles
+[From storytelling with data](http://www.storytellingwithdata.com/blog/2020/5/6/picking-the-right-colors)
+
 ## Colors for Maps
 The Color Brwer: [https://colorbrewer2.org/#type=sequential&scheme=PuBuGn&n=3]
 
