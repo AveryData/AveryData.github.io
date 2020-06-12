@@ -185,25 +185,35 @@ Residuals vs fitted values. We want to see no patterns, otherwise we have correl
 ## Variable Transformations
 
 ## Categorical Variables
+Categorical variables can be a bit trickier. Basically, if you have 3 categories, you'd going to split those categories into 2 binary dummy column. The two dummy groups will represent two, respective categories while the third category is represented by both dummy variables are off (0).
 
 ## Linear Regression in R
 
-To fit a linear regression:
+#### To fit a linear regression:
 ```R
 model = lm(y ~ x1 + x2)
 ```
 
-To see the summary:
+#### To see the summary:
 ```R
 summary(model)
 ```
 You'll see this includes (among others) the coefficients, the intercept, as well as the significance probabilities, and the $R^2$.
 
-Predicting using linear regression in R:
-
+#### Predicting using linear regression in R:
 ```{r}
 # Create New Data Point
 new_airbnb = data.frame(x1 = 19, x2 = 43)
 # Make prediction
 predict(model,new_airbnb,type="response")
 ```
+
+#### Changing the base case for categories
+If the data set is called Carseats and it has a column called 'ShelveLoc' that has categories of Good, Bad, and Medium. R chooses the base case default arbitrarily. You can choose which is the base case and it will not change your model, but would change what categories have coefficients and the understanding of them.
+
+Let's say the original base case was "Good". You can change it to "Medium" so that you'll have coeffs for "Good" and "Bad" by using *library(dplyr)*
+'''{r}
+Carseats <- Carseats %>%
+  mutate(ShelveLoc = relevel(ShelveLoc, ref = "Medium"))
+'''
+You can also this this link at STHDA (http://www.sthda.com/english/articles/40-regression-analysis/163-regression-with-categorical-variables-dummy-coding-essentials-in-r/)
