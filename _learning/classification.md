@@ -81,3 +81,23 @@ $ Accuracy = \frac{True Positive + True Negative}{All Data Points}
 Receiver Operating Characteristic curve
 Binary cut off classifier visualization.
 Plot False Positive (x) by True Positive (y)
+
+
+
+
+
+
+
+
+
+## Code
+
+
+
+### Logistic Regression
+
+##### R
+#### Logistic Regression
+'''{r}
+logreg = glm(Survived ~ Sex, data = titantic, family = "binomial")
+'''

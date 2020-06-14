@@ -80,6 +80,8 @@ The odds (remember $\frac{p}{1-p}$) can be simply written as $exp(linear equatio
 
 This constitutes the log odds of this event happening. This makes it so the range now is between 0 and 1.
 
+See classification topic for more learning.
+
 ### Interpreting coefficients
 As x increase by 1 unit, the log odds increase by the coefficient. Or you can find the odds change by taking $exp(coeff)$. This apparently approximates to 100*coeff%.
 
@@ -88,6 +90,15 @@ As x increase by 1 unit, the log odds increase by the coefficient. Or you can fi
 
 ## Interaction Terms
 Something like $x_1*x_2$
+
+## Log Transformations
+**If you've logged an x variable**, you can interpret that x-variable by saying for every 1% increase in my x-variable, I will see a change of coeff/100 in my y variable. See (https://data.library.virginia.edu/interpreting-log-transformations-in-a-linear-model/)
+
+**If you've logged the y variable**, take the $e^exponant%, subtract 1, multiply by 100: $(e^exp - 1) * 100$. For every one-unit increase in the independent variable, you should see the dependent variable change by that ^^ %. Or just take the coeff and unit value is the % value in Y. 
+
+
+
+**If you've logged by x and y**, you can just read them as % changes of each other rawly.
 
 ## OLS - Ordinary Least Squares
 Fit a line that minimizes sum of squared errors (SSE).
@@ -187,6 +198,8 @@ Residuals vs fitted values. We want to see no patterns, otherwise we have correl
 ## Categorical Variables
 Categorical variables can be a bit trickier. Basically, if you have 3 categories, you'd going to split those categories into 2 binary dummy column. The two dummy groups will represent two, respective categories while the third category is represented by both dummy variables are off (0).
 
+Those two dummy variables will get coefficients and represent the change in the y, if those dummys are true, *from the base case*. You always have to compare it to the base case.
+
 ## Linear Regression in R
 
 #### To fit a linear regression:
@@ -217,3 +230,9 @@ Carseats <- Carseats %>%
   mutate(ShelveLoc = relevel(ShelveLoc, ref = "Medium"))
 '''
 You can also this this link at STHDA (http://www.sthda.com/english/articles/40-regression-analysis/163-regression-with-categorical-variables-dummy-coding-essentials-in-r/)
+
+
+#### Logistic Regression
+'''{r}
+logreg = glm(Survived ~ Sex, data = titantic, family = "binomial")
+'''
