@@ -11,3 +11,9 @@ In gambling, you use odds as in odds of not happening. 10:1 odds mean you bet $1
 In usual odds you say 2:1 which means the event is twice as likely to occur than not, hence you bet $2 and only get $1.
 
 Odds are a ratio: $$\frac{Probability The Event Happens}{Probability The Event Does NOT Happen} = \frac{p}{1-p}$$
+
+$ Odds = \frac {probability} {1 - probability} = \frac {Events Happening / Subjects} {Events Note Happening / Subjects}$
+
+or
+
+$ Probability = \frac {odds}{1+odds}$
