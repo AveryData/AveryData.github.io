@@ -4,8 +4,9 @@ excerpt: "Data is the new oil"
 ---
 
 ## Places to find data
-- Kaggle
+- Kaggle (Data Science Website)
 - UCI Machine Learning Repository
+- ISLR (data sets for *Introduction to Statistical Learning with Applications in R*) Built into **R**. [See more info](https://cran.r-project.org/web/packages/ISLR/ISLR.pdf)
 
 ## Fault Detection / Reliability
 - NASA Turbo Fan Fault Detection
