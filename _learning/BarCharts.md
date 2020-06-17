@@ -7,6 +7,10 @@ excerpt: "Rectangluar Data Nuggets"
 ## Bar Charts
 Bar charts represent categorical data with rectangular bars.
 
+
+## Flourish
+Ever wondered how all those Instagram accounts of YouTube channels make the racing barcharts? Flourish makes it really easy. (Check it out)[https://app.flourish.studio/@flourish/bar-chart-race]
+
 ## Python
 
 ### Matplotlib
