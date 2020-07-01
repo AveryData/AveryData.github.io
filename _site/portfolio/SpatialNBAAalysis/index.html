@@ -27,13 +27,13 @@
 
 
 
-  <meta property="og:image" content="http://localhost:4000/Images/Family%20History%20Hacking/NameCloudTreeSmith.png">
+  <meta property="og:image" content="http://localhost:4000/Images/SpatialNBAAnalysis/DwadeAndWhiteside.png">
 
 
 
 
 
-  <meta property="article:published_time" content="2020-07-01T10:24:35-05:00">
+  <meta property="article:published_time" content="2020-07-01T13:21:09-05:00">
 
 
 
@@ -313,9 +313,9 @@
 
 <p>If you took a player, dipped his feet in ink, and let them play a game, what would the court end up looking like?</p>
 
-<p>Getting this data was not easy, and it makes sense, it could definitely be proprietary and give teams insight. Luckily for us, the NBA used to be more forthcoming with some of this data in the early days when the technology was first installed. They posted the entire 14-15 season; every game, every player, every second. Eventually the NBA wasn’t so sure they wanted to give this away, so to my understanding, they took if off their site. But lucky for us, some brilliant minds foresaw this and made a copy and made it publicly available. Check out this Git with all the info on how to get the data: https://github.com/sealneaward/nba-movement-data.</p>
+<p>Getting this data was not easy, and it makes sense, it could definitely be proprietary and give teams insight. Luckily for us, the NBA used to be more forthcoming with some of this data in the early days when the technology was first installed. They posted the entire 14-15 season; every game, every player, every second. Eventually the NBA wasn’t so sure they wanted to give this away, so to my understanding, they took if off their site. But lucky for us, some brilliant minds foresaw this and made a copy and made it publicly available. Check out this Git with all the info on how to get the data: [https://github.com/sealneaward/nba-movement-data].</p>
 
-<p>As you can imagine, this data set is enormous, like after it is compressed, it’s over 50 GB so I only grabbed a portion of it for the time being. It’s a really cool opportunity to use all of the data but that is a little more than a side project. Maybe ‘Big Side Project’ would be more accurate for that. In the mean time, I’ll just look at one game. For better or worse, that game ended up being a Knicks vs Heat game. If you want to check out the game, here’s the ESPN recap: https://www.espn.com/nba/recap?gameId=400828117.</p>
+<p>As you can imagine, this data set is enormous, like after it is compressed, it’s over 50 GB so I only grabbed a portion of it for the time being. It’s a really cool opportunity to use all of the data but that is a little more than a side project. Maybe ‘Big Side Project’ would be more accurate for that. In the mean time, I’ll just look at one game. For better or worse, that game ended up being a Knicks vs Heat game. If you want to check out the game, here’s the ESPN recap: [https://www.espn.com/nba/recap?gameId=400828117].</p>
 
 <p>I started off by just trying to understand the data. This data set didn’t come with any instructions really on what it was or how it was organized so it took some time to comprehend it all. Also, it is huge; 2.6 million rows huge.</p>
 
@@ -324,24 +324,60 @@
 <p>First, dip players feet in ink. Second, relish in NBA player movement.</p>
 
 <p>Carmelo Anthony</p>
+<figure class="">
+  <img src="/Images/SpatialNBAAnalysis/CarmeloAnthony.png" alt="this is a placeholder image" />
+  
+    <figcaption>
+      The movement of Carmelo Anthony
+
+    </figcaption>
+  
+</figure>
 
 <p>It looks like abstract art, does it not?!? The almost random, almost patterns really speaks artistically. You’ll notice the shape of the court. Not much happening in the middle x and middle y (middle court) because not much happens there. It’s the furthest point away from both hoops. What’s interesting about Carmelo is you see a lot of movement on the baselines. He’s moving a lot in the 2-point jumper range around the baseline post areas. This makes sense, this was his game in NY.</p>
 
 <p>Let’s look at another superstar’s. How about the unicorn himself, Kristaps Prozingis.</p>
 
 <p>Kristaps Prozingis</p>
+<figure class="">
+  <img src="/Images/SpatialNBAAnalysis/KristapsProzengius.png" alt="this is a placeholder image" />
+  
+    <figcaption>
+      The movement of KP
+
+    </figcaption>
+  
+</figure>
 
 <p>Ah! More abstract art I can sell. This one definitely has a different shape. We see a much more streamlined center court with a lot of action going on close the basket. Kristaps is around 7’2” and hence players center which typically is close to the basket so this makes sense.</p>
 
 <p>Now you might want to say, let’s look at Kristaps while also looking at the Heat’s center, how similar do they look? If you think about it, they were probably guarding each other and hence look pretty similar.</p>
 
 <p>Battle of Centers</p>
+<figure class="">
+  <img src="/Images/SpatialNBAAnalysis/KristapsAndWhiteside.png" alt="this is a placeholder image" />
+  
+    <figcaption>
+      How to big guys move differently?
+
+    </figcaption>
+  
+</figure>
 
 <p>Pretty close to the same shape!! They probably weren’t guarding each other the entire game due to substitutions and switches on defense, but we can see they definitely occupied a similar zone.</p>
 
 <p>Now, I mentioned spacing earlier, what does that mean? Essentially it means you want to use as much space on the court as you can to make it harder for the defense to cover you. This would lead to players not playing right next to each other constantly. How does that look? If we take two players on the same team, how close are they? We’ll continue to look at Whiteside and add his superstar teammate Dwyane Wade.</p>
 
 <p>Whiteside and Wade</p>
+<figure class="">
+  <img src="/Images/SpatialNBAAnalysis/DwadeAndWhiteside.png" alt="this is a placeholder image" />
+  
+    <figcaption>
+      Teammates
+
+    </figcaption>
+  
+</figure>
 
 <p>Not all that much overlap! Wade mostly plays outside of Whiteside’s areas.</p>
 
@@ -350,14 +386,34 @@
 <p>I added a background image of a court for a little bit more context. The time in seconds is shown in the lower left hand corner. This could be a new way to watch a game!</p>
 
 <p>Just for fun, I took the average of everyone’s movements and plotted them. This is how they looked at the end of the game.</p>
+<figure class="">
+  <img src="/Images/SpatialNBAAnalysis/averagemovement.png" alt="this is a placeholder image" />
+  
+    <figcaption>
+      The average movement of both teams
+
+    </figcaption>
+  
+</figure>
 
 <p>Kinda looks like Madusa or something. But very centered! This could mean everyone just played in the center…or it means the court was very evenly spaced.</p>
 
 <p>How bout watching the game with the whole team? And the ball?</p>
 
+<p><a href="https://www.instagram.com/tv/B8o4VVEA69A/">Watch it on my instagram</a></p>
+
 <p>Pretty cool to see passes and how the team moves as a whole.</p>
 
 <p>Finally, I made some distributions to show where players tend to be on the court in an x,y fashion.</p>
+<figure class="">
+  <img src="/Images/SpatialNBAAnalysis/Distributions.png" alt="this is a placeholder image" />
+  
+    <figcaption>
+      Where do people play?
+
+    </figcaption>
+  
+</figure>
 
 <p>There’s a lot more I could do with this data.</p>
 <ul>
@@ -403,7 +459,8 @@
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/portfolio/TigerKingTweets/" class="pagination--pager" title="Understanding Tiger King through NLP
+">Next</a>
     
   </nav>
 

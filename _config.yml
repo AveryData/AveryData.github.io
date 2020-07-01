@@ -307,7 +307,7 @@ defaults:
      # _learning
   - scope:
       path: ""
-      type: learning
+      type: posts
     values:
       layout: single
       author_profile: ture

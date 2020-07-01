@@ -85,7 +85,7 @@ var store = [{
       },{
         "title": "Classification",
         "excerpt":"Classifying This is a supervised learning method in which we have a matrix with labels to train our model. It is similar to clustering, but clustering is unsupervised and hence contains no labels. Clustering wants to find inherent structures within a data set. Classification solves I have a new point...","categories": [],
-        "tags": [],
+        "tags": ["data science","cool stuff","frozen"],
         "url": "http://localhost:4000/learning/classification/",
         "teaser": null
       },{
@@ -221,6 +221,12 @@ var store = [{
         "url": "http://localhost:4000/learning/statistics_basics/",
         "teaser": null
       },{
+        "title": "Utah: Crush The Curve Location Tracking",
+        "excerpt":"Google recently posted data to illustrate how mobility has changed during #StayAtHome You can find the report here. Someone webscraped the raw data and made it available here. But the Google report was a bit had to compare and not that pretty, so I made this graph. Find your county...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/portfolio/CrushTheCurve_Utah/",
+        "teaser": "http://localhost:4000/Images/UtahCrushCurve/Crush_The_Curve_Picture.png"
+      },{
         "title": "Family History Hacking",
         "excerpt":"Genealogy often gets a boring rap, but knowing where you come from and who made you can be fun and exciting. Family history is big in my family, and in my culture so I thought, “This is a lot of data. What else can you do with it? How else...","categories": [],
         "tags": [],
@@ -231,7 +237,13 @@ var store = [{
         "excerpt":"Basketball has become my favorite sport. I grew up playing and loving soccer, and don’t get me wrong, I still do. With soccer, it is hard to find a adequate competition and teammates, and even a league to play in. Hence, I’ve landed with basketball. I also love the community...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/portfolio/SpatialNBAAalysis/",
-        "teaser": "http://localhost:4000/Images/Family%20History%20Hacking/NameCloudTreeSmith.png"
+        "teaser": "http://localhost:4000/Images/SpatialNBAAnalysis/DwadeAndWhiteside.png"
+      },{
+        "title": "Understanding Tiger King through NLP",
+        "excerpt":"    Sweet! Thanks for checking out this post.   Please check out my Medium post about it to see the whole process, but enjoy the final outcome below.   Joe Exotic Twitter Portrait    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/portfolio/TigerKingTweets/",
+        "teaser": "http://localhost:4000/Images/TigerKing/WordArt.png"
       },{
         "title": "Post Title",
         "excerpt":"THis is my first post…where does it go  ","categories": [],
