@@ -1,0 +1,695 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>(A)Very Data</title>
+<meta name="description" content="My blog / portfolio of Data Science &amp;  Analytics ">
+
+
+  <meta name="author" content="Avery Smith">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="(A)Very Data">
+<meta property="og:title" content="(A)Very Data">
+<meta property="og:url" content="http://localhost:4000/learning/linear_regression/">
+
+
+  <meta property="og:description" content="My blog / portfolio of Data Science &amp;  Analytics ">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-06-30T23:35:27-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/learning/linear_regression/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Avery Smith",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="(A)Very Data Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          (A)Very Data
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/portfolio/">Portfolio</a>
+            </li><li class="masthead__menu-item">
+              <a href="/learning/">Learning</a>
+            </li><li class="masthead__menu-item">
+              <a href="/thingsilike/">Things I like</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/Images/PicturesOfMe/ProfPic_Best.JPG" alt="Avery Smith" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Avery Smith</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>My adventure in Data Science and Analytics</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Houston, TX</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:averyjs@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://twitter.com/A_Very_Data" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/AveryData?tab=repositories" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/verydata_365" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="linear-regression">Linear Regression</h1>
+
+<h2 id="regression-in-general">Regression In General</h2>
+
+<p>Regression is used to quantifiably model the relationship between a target variable and inputs. The target variable is often called the response variable, dependent variable of ‘y’. The inputs are often called the predicting variables of ‘x’.</p>
+
+<p>Linear regression is 1) Easy to Understand 2) Easy to implement 3) Works well for lots of things.</p>
+
+<p><strong>Linear models aren’t reality, but they’re useful pieces of advice</strong></p>
+
+<p>It can be used for:</p>
+<ul>
+  <li>prediction of response variable in different scenarios</li>
+  <li>modeling the relationship between response variable and explanatory variables</li>
+  <li>testing hypothesis of assocation relationships</li>
+</ul>
+
+<p>Regression can be diagnostic, predictive, or prescriptive.</p>
+<ul>
+  <li>Diagnostic: Understanding the relationship and why</li>
+  <li>Predictive: What will happen</li>
+  <li>Prescriptive: What to do to make something happen</li>
+</ul>
+
+<p>Regression ranges in various forms, some of the most common being: simple, multi-variate, and polynomial.</p>
+
+<h2 id="examples">Examples</h2>
+<ul>
+  <li><strong>Used Car Price</strong> - how many miles, year, condition, model</li>
+  <li><strong>House Price</strong> - year built, how many bed/bath, amenities, neighborhood</li>
+  <li><strong>Salary of Employee</strong> - years experience, location, degree</li>
+  <li><strong>Yield of Reactor</strong> - operating conditions, feed qualities</li>
+  <li><strong>Distance Dog Walked</strong> - Day of week, weather, month</li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+<ol>
+  <li>Mean Zero Assumption - expected value of errors is 0</li>
+  <li>Constant Variance - Model shouldn’t be more accurate for sections of population than other sections</li>
+  <li>Independence - Knowing you’re underpredicting one y, shouldn’t tell you anything about another, especially important in time series</li>
+  <li>Normally distributed errors - should be independent and identically distributed (i.i.d.) random variables with normal distribution of mean 0 and standard deviation</li>
+</ol>
+
+<ul>
+  <li>Predictor variables are assumed to be linearly independent</li>
+  <li>The value of Y must be linearly associated with the x’s</li>
+</ul>
+
+<h2 id="things-to-do-before-regression">Things To Do Before Regression</h2>
+<p>Before you do regression, it’s important to do EDA (exploratory data analysis). This could include making histograms, making scatter plots, and finding correlations.</p>
+
+<p>You’ll surely want to view scatters of all the x’s against the y’s to see for a good fit, and any shapes (hopefully line shapes)!</p>
+
+<h3 id="correlations">Correlations</h3>
+<p>Correlation coefficient only captures <em>linear</em> relationships</p>
+
+<h2 id="variable-selection">Variable Selection</h2>
+<p>Variable selection should probably be its on section…so maybe I will make it that eventually (copy to new section reminder!)</p>
+
+<h2 id="fitting-methods">Fitting Methods</h2>
+<ul>
+  <li>OLS - Ordinary Least Squares</li>
+  <li>Generalized</li>
+  <li>Step-wise</li>
+  <li>Maximum Liklihood</li>
+</ul>
+
+<h2 id="categorical-data">Categorical Data</h2>
+<p>Not all data is continuous and quantitative, it is often categorical. Think ‘gender’, ‘Age: Old, Young, Middle’. ‘Pet: Dog, Rabbit, Cat’.</p>
+
+<p>If you have 3 categories, you will need two indicator or dummy variables. The base (or reference) case, with both dummy variables set to 0, is the reference group to compare to the complementary dummy variables. For the age, we can make MiddleAged and OldAged. The OldAged would be set to 1 if the person is old. Both would be set to 0 if the person was young. The intercept then represents the other variable of young (because MiddledAged and OldAged would be 0, hence only int is left (corresponding to young)). The coefficient if OldAged would be the <strong>increase</strong> of a young customer (because you still have the intercept)</p>
+
+<h2 id="logistic-regression">Logistic Regression</h2>
+<p>A dependent variable that has vinary values (pass/fail or true/false or 0/1).</p>
+
+<p>Some examples might be:</p>
+<ul>
+  <li>Will the student get an “A” in the course?</li>
+  <li>Will this product pass all quality specs?</li>
+  <li>Will this thing survive? Titanic for example.</li>
+  <li>Will the customer purchase the item?</li>
+  <li>Will the party make their loan payments?</li>
+</ul>
+
+<p>The odds (remember $\frac{p}{1-p}$) can be simply written as $exp(LinEq)$. If you take the log of both sides you can get this: <script type="math/tex">log( \frac { p } {1-p}) = LinEq</script></p>
+
+<p>This constitutes the log odds of this event happening. This makes it so the range now is between 0 and 1.</p>
+
+<p>See classification topic for more learning.</p>
+
+<h3 id="interpreting-coefficients">Interpreting coefficients</h3>
+<p>As x increase by 1 unit, the log odds increase by the coefficient. Or you can find the odds change by taking $exp(coeff)$. This apparently approximates to 100*coeff%.</p>
+
+<h2 id="model-validation">Model Validation</h2>
+
+<h2 id="interaction-terms">Interaction Terms</h2>
+<p>Something like $x_1*x_2$</p>
+
+<h2 id="log-transformations">Log Transformations</h2>
+<p><strong>If you’ve logged an x variable</strong>, $log(x)$</p>
+
+<p>You can interpret that x-variable by saying for every 1% increase in my x-variable, I will see a change of coeff/100 in my y variable. See (https://data.library.virginia.edu/interpreting-log-transformations-in-a-linear-model/)</p>
+
+<p><strong>If you’ve logged the y variable</strong>, $log(y)$</p>
+
+<p>You can take the coefficient and raise <em>e</em> to it, subtract 1, and multiply by 100. $(e^{coefficient} -1) \cdot 100$. For every one-unit increase in the independent variable, you should see that percent change.</p>
+
+<p><strong>If you’ve logged by x and y</strong>, $log(y) + log(x)$</p>
+
+<p>For every % change in the in the x, you’ll get a y % increase of this: $((1+\%_{x})^{coeff}-1)\cdot 100$</p>
+
+<h2 id="ols---ordinary-least-squares">OLS - Ordinary Least Squares</h2>
+<p>Fit a line that minimizes sum of squared errors (SSE).</p>
+
+<script type="math/tex; mode=display">SSE = \Sigma (y-\hat{y})^2 = \Sigma (y-(\beta_0+\beta_1 \cdot x_i))^2</script>
+
+<p>Total Deviation is the difference between observed value $y_i$ and mean value $\hat{y}$.</p>
+
+<p>Total Sum of Squares (SST): The sum of sum of squared errors (SSE) plus sum of squares regression (SSR). $\Sigma (y_i - \bar{y})^2$</p>
+
+<p>Sum of Squares Regression (SSR): Sum of squared differences between <strong>mean response</strong> and  predictions. $\Sigma (\bar{y} - \hat{y})^2$</p>
+
+<p>Sum of Squared Errors (SSE): Sum of squared differences between <strong>observations</strong> and predictions. $\Sigma (y_i - \hat{y})^2$</p>
+
+<h2 id="r2">$R^2$</h2>
+<p>The coefficient of determination: measure of overall strength of the relationship between the dependent variable and independent variables.</p>
+
+<script type="math/tex; mode=display">R^2 = 1 - \frac{SSE}{SST} = \frac{SSR}{SST}</script>
+
+<p>Or simply stated, it is the amount of variance explained by the model, divided by the total variance. How much variance does the model account for?</p>
+
+<p>Never decreases with additional independent variables added Ranges between 0 and 1.</p>
+
+<p>IN THE FUTURE ADD EXAMPLES OF R^2 = 1 and R^2 = 0</p>
+
+<h3 id="adjusted-r2">Adjusted $R^2$</h3>
+<p>Adjusted $R^2$ ensures you never account for the inflation of number of predictors. Adds a penalty for the number of terms in model</p>
+
+<script type="math/tex; mode=display">R^2 = 1 - \frac{ \frac{SSE}{n-p-1} }{ \frac{SST}{n-1}}</script>
+
+<h2 id="simple-linear-regression">Simple Linear Regression</h2>
+<p><script type="math/tex">y = \beta_o + \beta_1\cdot x + \epsilon</script></p>
+
+<p>We use one variable and a constant to model the target variable. There is error included as the fit is likely to be not perfect.</p>
+
+<p>We don’t know $\beta_o$ or $\beta_1$.</p>
+
+<h2 id="significance">Significance</h2>
+<p>The <em>t</em> value is: $t=\frac{Coefficeint}{Standard Error}$</p>
+
+<p>The <em>p</em> value is the probability of finding a <em>t</em> value so large, given the null hypothesis that the coefficient should be 0. A low <em>p</em> value indicates this coefficient really shouldn’t be zero and hence is significant. If the <em>p</em> value is large (depends on your confidence level, but say greater than 0.05), that coefficient is <strong>not</strong> significant.</p>
+
+<p>The <em>F-Test</em> is a way to check if the model is statistically significant. The <em>F-Statistic</em> is the probability that the model coefficients are equal to 0. It is defined as the ratio of means regression sum of squares divided by the mean error sum of squares. It ranges from 0 to an arbitrary large number.</p>
+
+<script type="math/tex; mode=display">F = \frac{ \frac{SSR}{p}  }  { /frac{SSE}{n-p-1}   }</script>
+
+<h2 id="intepretting-coefficients">Intepretting Coefficients</h2>
+<p>If $\beta_1$ has a value of 300, that means for every one unit change in the explanatory variable associated with $\beta_1$, we can expect an estimated 300 increase in the dependent variable.</p>
+
+<p>These coefficients must be interpreted assuming all other variables are held constant…this invokes a lack of colinearity between input variables. See the section on multi collinearity for further explanation.</p>
+
+<h2 id="multi-colinearity">Multi Colinearity</h2>
+<p>Two or more explanatory variables are highly correlated with one another. Makes explaining coefficients magnitudes very difficult. Violates one of the assumptions that input terms are independent. Only use one variable to represent multiple correlated variables. There are several techniques to do this automatically for you…see stepwise, generalized regression, or even PCA / Factor Analysis.</p>
+
+<p>VIF - Variance Inflation Factors – Predict a given input variable with all other input variables…how well do you do? If VIF &gt; 5, multi colinearity is present.</p>
+
+<p>Regression coefficients get messed up…they could have large variance, wrong sign, 0, explained incorrectly.</p>
+
+<h2 id="outliers">Outliers</h2>
+<p>Outliers are points that have a y value far from the predicted y. They can be identified by looking at the residuals plot. It may need to be removed.</p>
+
+<p>You can identify outliers by <strong>Cook’s Distance</strong></p>
+
+<h3 id="high-leverage-points">High Leverage points</h3>
+<p>A predictor value outside the observations. If it is removed and the model changes significantly, it is thought to be high leverage.</p>
+
+<h2 id="things-to-check">Things to check</h2>
+
+<ul>
+  <li>Is the relationship linear?
+Scatter Y against all x’s…see if it is well correlated and linear.
+    <h5 id="if-the-variable-is-nonlinear">If the variable is nonlinear</h5>
+  </li>
+  <li>Can you use a non-linear relationship with higher order terms? I.e. add a square term?
+    <ul>
+      <li>Cannot read coefficients because the slope is not constant, with every change of x, your slope is changed.</li>
+    </ul>
+  </li>
+  <li>Use variance reducing  transformations (such as log)
+    <ul>
+      <li>Note that logs don’t work for negative numbers.</li>
+      <li>Did you try logging the x variable?
+        <ul>
+          <li>Coefficients can be interpreted as a 1% increase in X corresponds to a coefficient/100 change in Y.</li>
+        </ul>
+      </li>
+      <li>Did you try logging the y variable?
+        <ul>
+          <li>Coefficients are interpreted as the dependent variable chances by coeff * 100 for a one unit increase in the X.</li>
+        </ul>
+      </li>
+      <li>Did you try loging both x and y?</li>
+    </ul>
+  </li>
+  <li>
+    <p>Did you possibly leave any important predictor variables out?</p>
+  </li>
+  <li>
+    <p>Are the residuals (errors) normal?
+Make a q-plot or histogram of the residuals. If a histogram, does it look normal? If q-q plot, is it linear? Does it have tail deviations at the ends? That may suggest outliers.</p>
+  </li>
+  <li>Are the errors correlated?
+Residuals vs fitted values. We want to see no patterns, otherwise we have correlated errors (autocorrelation). This would violate independence and constant variance assumptions. Durbin-Watson test can be used to detect autocorrelation in linear model.</li>
+</ul>
+
+<h2 id="variable-transformations">Variable Transformations</h2>
+
+<h2 id="categorical-variables">Categorical Variables</h2>
+<p>Categorical variables can be a bit trickier. Basically, if you have 3 categories, you’d going to split those categories into 2 binary dummy column. The two dummy groups will represent two, respective categories while the third category is represented by both dummy variables are off (0).</p>
+
+<p>Those two dummy variables will get coefficients and represent the change in the y, if those dummys are true, <em>from the base case</em>. You always have to compare it to the base case.</p>
+
+<h2 id="linear-regression-in-r">Linear Regression in R</h2>
+
+<h4 id="to-fit-a-linear-regression">To fit a linear regression:</h4>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lm</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">x1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">x2</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="to-see-the-summary">To see the summary:</h4>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">summary</span><span class="p">(</span><span class="n">model</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<p>You’ll see this includes (among others) the coefficients, the intercept, as well as the significance probabilities, and the $R^2$.</p>
+
+<h4 id="predicting-using-linear-regression-in-r">Predicting using linear regression in R:</h4>
+<pre><code class="language-{r}"># Create New Data Point
+new_airbnb = data.frame(x1 = 19, x2 = 43)
+# Make prediction
+predict(model,new_airbnb,type="response")
+</code></pre>
+
+<h4 id="changing-the-base-case-for-categories">Changing the base case for categories</h4>
+<p>If the data set is called Carseats and it has a column called ‘ShelveLoc’ that has categories of Good, Bad, and Medium. R chooses the base case default arbitrarily. You can choose which is the base case and it will not change your model, but would change what categories have coefficients and the understanding of them.</p>
+
+<p>Let’s say the original base case was “Good”. You can change it to “Medium” so that you’ll have coeffs for “Good” and “Bad” by using <em>library(dplyr)</em>
+‘’‘{r}
+Carseats &lt;- Carseats %&gt;%
+  mutate(ShelveLoc = relevel(ShelveLoc, ref = “Medium”))
+‘’’
+You can also this this link at STHDA (http://www.sthda.com/english/articles/40-regression-analysis/163-regression-with-categorical-variables-dummy-coding-essentials-in-r/)</p>
+
+<h4 id="logistic-regression-1">Logistic Regression</h4>
+<p>’’‘{r}
+logreg = glm(Survived ~ Sex, data = titantic, family = “binomial”)
+‘’’</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%20http%3A%2F%2Flocalhost%3A4000%2Flearning%2Flinear_regression%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Flearning%2Flinear_regression%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Flearning%2Flinear_regression%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/learning/jupyter_notebook/" class="pagination--pager" title="Jupyter Notebook
+">Previous</a>
+    
+    
+      <a href="/learning/markdown_tips/" class="pagination--pager" title="Tips For Markdown
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/firstpost/" rel="permalink">Post Title
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">THis is my first post…where does it go
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/A_Very_Data" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/AveryData?tab=repositories" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://instagram.com/verydata_365" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Avery Smith. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

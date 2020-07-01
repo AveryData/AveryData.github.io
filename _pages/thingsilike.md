@@ -5,5 +5,6 @@ collection: thingsilike
 entries_layout: grid
 classes: wide
 header:
-  image: /Images/Free Stock Photos/Nature/StGeorge.jpg
+  overlay_image: /Images/FreeStockPhotos/Nature/LakePowell_original.png
+title: "Things I Like"
 ---

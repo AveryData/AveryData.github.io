@@ -5,5 +5,8 @@ collection: portfolio
 entries_layout: grid
 classes: wide
 header:
-  image: /Images/Free Stock Photos/Nature/DarkDelicateArch.jpg
+  overlay_image: /Images/FreeStockPhotos/Nature/DarkDelicateArch.jpg
+
+
+title: "Portfolio"
 ---

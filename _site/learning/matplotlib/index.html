@@ -1,0 +1,961 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>matplotlib - (A)Very Data</title>
+<meta name="description" content="Python Plots!!! ">
+
+
+  <meta name="author" content="Avery Smith">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="(A)Very Data">
+<meta property="og:title" content="matplotlib">
+<meta property="og:url" content="http://localhost:4000/learning/matplotlib/">
+
+
+  <meta property="og:description" content="Python Plots!!! ">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-06-30T23:35:27-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/learning/matplotlib/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Avery Smith",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="(A)Very Data Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          (A)Very Data
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/portfolio/">Portfolio</a>
+            </li><li class="masthead__menu-item">
+              <a href="/learning/">Learning</a>
+            </li><li class="masthead__menu-item">
+              <a href="/thingsilike/">Things I like</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/Images/PicturesOfMe/ProfPic_Best.JPG" alt="Avery Smith" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Avery Smith</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>My adventure in Data Science and Analytics</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Houston, TX</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:averyjs@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://twitter.com/A_Very_Data" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/AveryData?tab=repositories" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/verydata_365" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="matplotlib">
+    <meta itemprop="description" content="Python Plots!!!">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">matplotlib
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="color-options">Color options</h2>
+<p>https://matplotlib.org/2.0.2/examples/color/named_colors.html</p>
+
+<h2 id="changing-the-figure-sizes">Changing the figure sizes</h2>
+<p>fig= plt.figure(figsize=(6,3))
+see [http://www.learningaboutelectronics.com/Articles/How-to-set-the-size-of-a-figure-in-matplotlib-with-Python.php]</p>
+
+<h2 id="changing-the-boring-lame-stupid-defaults">Changing the boring, lame, stupid defaults</h2>
+<p>find this file
+‘’’</p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>import matplotlib
+matplotlib.matplotlib_fname()
+‘/home/foo/.config/matplotlib/matplotlibrc’
+‘’’</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p>Edit and paste this
+‘’’</p>
+<h3 id="matplotlibrc-format">MATPLOTLIBRC FORMAT</h3>
+
+<h1 id="this-is-a-sample-matplotlib-configuration-file---you-can-find-a-copy">This is a sample matplotlib configuration file - you can find a copy</h1>
+<h1 id="of-it-on-your-system-in">of it on your system in</h1>
+<h1 id="site-packagesmatplotlibmpl-datamatplotlibrc--if-you-edit-it">site-packages/matplotlib/mpl-data/matplotlibrc.  If you edit it</h1>
+<h1 id="there-please-note-that-it-will-be-overwritten-in-your-next-install">there, please note that it will be overwritten in your next install.</h1>
+<h1 id="if-you-want-to-keep-a-permanent-local-copy-that-will-not-be">If you want to keep a permanent local copy that will not be</h1>
+<h1 id="overwritten-place-it-in-the-following-location">overwritten, place it in the following location:</h1>
+<h1 id="unixlinux">unix/linux:</h1>
+<h1 id="homeconfigmatplotlibmatplotlibrc-or">$HOME/.config/matplotlib/matplotlibrc or</h1>
+<h1 id="xdg_config_homematplotlibmatplotlibrc-if-xdg_config_home-is-set">$XDG_CONFIG_HOME/matplotlib/matplotlibrc (if $XDG_CONFIG_HOME is set)</h1>
+<h1 id="other-platforms">other platforms:</h1>
+<h1 id="homematplotlibmatplotlibrc">$HOME/.matplotlib/matplotlibrc</h1>
+<p>#</p>
+<h1 id="see-httpmatplotliborguserscustomizinghtmlthe-matplotlibrc-file-for">See http://matplotlib.org/users/customizing.html#the-matplotlibrc-file for</h1>
+<h1 id="more-details-on-the-paths-which-are-checked-for-the-configuration-file">more details on the paths which are checked for the configuration file.</h1>
+<p>#</p>
+<h1 id="this-file-is-best-viewed-in-a-editor-which-supports-python-mode">This file is best viewed in a editor which supports python mode</h1>
+<h1 id="syntax-highlighting-blank-lines-or-lines-starting-with-a-comment">syntax highlighting. Blank lines, or lines starting with a comment</h1>
+<h1 id="symbol-are-ignored-as-are-trailing-comments--other-lines-must">symbol, are ignored, as are trailing comments.  Other lines must</h1>
+<h1 id="have-the-format">have the format</h1>
+<h1 id="key--val--optional-comment">key : val # optional comment</h1>
+<p>#</p>
+<h1 id="colors-for-the-color-values-below-you-can-either-use---a">Colors: for the color values below, you can either use - a</h1>
+<h1 id="matplotlib-color-string-such-as-r-k-or-b---an-rgb-tuple-such-as">matplotlib color string, such as r, k, or b - an rgb tuple, such as</h1>
+<h1 id="10-05-00---a-hex-string-such-as-ff00ff-or-ff00ff---a-scalar">(1.0, 0.5, 0.0) - a hex string, such as ff00ff or #ff00ff - a scalar</h1>
+<h1 id="grayscale-intensity-such-as-075---a-legal-html-color-name-eg-red">grayscale intensity such as 0.75 - a legal html color name, eg red,</h1>
+<h1 id="blue-darkslategray">blue, darkslategray</h1>
+
+<h4 id="configuration-begins-here">CONFIGURATION BEGINS HERE</h4>
+
+<h1 id="the-default-backend-one-of-gtk-gtkagg-gtkcairo-gtk3agg-gtk3cairo">The default backend; one of GTK GTKAgg GTKCairo GTK3Agg GTK3Cairo</h1>
+<h1 id="cocoaagg-macosx-qt4agg-qt5agg-tkagg-wx-wxagg-agg-cairo-gdk-ps-pdf-svg">CocoaAgg MacOSX Qt4Agg Qt5Agg TkAgg WX WXAgg Agg Cairo GDK PS PDF SVG</h1>
+<h1 id="template">Template.</h1>
+<h1 id="you-can-also-deploy-your-own-backend-outside-of-matplotlib-by">You can also deploy your own backend outside of matplotlib by</h1>
+<h1 id="referring-to-the-module-name-which-must-be-in-the-pythonpath-as">referring to the module name (which must be in the PYTHONPATH) as</h1>
+<h1 id="modulemy_backend">‘module://my_backend’.</h1>
+<p>backend      : qt4agg</p>
+
+<h1 id="if-you-are-using-the-qt4agg-backend-you-can-choose-here">If you are using the Qt4Agg backend, you can choose here</h1>
+<h1 id="to-use-the-pyqt4-bindings-or-the-newer-pyside-bindings-to">to use the PyQt4 bindings or the newer PySide bindings to</h1>
+<h1 id="the-underlying-qt4-toolkit">the underlying Qt4 toolkit.</h1>
+<p>#backend.qt4 : PyQt4        # PyQt4 | PySide</p>
+
+<h1 id="note-that-this-can-be-overridden-by-the-environment-variable">Note that this can be overridden by the environment variable</h1>
+<h1 id="qt_api-used-by-enthought-tool-suite-ets-valid-values-are">QT_API used by Enthought Tool Suite (ETS); valid values are</h1>
+<h1 id="pyqt-and-pyside--the-pyqt-setting-has-the-side-effect-of">“pyqt” and “pyside”.  The “pyqt” setting has the side effect of</h1>
+<h1 id="forcing-the-use-of-version-2-api-for-qstring-and-qvariant">forcing the use of Version 2 API for QString and QVariant.</h1>
+
+<h1 id="the-port-to-use-for-the-web-server-in-the-webagg-backend">The port to use for the web server in the WebAgg backend.</h1>
+<h1 id="webaggport--8888">webagg.port : 8888</h1>
+
+<h1 id="if-webaggport-is-unavailable-a-number-of-other-random-ports-will">If webagg.port is unavailable, a number of other random ports will</h1>
+<h1 id="be-tried-until-one-that-is-available-is-found">be tried until one that is available is found.</h1>
+<h1 id="webaggport_retries--50">webagg.port_retries : 50</h1>
+
+<h1 id="when-true-open-the-webbrowser-to-the-plot-that-is-shown">When True, open the webbrowser to the plot that is shown</h1>
+<h1 id="webaggopen_in_browser--true">webagg.open_in_browser : True</h1>
+
+<h1 id="when-true-the-figures-rendered-in-the-nbagg-backend-are-created-with">When True, the figures rendered in the nbagg backend are created with</h1>
+<h1 id="a-transparent-background">a transparent background.</h1>
+<h1 id="nbaggtransparent--true">nbagg.transparent : True</h1>
+
+<h1 id="if-you-are-running-pyplot-inside-a-gui-and-your-backend-choice">if you are running pyplot inside a GUI and your backend choice</h1>
+<h1 id="conflicts-we-will-automatically-try-to-find-a-compatible-one-for">conflicts, we will automatically try to find a compatible one for</h1>
+<h1 id="you-if-backend_fallback-is-true">you if backend_fallback is True</h1>
+<p>#backend_fallback: True</p>
+
+<p>#interactive  : False
+#toolbar      : toolbar2   # None | toolbar2  (“classic” is deprecated)
+#timezone     : UTC        # a pytz timezone string, eg US/Central or Europe/Paris</p>
+
+<h1 id="where-your-matplotlib-data-lives-if-you-installed-to-a-non-default">Where your matplotlib data lives if you installed to a non-default</h1>
+<h1 id="location--this-is-where-the-matplotlib-fonts-bitmaps-etc-reside">location.  This is where the matplotlib fonts, bitmaps, etc reside</h1>
+<p>#datapath : /home/jdhunter/mpldata</p>
+
+<h3 id="lines">LINES</h3>
+<h1 id="see-httpmatplotliborgapiartist_apihtmlmodule-matplotliblines-for-more">See http://matplotlib.org/api/artist_api.html#module-matplotlib.lines for more</h1>
+<h1 id="information-on-line-properties">information on line properties.</h1>
+<p>lines.linewidth   : 6.0     # line width in points
+#lines.linestyle   : -       # solid line
+lines.color       : red    # has no affect on plot(); see axes.color_cycle
+#lines.marker      : None    # the default marker
+#lines.markeredgewidth  : 0.5     # the line width around the marker symbol
+#lines.markersize  : 6            # markersize, in points
+#lines.dash_joinstyle : miter        # miter|round|bevel
+#lines.dash_capstyle : butt          # butt|round|projecting
+#lines.solid_joinstyle : miter       # miter|round|bevel
+#lines.solid_capstyle : projecting   # butt|round|projecting
+#lines.antialiased : True         # render lines in antialised (no jaggies)</p>
+
+<h3 id="patches">PATCHES</h3>
+<h1 id="patches-are-graphical-objects-that-fill-2d-space-like-polygons-or">Patches are graphical objects that fill 2D space, like polygons or</h1>
+<h1 id="circles--see">circles.  See</h1>
+<h1 id="httpmatplotliborgapiartist_apihtmlmodule-matplotlibpatches">http://matplotlib.org/api/artist_api.html#module-matplotlib.patches</h1>
+<h1 id="information-on-patch-properties">information on patch properties</h1>
+<p>#patch.linewidth        : 1.0     # edge width in points
+#patch.facecolor        : blue
+#patch.edgecolor        : black
+#patch.antialiased      : True    # render patches in antialised (no jaggies)</p>
+
+<h3 id="font">FONT</h3>
+<p>#</p>
+<h1 id="font-properties-used-by-texttext--see">font properties used by text.Text.  See</h1>
+<h1 id="httpmatplotliborgapifont_manager_apihtml-for-more">http://matplotlib.org/api/font_manager_api.html for more</h1>
+<h1 id="information-on-font-properties--the-6-font-properties-used-for-font">information on font properties.  The 6 font properties used for font</h1>
+<h1 id="matching-are-given-below-with-their-default-values">matching are given below with their default values.</h1>
+<p>#</p>
+<h1 id="the-fontfamily-property-has-five-values-serif-eg-times">The font.family property has five values: ‘serif’ (e.g., Times),</h1>
+<h1 id="sans-serif-eg-helvetica-cursive-eg-zapf-chancery">‘sans-serif’ (e.g., Helvetica), ‘cursive’ (e.g., Zapf-Chancery),</h1>
+<h1 id="fantasy-eg-western-and-monospace-eg-courier--each-of">‘fantasy’ (e.g., Western), and ‘monospace’ (e.g., Courier).  Each of</h1>
+<h1 id="these-font-families-has-a-default-list-of-font-names-in-decreasing">these font families has a default list of font names in decreasing</h1>
+<h1 id="order-of-priority-associated-with-them--when-textusetex-is-false">order of priority associated with them.  When text.usetex is False,</h1>
+<h1 id="fontfamily-may-also-be-one-or-more-concrete-font-names">font.family may also be one or more concrete font names.</h1>
+<p>#</p>
+<h1 id="the-fontstyle-property-has-three-values-normal-or-roman-italic">The font.style property has three values: normal (or roman), italic</h1>
+<h1 id="or-oblique--the-oblique-style-will-be-used-for-italic-if-it-is-not">or oblique.  The oblique style will be used for italic, if it is not</h1>
+<h1 id="present">present.</h1>
+<p>#</p>
+<h1 id="the-fontvariant-property-has-two-values-normal-or-small-caps--for">The font.variant property has two values: normal or small-caps.  For</h1>
+<h1 id="truetype-fonts-which-are-scalable-fonts-small-caps-is-equivalent">TrueType fonts, which are scalable fonts, small-caps is equivalent</h1>
+<h1 id="to-using-a-font-size-of-smaller-or-about-83-of-the-current-font">to using a font size of ‘smaller’, or about 83% of the current font</h1>
+<h1 id="size">size.</h1>
+<p>#</p>
+<h1 id="the-fontweight-property-has-effectively-13-values-normal-bold">The font.weight property has effectively 13 values: normal, bold,</h1>
+<h1 id="bolder-lighter-100-200-300--900--normal-is-the-same-as">bolder, lighter, 100, 200, 300, …, 900.  Normal is the same as</h1>
+<h1 id="400-and-bold-is-700--bolder-and-lighter-are-relative-values-with">400, and bold is 700.  bolder and lighter are relative values with</h1>
+<h1 id="respect-to-the-current-weight">respect to the current weight.</h1>
+<p>#</p>
+<h1 id="the-fontstretch-property-has-11-values-ultra-condensed">The font.stretch property has 11 values: ultra-condensed,</h1>
+<h1 id="extra-condensed-condensed-semi-condensed-normal-semi-expanded">extra-condensed, condensed, semi-condensed, normal, semi-expanded,</h1>
+<h1 id="expanded-extra-expanded-ultra-expanded-wider-and-narrower--this">expanded, extra-expanded, ultra-expanded, wider, and narrower.  This</h1>
+<h1 id="property-is-not-currently-implemented">property is not currently implemented.</h1>
+<p>#</p>
+<h1 id="the-fontsize-property-is-the-default-font-size-for-text-given-in-pts">The font.size property is the default font size for text, given in pts.</h1>
+<h1 id="12pt-is-the-standard-value">12pt is the standard value.</h1>
+<p>#
+font.size : 64pt
+font.family         : serif
+font.style          : normal
+font.variant        : normal
+font.weight         : medium
+font.stretch        : normal</p>
+<h1 id="note-that-fontsize-controls-default-text-sizes--to-configure">note that font.size controls default text sizes.  To configure</h1>
+<h1 id="special-text-sizes-tick-labels-axes-labels-title-etc-see-the-rc">special text sizes tick labels, axes, labels, title, etc, see the rc</h1>
+<h1 id="settings-for-axes-and-ticks-special-text-sizes-can-be-defined">settings for axes and ticks. Special text sizes can be defined</h1>
+<h1 id="relative-to-fontsize-using-the-following-values-xx-small-x-small">relative to font.size, using the following values: xx-small, x-small,</h1>
+<h1 id="small-medium-large-x-large-xx-large-larger-or-smaller">small, medium, large, x-large, xx-large, larger, or smaller</h1>
+
+<p>font.serif          : Charter, Bitstream Vera Serif, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Times New Roman, Times, Palatino,  serif
+#font.sans-serif     : Bitstream Vera Sans, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
+#font.cursive        : Apple Chancery, Textile, Zapf Chancery, Sand, cursive
+#font.fantasy        : Comic Sans MS, Chicago, Charcoal, Impact, Western, fantasy
+#font.monospace      : Bitstream Vera Sans Mono, Andale Mono, Nimbus Mono L, Courier New, Courier, Fixed, Terminal, monospace</p>
+
+<h3 id="text">TEXT</h3>
+<h1 id="text-properties-used-by-texttext--see">text properties used by text.Text.  See</h1>
+<h1 id="httpmatplotliborgapiartist_apihtmlmodule-matplotlibtext-for-more">http://matplotlib.org/api/artist_api.html#module-matplotlib.text for more</h1>
+<h1 id="information-on-text-properties">information on text properties</h1>
+
+<p>text.color          : red</p>
+
+<h3 id="latex-customizations-see-httpwwwscipyorgwikicookbookmatplotlibusingtex">LaTeX customizations. See http://www.scipy.org/Wiki/Cookbook/Matplotlib/UsingTex</h3>
+<p>#text.usetex         : False  # use latex for all text handling. The following fonts
+                              # are supported through the usual rc parameter settings:
+                              # new century schoolbook, bookman, times, palatino,
+                              # zapf chancery, charter, serif, sans-serif, helvetica,
+                              # avant garde, courier, monospace, computer modern roman,
+                              # computer modern sans serif, computer modern typewriter
+                              # If another font is desired which can loaded using the
+                              # LaTeX \usepackage command, please inquire at the
+                              # matplotlib mailing list
+#text.latex.unicode : False # use “ucs” and “inputenc” LaTeX packages for handling
+                            # unicode strings.
+#text.latex.preamble :  # IMPROPER USE OF THIS FEATURE WILL LEAD TO LATEX FAILURES
+                            # AND IS THEREFORE UNSUPPORTED. PLEASE DO NOT ASK FOR HELP
+                            # IF THIS FEATURE DOES NOT DO WHAT YOU EXPECT IT TO.
+                            # preamble is a comma separated list of LaTeX statements
+                            # that are included in the LaTeX document preamble.
+                            # An example:
+                            # text.latex.preamble : \usepackage{bm},\usepackage{euler}
+                            # The following packages are always loaded with usetex, so
+                            # beware of package collisions: color, geometry, graphicx,
+                            # type1cm, textcomp. Adobe Postscript (PSSNFS) font packages
+                            # may also be loaded, depending on your font settings</p>
+
+<p>#text.dvipnghack : None      # some versions of dvipng don’t handle alpha
+                             # channel properly.  Use True to correct
+                             # and flush ~/.matplotlib/tex.cache
+                             # before testing and False to force
+                             # correction off.  None will try and
+                             # guess based on your dvipng version</p>
+
+<p>#text.hinting : auto   # May be one of the following:
+                       #   ‘none’: Perform no hinting
+                       #   ‘auto’: Use freetype’s autohinter
+                       #   ‘native’: Use the hinting information in the
+                       #             font file, if available, and if your
+                       #             freetype library supports it
+                       #   ‘either’: Use the native hinting information,
+                       #             or the autohinter if none is available.
+                       # For backward compatibility, this value may also be
+                       # True === ‘auto’ or False === ‘none’.
+#text.hinting_factor : 8 # Specifies the amount of softness for hinting in the
+                         # horizontal direction.  A value of 1 will hint to full
+                         # pixels.  A value of 2 will hint to half pixels etc.</p>
+
+<p>#text.antialiased : True # If True (default), the text will be antialiased.
+                         # This only affects the Agg backend.</p>
+
+<h1 id="the-following-settings-allow-you-to-select-the-fonts-in-math-mode">The following settings allow you to select the fonts in math mode.</h1>
+<h1 id="they-map-from-a-tex-font-name-to-a-fontconfig-font-pattern">They map from a TeX font name to a fontconfig font pattern.</h1>
+<h1 id="these-settings-are-only-used-if-mathtextfontset-is-custom">These settings are only used if mathtext.fontset is ‘custom’.</h1>
+<h1 id="note-that-this-custom-mode-is-unsupported-and-may-go-away-in-the">Note that this “custom” mode is unsupported and may go away in the</h1>
+<h1 id="future">future.</h1>
+<p>#mathtext.cal : cursive
+#mathtext.rm  : serif
+#mathtext.tt  : monospace
+#mathtext.it  : serif:italic
+#mathtext.bf  : serif:bold
+#mathtext.sf  : sans
+#mathtext.fontset : cm # Should be ‘cm’ (Computer Modern), ‘stix’,
+                       # ‘stixsans’ or ‘custom’
+#mathtext.fallback_to_cm : True  # When True, use symbols from the Computer Modern
+                                 # fonts when a symbol can not be found in one of
+                                 # the custom math fonts.</p>
+
+<p>#mathtext.default : it # The default font to use for math.
+                       # Can be any of the LaTeX font names, including
+                       # the special name “regular” for the same font
+                       # used in regular text.</p>
+
+<h3 id="axes">AXES</h3>
+<h1 id="default-face-and-edge-color-default-tick-sizes">default face and edge color, default tick sizes,</h1>
+<h1 id="default-fontsizes-for-ticklabels-and-so-on--see">default fontsizes for ticklabels, and so on.  See</h1>
+<h1 id="httpmatplotliborgapiaxes_apihtmlmodule-matplotlibaxes">http://matplotlib.org/api/axes_api.html#module-matplotlib.axes</h1>
+<p>#axes.hold           : True    # whether to clear the axes by default on
+axes.facecolor      : white   # axes background color
+axes.edgecolor      : back   # axes edge color
+axes.linewidth      : 0.0     # edge linewidth
+#axes.grid           : False   # display grid or not
+axes.titlesize      : xx-large   # fontsize of the axes title
+axes.labelsize      : xx-large  # fontsize of the x any y labels
+#axes.labelweight    : normal  # weight of the x and y labels
+#axes.labelcolor     : black
+#axes.axisbelow      : False   # whether axis gridlines and ticks are below
+                               # the axes elements (lines, text, etc)</p>
+
+<p>#axes.formatter.limits : -7, 7 # use scientific notation if log10
+                               # of the axis range is smaller than the
+                               # first or larger than the second
+#axes.formatter.use_locale : False # When True, format tick labels
+                                   # according to the user’s locale.
+                                   # For example, use ‘,’ as a decimal
+                                   # separator in the fr_FR locale.
+#axes.formatter.use_mathtext : False # When True, use mathtext for scientific
+                                     # notation.
+#axes.formatter.useoffset      : True    # If True, the tick label formatter
+                                         # will default to labeling ticks relative
+                                         # to an offset when the data range is very
+                                         # small compared to the minimum absolute
+                                         # value of the data.</p>
+
+<p>#axes.unicode_minus  : True    # use unicode for the minus symbol
+                               # rather than hyphen.  See
+                               # http://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
+axes.color_cycle    : g, g, r, c, m, y, k  # color cycle for plot lines
+                                            # as list of string colorspecs:
+                                            # single letter, long name, or
+                                            # web-style hex
+#axes.xmargin        : 0  # x margin.  See <code class="highlighter-rouge">axes.Axes.margins</code>
+#axes.ymargin        : 0  # y margin See <code class="highlighter-rouge">axes.Axes.margins</code></p>
+
+<p>#polaraxes.grid      : True    # display grid on polar axes
+#axes3d.grid         : True    # display grid on 3d axes</p>
+
+<h3 id="ticks">TICKS</h3>
+<h1 id="see-httpmatplotliborgapiaxis_apihtmlmatplotlibaxistick">see http://matplotlib.org/api/axis_api.html#matplotlib.axis.Tick</h1>
+<p>#xtick.major.size     : 4      # major tick size in points
+#xtick.minor.size     : 2      # minor tick size in points
+#xtick.major.width    : 0.5    # major tick width in points
+#xtick.minor.width    : 0.5    # minor tick width in points
+#xtick.major.pad      : 4      # distance to major tick label in points
+#xtick.minor.pad      : 4      # distance to the minor tick label in points
+#xtick.color          : k      # color of the tick labels
+xtick.labelsize      : xx-large # fontsize of the tick labels
+#xtick.direction      : in     # direction: in, out, or inout</p>
+
+<p>#ytick.major.size     : 4      # major tick size in points
+#ytick.minor.size     : 2      # minor tick size in points
+#ytick.major.width    : 0.5    # major tick width in points
+#ytick.minor.width    : 0.5    # minor tick width in points
+#ytick.major.pad      : 4      # distance to major tick label in points
+#ytick.minor.pad      : 4      # distance to the minor tick label in points
+#ytick.color          : k      # color of the tick labels
+ytick.labelsize      : xx-large # fontsize of the tick labels
+#ytick.direction      : in     # direction: in, out, or inout</p>
+
+<h3 id="grids">GRIDS</h3>
+<p>#grid.color       :   black   # grid color
+#grid.linestyle   :   :       # dotted
+#grid.linewidth   :   0.5     # in points
+#grid.alpha       :   1.0     # transparency, between 0.0 and 1.0</p>
+
+<h3 id="legend">Legend</h3>
+<p>#legend.fancybox      : False  # if True, use a rounded box for the
+                               # legend, else a rectangle
+#legend.isaxes        : True
+#legend.numpoints     : 2      # the number of points in the legend line
+#legend.fontsize      : large
+#legend.borderpad     : 0.5    # border whitespace in fontsize units
+#legend.markerscale   : 1.0    # the relative size of legend markers vs. original</p>
+<h1 id="the-following-dimensions-are-in-axes-coords">the following dimensions are in axes coords</h1>
+<p>#legend.labelspacing  : 0.5    # the vertical space between the legend entries in fraction of fontsize
+#legend.handlelength  : 2.     # the length of the legend lines in fraction of fontsize
+#legend.handleheight  : 0.7     # the height of the legend handle in fraction of fontsize
+#legend.handletextpad : 0.8    # the space between the legend line and legend text in fraction of fontsize
+#legend.borderaxespad : 0.5   # the border between the axes and legend edge in fraction of fontsize
+#legend.columnspacing : 2.    # the border between the axes and legend edge in fraction of fontsize
+#legend.shadow        : False
+#legend.frameon       : True   # whether or not to draw a frame around legend
+#legend.framealpha    : 1.0    # opacity of of legend frame
+#legend.scatterpoints : 3 # number of scatter points</p>
+
+<h3 id="figure">FIGURE</h3>
+<h1 id="see-httpmatplotliborgapifigure_apihtmlmatplotlibfigurefigure">See http://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure</h1>
+<p>#figure.figsize   : 8, 6    # figure size in inches
+#figure.dpi       : 80      # figure dots per inch
+#figure.facecolor : 0.75    # figure facecolor; 0.75 is scalar gray
+#figure.edgecolor : white   # figure edgecolor
+#figure.autolayout : False  # When True, automatically adjust subplot
+                            # parameters to make the plot fit the figure
+#figure.max_open_warning : 20  # The maximum number of figures to open through
+                               # the pyplot interface before emitting a warning.
+                               # If less than one this feature is disabled.</p>
+
+<h1 id="the-figure-subplot-parameters--all-dimensions-are-a-fraction-of-the">The figure subplot parameters.  All dimensions are a fraction of the</h1>
+<h1 id="figure-width-or-height">figure width or height</h1>
+<p>#figure.subplot.left    : 0.125  # the left side of the subplots of the figure
+#figure.subplot.right   : 0.9    # the right side of the subplots of the figure
+#figure.subplot.bottom  : 0.1    # the bottom of the subplots of the figure
+#figure.subplot.top     : 0.9    # the top of the subplots of the figure
+#figure.subplot.wspace  : 0.2    # the amount of width reserved for blank space between subplots
+#figure.subplot.hspace  : 0.2    # the amount of height reserved for white space between subplots</p>
+
+<h3 id="images">IMAGES</h3>
+<p>#image.aspect : equal             # equal | auto | a number
+#image.interpolation  : bilinear  # see help(imshow) for options
+#image.cmap   : jet               # gray | jet etc…
+#image.lut    : 256               # the size of the colormap lookup table
+#image.origin : upper             # lower | upper
+#image.resample  : False</p>
+
+<h3 id="contour-plots">CONTOUR PLOTS</h3>
+<p>#contour.negative_linestyle :  dashed # dashed | solid</p>
+
+<h3 id="agg-rendering">Agg rendering</h3>
+<h3 id="warning-experimental-20081010">Warning: experimental, 2008/10/10</h3>
+<p>#agg.path.chunksize : 0           # 0 to disable; values in the range
+                                  # 10000 to 100000 can improve speed slightly
+                                  # and prevent an Agg rendering failure
+                                  # when plotting very large data sets,
+                                  # especially if they are very gappy.
+                                  # It may cause minor artifacts, though.
+                                  # A value of 20000 is probably a good
+                                  # starting point.</p>
+<h3 id="saving-figures">SAVING FIGURES</h3>
+<p>#path.simplify : True   # When True, simplify paths by removing “invisible”
+                        # points to reduce file size and increase rendering
+                        # speed
+#path.simplify_threshold : 0.1  # The threshold of similarity below which
+                                # vertices will be removed in the simplification
+                                # process
+#path.snap : True # When True, rectilinear axis-aligned paths will be snapped to
+                  # the nearest pixel when certain criteria are met.  When False,
+                  # paths will never be snapped.
+#path.sketch : None # May be none, or a 3-tuple of the form (scale, length,
+                    # randomness).
+                    # <em>scale</em> is the amplitude of the wiggle
+                    # perpendicular to the line (in pixels).  <em>length</em>
+                    # is the length of the wiggle along the line (in
+                    # pixels).  <em>randomness</em> is the factor by which
+                    # the length is randomly scaled.</p>
+
+<h1 id="the-default-savefig-params-can-be-different-from-the-display-params">the default savefig params can be different from the display params</h1>
+<h1 id="eg-you-may-want-a-higher-resolution-or-to-make-the-figure">e.g., you may want a higher resolution, or to make the figure</h1>
+<h1 id="background-white">background white</h1>
+<p>#savefig.dpi         : 100      # figure dots per inch
+#savefig.facecolor   : white    # figure facecolor when saving
+#savefig.edgecolor   : white    # figure edgecolor when saving
+#savefig.format      : png      # png, ps, pdf, svg
+#savefig.bbox        : standard # ‘tight’ or ‘standard’.
+                                # ‘tight’ is incompatible with pipe-based animation
+                                # backends but will workd with temporary file based ones:
+                                # e.g. setting animation.writer to ffmpeg will not work,
+                                # use ffmpeg_file instead
+#savefig.pad_inches  : 0.1      # Padding to be used when bbox is set to ‘tight’
+#savefig.jpeg_quality: 95       # when a jpeg is saved, the default quality parameter.
+#savefig.directory   : ~        # default directory in savefig dialog box,
+                                # leave empty to always use current working directory
+#savefig.transparent : False    # setting that controls whether figures are saved with a
+                                # transparent background by default</p>
+
+<h1 id="tk-backend-params">tk backend params</h1>
+<p>#tk.window_focus   : False    # Maintain shell focus for TkAgg</p>
+
+<h1 id="ps-backend-params">ps backend params</h1>
+<p>#ps.papersize      : letter   # auto, letter, legal, ledger, A0-A10, B0-B10
+#ps.useafm         : False    # use of afm fonts, results in small files
+#ps.usedistiller   : False    # can be: None, ghostscript or xpdf
+                                          # Experimental: may produce smaller files.
+                                          # xpdf intended for production of publication quality files,
+                                          # but requires ghostscript, xpdf and ps2eps
+#ps.distiller.res  : 6000      # dpi
+#ps.fonttype       : 3         # Output Type 3 (Type3) or Type 42 (TrueType)</p>
+
+<h1 id="pdf-backend-params">pdf backend params</h1>
+<p>#pdf.compression   : 6 # integer from 0 to 9
+                       # 0 disables compression (good for debugging)
+#pdf.fonttype       : 3         # Output Type 3 (Type3) or Type 42 (TrueType)</p>
+
+<h1 id="svg-backend-params">svg backend params</h1>
+<p>#svg.image_inline : True       # write raster image data directly into the svg file
+#svg.image_noscale : False     # suppress scaling of raster data embedded in SVG
+#svg.fonttype : ‘path’         # How to handle SVG fonts:</p>
+<h1 id="none-assume-fonts-are-installed-on-the-machine-where-the-svg-will-be-viewed">‘none’: Assume fonts are installed on the machine where the SVG will be viewed.</h1>
+<h1 id="path-embed-characters-as-paths--supported-by-most-svg-renderers">‘path’: Embed characters as paths – supported by most SVG renderers</h1>
+<h1 id="svgfont-embed-characters-as-svg-fonts--supported-only-by-chrome">‘svgfont’: Embed characters as SVG fonts – supported only by Chrome,</h1>
+<h1 id="opera-and-safari">Opera and Safari</h1>
+
+<h1 id="docstring-params">docstring params</h1>
+<p>#docstring.hardcopy = False  # set this when you want to generate hardcopy docstring</p>
+
+<h1 id="set-the-verbose-flags--this-controls-how-much-information">Set the verbose flags.  This controls how much information</h1>
+<h1 id="matplotlib-gives-you-at-runtime-and-where-it-goes--the-verbosity">matplotlib gives you at runtime and where it goes.  The verbosity</h1>
+<h1 id="levels-are-silent-helpful-debug-debug-annoying--any-level-is">levels are: silent, helpful, debug, debug-annoying.  Any level is</h1>
+<h1 id="inclusive-of-all-the-levels-below-it--if-your-setting-is-debug">inclusive of all the levels below it.  If your setting is “debug”,</h1>
+<h1 id="youll-get-all-the-debug-and-helpful-messages--when-submitting">you’ll get all the debug and helpful messages.  When submitting</h1>
+<h1 id="problems-to-the-mailing-list-please-set-verbose-to-helpful-or-debug">problems to the mailing-list, please set verbose to “helpful” or “debug”</h1>
+<h1 id="and-paste-the-output-into-your-report">and paste the output into your report.</h1>
+<p>#</p>
+<h1 id="the-fileo-gives-the-destination-for-any-calls-to-verbosereport">The “fileo” gives the destination for any calls to verbose.report.</h1>
+<h1 id="these-objects-can-a-filename-or-a-filehandle-like-sysstdout">These objects can a filename, or a filehandle like sys.stdout.</h1>
+<p>#</p>
+<h1 id="you-can-override-the-rc-default-verbosity-from-the-command-line-by">You can override the rc default verbosity from the command line by</h1>
+<h1 id="giving-the-flags-verbose-level-where-level-is-one-of-the-legal">giving the flags –verbose-LEVEL where LEVEL is one of the legal</h1>
+<h1 id="levels-eg-verbose-helpful">levels, eg –verbose-helpful.</h1>
+<p>#</p>
+<h1 id="you-can-access-the-verbose-instance-in-your-code">You can access the verbose instance in your code</h1>
+<h1 id="from-matplotlib-import-verbose">from matplotlib import verbose.</h1>
+<p>#verbose.level  : silent      # one of silent, helpful, debug, debug-annoying
+#verbose.fileo  : sys.stdout  # a log filename, sys.stdout or sys.stderr</p>
+
+<h1 id="event-keys-to-interact-with-figuresplots-via-keyboard">Event keys to interact with figures/plots via keyboard.</h1>
+<h1 id="customize-these-settings-according-to-your-needs">Customize these settings according to your needs.</h1>
+<h1 id="leave-the-fields-empty-if-you-dont-need-a-key-map-ie-fullscreen--">Leave the field(s) empty if you don’t need a key-map. (i.e., fullscreen : ‘’)</h1>
+
+<p>#keymap.fullscreen : f               # toggling
+#keymap.home : h, r, home            # home or reset mnemonic
+#keymap.back : left, c, backspace    # forward / backward keys to enable
+#keymap.forward : right, v           #   left handed quick navigation
+#keymap.pan : p                      # pan mnemonic
+#keymap.zoom : o                     # zoom mnemonic
+#keymap.save : s                     # saving current figure
+#keymap.quit : ctrl+w, cmd+w         # close the current figure
+#keymap.grid : g                     # switching on/off a grid in current axes
+#keymap.yscale : l                   # toggle scaling of y-axes (‘log’/’linear’)
+#keymap.xscale : L, k                # toggle scaling of x-axes (‘log’/’linear’)
+#keymap.all_axes : a                 # enable all axes</p>
+
+<h1 id="control-location-of-examples-data-files">Control location of examples data files</h1>
+<p>#examples.directory : ‘’   # directory to look in for custom installation</p>
+
+<p>###ANIMATION settings
+#animation.writer : ffmpeg         # MovieWriter ‘backend’ to use
+#animation.codec : mpeg4           # Codec to use for writing movie
+#animation.bitrate: -1             # Controls size/quality tradeoff for movie.
+                                   # -1 implies let utility auto-determine
+#animation.frame_format: ‘png’     # Controls frame format used by temp files
+#animation.ffmpeg_path: ‘ffmpeg’   # Path to ffmpeg binary. Without full path
+                                   # $PATH is searched
+#animation.ffmpeg_args: ‘’         # Additional arguments to pass to ffmpeg
+#animation.avconv_path: ‘avconv’   # Path to avconv binary. Without full path
+                                   # $PATH is searched
+#animation.avconv_args: ‘’         # Additional arguments to pass to avconv
+#animation.mencoder_path: ‘mencoder’
+                                   # Path to mencoder binary. Without full path
+                                   # $PATH is searched
+#animation.mencoder_args: ‘’       # Additional arguments to pass to mencoder
+#animation.convert_path: ‘convert’ # Path to ImageMagick’s convert binary.
+                                   # On Windows use the full path since convert
+                                   # is also the name of a system tool.</p>
+
+<p>’’’
+see [https://matplotlib.org/1.4.1/users/customizing.html#matplotlibrc-sample]
+see [http://web.stanford.edu/~ymkhan/blog/2015/matplotlib_change_default_font/]</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=matplotlib%20http%3A%2F%2Flocalhost%3A4000%2Flearning%2Fmatplotlib%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Flearning%2Fmatplotlib%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Flearning%2Fmatplotlib%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/learning/marketing/" class="pagination--pager" title="Marketing
+">Previous</a>
+    
+    
+      <a href="/learning/networkx/" class="pagination--pager" title="NetworkX
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/firstpost/" rel="permalink">Post Title
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">THis is my first post…where does it go
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/A_Very_Data" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/AveryData?tab=repositories" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://instagram.com/verydata_365" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Avery Smith. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

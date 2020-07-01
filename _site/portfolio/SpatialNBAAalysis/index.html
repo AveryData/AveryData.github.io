@@ -1,0 +1,516 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>NBA Player Tracking - (A)Very Data</title>
+<meta name="description" content="Where do NBA players spend their time on the court? ">
+
+
+  <meta name="author" content="Avery Smith">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="(A)Very Data">
+<meta property="og:title" content="NBA Player Tracking">
+<meta property="og:url" content="http://localhost:4000/portfolio/SpatialNBAAalysis/">
+
+
+  <meta property="og:description" content="Where do NBA players spend their time on the court? ">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/Images/Family%20History%20Hacking/NameCloudTreeSmith.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2020-06-30T23:35:27-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/portfolio/SpatialNBAAalysis/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Avery Smith",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="(A)Very Data Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          (A)Very Data
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/portfolio/">Portfolio</a>
+            </li><li class="masthead__menu-item">
+              <a href="/learning/">Learning</a>
+            </li><li class="masthead__menu-item">
+              <a href="/thingsilike/">Things I like</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/Images/PicturesOfMe/ProfPic_Best.JPG" alt="Avery Smith" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Avery Smith</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>My adventure in Data Science and Analytics</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Houston, TX</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:averyjs@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://twitter.com/A_Very_Data" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/AveryData?tab=repositories" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/verydata_365" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="NBA Player Tracking">
+    <meta itemprop="description" content="Where do NBA players spend their time on the court?">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">NBA Player Tracking
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Basketball has become my favorite sport. I grew up playing and loving soccer, and don’t get me wrong, I still do. With soccer, it is hard to find a adequate competition and teammates, and even a league to play in. Hence, I’ve landed with basketball. I also love the community and atmosphere associated with basketball. March madness, NBA twitter, and of course, all the analytics involved in basketball just make it very entertaining for me.</p>
+
+<p>Analytics in basketball is huge and it has changed the way the game is played. Probably the biggest instance of this with the 3-point revolution. Spacing, shooting efficiency, and 3-pointers have been huge focus points over the last five years. I’ll talk about these in another post coming up. Today, I looked at something that I haven’t seen that many people look at and that is, player movement.</p>
+
+<p>If you took a player, dipped his feet in ink, and let them play a game, what would the court end up looking like?</p>
+
+<p>Getting this data was not easy, and it makes sense, it could definitely be proprietary and give teams insight. Luckily for us, the NBA used to be more forthcoming with some of this data in the early days when the technology was first installed. They posted the entire 14-15 season; every game, every player, every second. Eventually the NBA wasn’t so sure they wanted to give this away, so to my understanding, they took if off their site. But lucky for us, some brilliant minds foresaw this and made a copy and made it publicly available. Check out this Git with all the info on how to get the data: https://github.com/sealneaward/nba-movement-data.</p>
+
+<p>As you can imagine, this data set is enormous, like after it is compressed, it’s over 50 GB so I only grabbed a portion of it for the time being. It’s a really cool opportunity to use all of the data but that is a little more than a side project. Maybe ‘Big Side Project’ would be more accurate for that. In the mean time, I’ll just look at one game. For better or worse, that game ended up being a Knicks vs Heat game. If you want to check out the game, here’s the ESPN recap: https://www.espn.com/nba/recap?gameId=400828117.</p>
+
+<p>I started off by just trying to understand the data. This data set didn’t come with any instructions really on what it was or how it was organized so it took some time to comprehend it all. Also, it is huge; 2.6 million rows huge.</p>
+
+<p>We can find the team and player ID’s in another sheet so I added those in. Then I had to reorganize the time to make more sense and not be seconds remaining in quarter. Then I had to figure out the x and y locations, but after all that, I was able to do some interesting things.</p>
+
+<p>First, dip players feet in ink. Second, relish in NBA player movement.</p>
+
+<p>Carmelo Anthony</p>
+
+<p>It looks like abstract art, does it not?!? The almost random, almost patterns really speaks artistically. You’ll notice the shape of the court. Not much happening in the middle x and middle y (middle court) because not much happens there. It’s the furthest point away from both hoops. What’s interesting about Carmelo is you see a lot of movement on the baselines. He’s moving a lot in the 2-point jumper range around the baseline post areas. This makes sense, this was his game in NY.</p>
+
+<p>Let’s look at another superstar’s. How about the unicorn himself, Kristaps Prozingis.</p>
+
+<p>Kristaps Prozingis</p>
+
+<p>Ah! More abstract art I can sell. This one definitely has a different shape. We see a much more streamlined center court with a lot of action going on close the basket. Kristaps is around 7’2” and hence players center which typically is close to the basket so this makes sense.</p>
+
+<p>Now you might want to say, let’s look at Kristaps while also looking at the Heat’s center, how similar do they look? If you think about it, they were probably guarding each other and hence look pretty similar.</p>
+
+<p>Battle of Centers</p>
+
+<p>Pretty close to the same shape!! They probably weren’t guarding each other the entire game due to substitutions and switches on defense, but we can see they definitely occupied a similar zone.</p>
+
+<p>Now, I mentioned spacing earlier, what does that mean? Essentially it means you want to use as much space on the court as you can to make it harder for the defense to cover you. This would lead to players not playing right next to each other constantly. How does that look? If we take two players on the same team, how close are they? We’ll continue to look at Whiteside and add his superstar teammate Dwyane Wade.</p>
+
+<p>Whiteside and Wade</p>
+
+<p>Not all that much overlap! Wade mostly plays outside of Whiteside’s areas.</p>
+
+<p>The other thing I did was look at this type of movement in ‘live’ time, actually watch them step through a game. Obviously, with the temporal and spatial precision of this data, it takes a long time to walk through a whole game but here’s a snippet of what the start of Carmelo Anthony’s game looked like.</p>
+
+<p>I added a background image of a court for a little bit more context. The time in seconds is shown in the lower left hand corner. This could be a new way to watch a game!</p>
+
+<p>Just for fun, I took the average of everyone’s movements and plotted them. This is how they looked at the end of the game.</p>
+
+<p>Kinda looks like Madusa or something. But very centered! This could mean everyone just played in the center…or it means the court was very evenly spaced.</p>
+
+<p>How bout watching the game with the whole team? And the ball?</p>
+
+<p>Pretty cool to see passes and how the team moves as a whole.</p>
+
+<p>Finally, I made some distributions to show where players tend to be on the court in an x,y fashion.</p>
+
+<p>There’s a lot more I could do with this data.</p>
+<ul>
+  <li>There’s play by play commentary I’d love to incorporate somehow. That would allow for shots and such.</li>
+  <li>There’s a radius stat I’m not so sure what it is yet.</li>
+  <li>There are more games I’d like to look at.</li>
+  <li>I’d like to see movements by position a bit more.</li>
+  <li>Wonder if there is clustering that I could do</li>
+  <li>Wonder if I could create a team spacing stat</li>
+  <li>Wonder if there is any predictive models I can make</li>
+</ul>
+
+<p>But that’s all for today!</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=NBA+Player+Tracking%20http%3A%2F%2Flocalhost%3A4000%2Fportfolio%2FSpatialNBAAalysis%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fportfolio%2FSpatialNBAAalysis%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fportfolio%2FSpatialNBAAalysis%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/portfolio/FamilyHistoryHacking/" class="pagination--pager" title="Family History Hacking
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/firstpost/" rel="permalink">Post Title
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">THis is my first post…where does it go
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/A_Very_Data" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/AveryData?tab=repositories" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://instagram.com/verydata_365" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Avery Smith. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

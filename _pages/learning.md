@@ -5,5 +5,7 @@ collection: learning
 entries_layout: grid
 classes: wide
 header:
-  image: /Images/Free Stock Photos/Nature/bryce_black_white_skinny.jpeg
+  overlay_image: /Images/FreeStockPhotos/Nature/Cruise_edit.png
+
+title: "Learning"
 ---

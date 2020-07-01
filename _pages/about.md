@@ -1,8 +1,9 @@
 ---
-title: "About"
+layout: single
+title: "About Me"
 permalink: /about/
 header:
-  image: /Images/Free Stock Photos/Nature/bryce_black_white_skinny.jpeg
+  overlay_image: /Images/FreeStockPhotos/Nature/bryce_black_white_skinny.jpeg
 ---
 
 # Very Data
