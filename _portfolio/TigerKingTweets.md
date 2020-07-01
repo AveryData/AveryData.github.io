@@ -1,6 +1,6 @@
 ---
-title: "NBA Player Tracking"
-excerpt: "Where do NBA players spend their time on the court?"
+title: "Understanding Tiger King through NLP"
+excerpt: "What does the Tiger King talk about on Twitter?"
 header:
   #image: /Images/Family History Hacking/NameCloudTreeSmith.png
   teaser: /Images/TigerKing/WordArt.png
@@ -11,6 +11,8 @@ header:
 
 Sweet! Thanks for checking out this post.
 
-<div style="width: 400px; height: 400px;" data-wordart-src="//cdn.wordart.com/json/3avj5ooop83n" data-wordart-show-attribution></div>
+Please check out [my Medium post about it](https://towardsdatascience.com/understanding-the-tiger-king-and-his-tweets-through-python-b928f92af05d) to see the whole process, but enjoy the final outcome below.
 
-Check out [my Medium post about it](https://towardsdatascience.com/understanding-the-tiger-king-and-his-tweets-through-python-b928f92af05d)!
+## Joe Exotic Twitter Portrait
+
+<div style="width: 600px; height: 600px;" data-wordart-src="//cdn.wordart.com/json/3avj5ooop83n" data-wordart-show-attribution></div>

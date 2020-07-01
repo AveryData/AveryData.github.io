@@ -5,6 +5,7 @@ permalink: /about/
 header:
   overlay_image: /Images/FreeStockPhotos/Nature/bryce_black_white_skinny.jpeg
 author_profile: true
+classes: wide
 ---
 
 # Hey! Nice to meet you.
