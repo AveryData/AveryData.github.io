@@ -21,9 +21,9 @@ title_separator          : #"-"
 subtitle                 : #"Version 0.0" # site tagline that appears below site title in masthead
 name                     : "Avery Smith"
 description              : "My blog / portfolio of Data Science &  Analytics"
-url                      : #"https://AveryData.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "averyjsmith.com" #"https://AveryData.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : #"/VeryData" # the subpath of your site, e.g. "/blog"
-repository               : #"AveryData/AveryData.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "AveryData/AveryData.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : #"/assets/images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : #"/assets/images/88x88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -307,7 +307,7 @@ defaults:
      # _learning
   - scope:
       path: ""
-      type: posts
+      type: learning
     values:
       layout: single
       author_profile: ture
