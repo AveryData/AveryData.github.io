@@ -114,6 +114,9 @@ Other fees:
 - Bid-ask Spread Cost = Quoted vs Immediate Purchase
 - Delay Cost = slippage.
 
+## Book Value
+Book value is the difference between Total Assets and Total Liabilities. $BookPrice = TotalAssets - TotalLiabilities$
+
 ## Efficient Market Hypothesis
 How easy is it to beat the market?
 
@@ -184,7 +187,7 @@ We can then learn from the coefficients!
 - Positive coeff on MOM means high momentum stocks
 - Positive coeff on QMJ means skew towards profitable stocks
 - Positive coeff on BAB means fund skews to safe stocks
-- Intercept tells us about the skill of the fund manager. Positive means outperformed. 
+- Intercept tells us about the skill of the fund manager. Positive means outperformed.
 
 Example in R:
 ```{r}

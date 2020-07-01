@@ -76,7 +76,7 @@ Some examples might be:
 - Will the customer purchase the item?
 - Will the party make their loan payments?
 
-The odds (remember $\frac{p}{1-p}$) can be simply written as $exp(linear equation)$. If you take the log of both sides you can get this: $$ log(/frac{p}{1-p}) = linear equation $$
+The odds (remember $\frac{p}{1-p}$) can be simply written as $exp(LinEq)$. If you take the log of both sides you can get this: $$log( \frac { p } {1-p}) = LinEq$$
 
 This constitutes the log odds of this event happening. This makes it so the range now is between 0 and 1.
 
@@ -92,13 +92,19 @@ As x increase by 1 unit, the log odds increase by the coefficient. Or you can fi
 Something like $x_1*x_2$
 
 ## Log Transformations
-**If you've logged an x variable**, you can interpret that x-variable by saying for every 1% increase in my x-variable, I will see a change of coeff/100 in my y variable. See (https://data.library.virginia.edu/interpreting-log-transformations-in-a-linear-model/)
+**If you've logged an x variable**, $log(x)$
 
-**If you've logged the y variable**, take the $e^exponant%, subtract 1, multiply by 100: $(e^exp - 1) * 100$. For every one-unit increase in the independent variable, you should see the dependent variable change by that ^^ %. Or just take the coeff and unit value is the % value in Y. 
+You can interpret that x-variable by saying for every 1% increase in my x-variable, I will see a change of coeff/100 in my y variable. See (https://data.library.virginia.edu/interpreting-log-transformations-in-a-linear-model/)
+
+**If you've logged the y variable**, $log(y)$
+
+You can take the coefficient and raise *e* to it, subtract 1, and multiply by 100. $(e^{coefficient} -1) \cdot 100$. For every one-unit increase in the independent variable, you should see that percent change.
 
 
 
-**If you've logged by x and y**, you can just read them as % changes of each other rawly.
+**If you've logged by x and y**, $log(y) + log(x)$
+
+For every % change in the in the x, you'll get a y % increase of this: $((1+\%_{x})^{coeff}-1)\cdot 100$
 
 ## OLS - Ordinary Least Squares
 Fit a line that minimizes sum of squared errors (SSE).
