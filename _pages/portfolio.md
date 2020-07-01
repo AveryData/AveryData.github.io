@@ -9,4 +9,5 @@ header:
 
 
 title: "Portfolio"
+author_profile: false
 ---
