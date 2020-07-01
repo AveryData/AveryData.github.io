@@ -4,31 +4,16 @@ title: "About Me"
 permalink: /about/
 header:
   overlay_image: /Images/FreeStockPhotos/Nature/bryce_black_white_skinny.jpeg
+author_profile: true
 ---
 
-# Very Data
-## I find hidden nuggets of *gold* in large data sets
+Hi, I'm Avery Smith, and I'm **obsessed** with data.
 
-***
+Don't believe me? My dog has her own fitbit. My iPhone app usage has a dashboard. My Chick-Fil-A visits are already predicted for the next month.
 
-# Hi
-## I'm Avery Smith
-## And I'm ...
-# OBSSESSED
-# WITH DATA
+I am excited to:
+1. Uncover valuable insight in your data
+2. Provide modern tech solutions to help your business grow
+3. Create beautiful dashboards and visuals that give you clarity
 
-Don't believe me?
-* My dog has her own fitbit
-* My iPhone usage has a dashboard
-* My Chick-Fil-A visits are already predicted for the next month
-
-# I am excited to
-1. Uncover valuable insight in your Data
-2. Teach you to think like a data scientist
-3. Work with you to help you understand programming and statistics
-
-
-# I write code, perform stats, and make sweet visualizations
-
-
-Check out my page: things I like, technical notes, projects, articles.
+I write code, perform analytics, build web interfaces, and make sweet visualizations.
