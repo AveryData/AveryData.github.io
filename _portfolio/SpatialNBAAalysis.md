@@ -4,16 +4,6 @@ excerpt: "Where do NBA players spend their time on the court?"
 header:
   #image: /Images/Family History Hacking/NameCloudTreeSmith.png
   teaser: /Images/Family History Hacking/NameCloudTreeSmith.png
-gallery:
-  - url: /Images/Family History Hacking/WordCloudBirthLat.PNG
-    image_path: /Images/Family History Hacking/WordCloudBirthLat.PNG
-    alt: "Family Word Cloud colored by Latitude"
-  - url: /Images/Family History Hacking/WordCloudBirthLat.PNG
-    image_path: /Images/Family History Hacking/WordCloudYear.PNG
-    alt: "Family Word Cloud colored by Year Born"
-  - url: /Images/Family History Hacking/WordCloudBirthLat.PNG
-    image_path: /Images/Family History Hacking/WordCloudRandoColo.PNG
-    alt: "Family Word Cloud colored by Random Colors"
 ---
 Basketball has become my favorite sport. I grew up playing and loving soccer, and don't get me wrong, I still do. With soccer, it is hard to find a adequate competition and teammates, and even a league to play in. Hence, I've landed with basketball. I also love the community and atmosphere associated with basketball. March madness, NBA twitter, and of course, all the analytics involved in basketball just make it very entertaining for me.
 
@@ -34,6 +24,7 @@ We can find the team and player ID's in another sheet so I added those in. Then 
 First, dip players feet in ink. Second, relish in NBA player movement.
 
 Carmelo Anthony
+{% include figure image_path="/Images/SpatialNBAAnalysis/CarmeloAnthony.png" alt="this is a placeholder image" caption="The movement of Carmelo Anthony" %}
 
 It looks like abstract art, does it not?!? The almost random, almost patterns really speaks artistically. You'll notice the shape of the court. Not much happening in the middle x and middle y (middle court) because not much happens there. It's the furthest point away from both hoops. What's interesting about Carmelo is you see a lot of movement on the baselines. He's moving a lot in the 2-point jumper range around the baseline post areas. This makes sense, this was his game in NY.
 

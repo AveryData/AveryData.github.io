@@ -7,13 +7,16 @@ header:
 author_profile: true
 ---
 
-Hi, I'm Avery Smith, and I'm **obsessed** with data.
+# Hey! Nice to meet you.
 
-Don't believe me? My dog has her own fitbit. My iPhone app usage has a dashboard. My Chick-Fil-A visits are already predicted for the next month.
+Hey! I'm Avery. I'm a data nerd.
 
-I am excited to:
-1. Uncover valuable insight in your data
-2. Provide modern tech solutions to help your business grow
-3. Create beautiful dashboards and visuals that give you clarity
+I'm originally from beautiful Sandy, Utah. I attended University of Utah where I earned my BS in Chemical Engineering. Yup, Chemical Engineering. During school, I ended up working as a Data Scientist at Vaporsens, a small bio-tech company (fun story, read below). I also did some undergraduate research with Doctor Kody Powell in fault detection that ended up getting published in a special issue of IFAC. I interned with, and later accepted a full-time job with ExxonMobil in their Refinery Optimization Division in Houston, Texas, where I continue to work today. After my undergrad, I started grad school at Georgia Tech in their Master's of Data Analytics which I'm continuing part time.
 
-I write code, perform analytics, build web interfaces, and make sweet visualizations.
+I'm married to the love of my life, with the most perfect goldendoodle you could ever imagine. Life is good!
+
+This website is meant to be a portfolio of all of my side projects and some of my work and school projects. It'll also have a bunch of my notes about data science, business, and life in general. And finally, it'll have a bit of my musings and weird thoughts.
+
+I'm always open to messages. I'm open to mentor, or be mentored. I'm interested in collaborations, freelance work, startups, and whatever else you have in mind.
+
+You can email me, tweet me, find me on LinkedIn, or slide into my DM's on Instagram. 
