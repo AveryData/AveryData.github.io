@@ -12,7 +12,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Neural Nets",
-        "excerpt":" ","categories": [],
+        "excerpt":"The idea of neural nets comes from biological neurons in the human brain. There are million of neurons in our brain. Each is a small decision maker that takes information in and makes an output. One neuron ever makes a decision, but a unique layered, network of them. Highly parallel,...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/learning/NeuralNets/",
         "teaser": null
@@ -33,6 +33,12 @@ var store = [{
         "excerpt":"Data Dimensionality There is a lot of data in the world, and that data has lots of data. Sometimes, it is too much data. Too much for a human to digest surely, but even sometimes too much for a computer to handle in reasonable amounts of time. In these cases,...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/learning/PCA0/",
+        "teaser": null
+      },{
+        "title": "Principal Component Analysis",
+        "excerpt":"Data Dimensionality There is a lot of data in the world, and that data has lots of data. Sometimes, it is too much data. Too much for a human to digest surely, but even sometimes too much for a computer to handle in reasonable amounts of time. In these cases,...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/learning/PCA1/",
         "teaser": null
       },{
         "title": "Lists in Python",
@@ -149,15 +155,21 @@ var store = [{
         "url": "http://localhost:4000/learning/investing/",
         "teaser": null
       },{
+        "title": "Jobs",
+        "excerpt":"[LinkedIn.com] has a lot of great jobs. The EasyApply make it especially easy to apply to many jobs quickly.   Start Ups   [angel.co] has start up company positions open  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/learning/jobs/",
+        "teaser": null
+      },{
         "title": "Jupyter Notebook",
         "excerpt":"Embedding a photo in Jupyter Notebook      see https://stackoverflow.com/questions/32370281/how-to-embed-image-or-picture-in-jupyter-notebook-either-from-a-local-machine-o  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/learning/jupyter_notebook/",
         "teaser": null
       },{
-        "title": null,
+        "title": "Linear Regression",
         "excerpt":"Linear Regression Regression In General Regression is used to quantifiably model the relationship between a target variable and inputs. The target variable is often called the response variable, dependent variable of ‘y’. The inputs are often called the predicting variables of ‘x’. Linear regression is 1) Easy to Understand 2)...","categories": [],
-        "tags": null,
+        "tags": [],
         "url": "http://localhost:4000/learning/linear_regression/",
         "teaser": null
       },{
@@ -221,6 +233,12 @@ var store = [{
         "url": "http://localhost:4000/learning/statistics_basics/",
         "teaser": null
       },{
+        "title": "Support Vector Machine (SVM)",
+        "excerpt":"The intuitive thought process for SVM is you want your decision boundary to not be very close to any of your data points. That gives the classifier some margin room between the groups and allows for higher accuracy. This translates in math terms into: where w is the weights, y...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/learning/svm/",
+        "teaser": null
+      },{
         "title": "Utah: Crush The Curve Location Tracking",
         "excerpt":"Google recently posted data to illustrate how mobility has changed during #StayAtHome You can find the report here. Someone webscraped the raw data and made it available here. But the Google report was a bit had to compare and not that pretty, so I made this graph. Find your county...","categories": [],
         "tags": [],
@@ -233,6 +251,18 @@ var store = [{
         "url": "http://localhost:4000/portfolio/FamilyHistoryHacking/",
         "teaser": "http://localhost:4000/Images/Family%20History%20Hacking/NameCloudTreeSmith.png"
       },{
+        "title": "Popularity of Netflix Originals",
+        "excerpt":"photo by https://www.instagram.com/freestocks/ Tiger King felt all-encompassing Flash back to mid March 2020. The Corona virus was just hitting America seriously, or rather, the US had suddenly realized the threat of COVID19. The NBA was suspended, late night shows canceled, movie theaters closed, and the world was starting to #StayAtHome....","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/portfolio/NetflexOriginals/",
+        "teaser": "http://localhost:4000/Images/NetflixOriginals/NetflixOriginalsPreview.png"
+      },{
+        "title": "Screen Time Dashboard",
+        "excerpt":"Let’s be honest…phones are addicting! photo by https://www.instagram.com/romaodintsow/ Phones are an incredible, modern technology that bless us in many ways, but they’re also time suckers. They give us content we don’t want, they make use worry, they keep our focus. It’s a two-edged sword. I love my phone for a...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/portfolio/ScreenTime/",
+        "teaser": "http://localhost:4000/Images/ScreenTimeDashboard/ScreentimeDashboardPreview.png"
+      },{
         "title": "NBA Player Tracking",
         "excerpt":"Basketball has become my favorite sport. I grew up playing and loving soccer, and don’t get me wrong, I still do. With soccer, it is hard to find a adequate competition and teammates, and even a league to play in. Hence, I’ve landed with basketball. I also love the community...","categories": [],
         "tags": [],
@@ -240,7 +270,7 @@ var store = [{
         "teaser": "http://localhost:4000/Images/SpatialNBAAnalysis/DwadeAndWhiteside.png"
       },{
         "title": "Understanding Tiger King through NLP",
-        "excerpt":"    Sweet! Thanks for checking out this post.   Please check out my Medium post about it to see the whole process, but enjoy the final outcome below.   Joe Exotic Twitter Portrait    ","categories": [],
+        "excerpt":"Sweet! Thanks for checking out this post. Please check out my Medium post about it to see the whole process, but enjoy the final outcome below. Joe Exotic Twitter Portrait Summart of Process on TikTok You could also watch a short, action-packed summary of the process on my TikTok. @verydata...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/portfolio/TigerKingTweets/",
         "teaser": "http://localhost:4000/Images/TigerKing/WordArt.png"

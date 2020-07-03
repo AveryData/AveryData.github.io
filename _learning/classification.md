@@ -19,6 +19,16 @@ It is similar to clustering, but clustering is unsupervised and hence contains n
 - Is this tumor malignant or benign?
 - Who will this citizen vote for?
 
+### Main Approaches To Classify
+
+- Bayes Rule $p(x|y=1)$
+- Use geometric intutions
+    - knn
+    - svm
+- Direct Decision Boundary
+    - logistic regression
+    - neural network
+
 
 You need some "decision boundary" to split your data into the separate groups. It is usually said if you belong in certain spaces, you belong to that space's group. This space is easiest seen in 2D but can be in much deeper dimensions than two.
 
@@ -33,6 +43,9 @@ If you get a new point, calculate the *k* closest points, what groups do those p
 Relies on Vornoi partitions.
 
 ## Decision Tree
+
+## SVM
+Kernel constructed decision bounderies based on minimizing the margin between the closest points. Easiet to think as linear, but can be non-linear including gaussian. 
 
 ## Logistic Regression
 

@@ -1,6 +1,6 @@
 ---
 title: "Linear Regression"
-excerpt: "$ y = \beta_o + \beta_1\cdot x $"
+excerpt: "y=mx+B"
 ---
 
 
