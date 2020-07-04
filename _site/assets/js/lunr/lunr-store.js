@@ -23,6 +23,12 @@ var store = [{
         "url": "http://localhost:4000/learning/OSMA/",
         "teaser": null
       },{
+        "title": "Operations Management",
+        "excerpt":"Operations management is how to make stuff…on time, at low cost, high quality, meeting customer’s demands Could be making: Cars, gadgets, medicine, gas, education, food … but doing so in high efficiency, at the lowest possible cost, increasing value. Taking inputs and making a more valuable output.Usually operations management and...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/learning/OperationsManagement/",
+        "teaser": null
+      },{
         "title": "Principal Component Analysis",
         "excerpt":"Data Dimensionality There is a lot of data in the world, and that data has lots of data. Sometimes, it is too much data. Too much for a human to digest surely, but even sometimes too much for a computer to handle in reasonable amounts of time. In these cases,...","categories": [],
         "tags": [],
@@ -257,11 +263,35 @@ var store = [{
         "url": "http://localhost:4000/portfolio/CrushTheCurve_Utah/",
         "teaser": "http://localhost:4000/Images/UtahCrushCurve/Crush_The_Curve_Picture.png"
       },{
+        "title": "What kills Americans the most?",
+        "excerpt":"         ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/portfolio/DeathUS/",
+        "teaser": "http://localhost:4000/Images/DeathsinUS/Deaths_clean.png"
+      },{
+        "title": "Smart Manufacturing of Essential Oils Through Artificial Intelligence",
+        "excerpt":"In 2017, I had pleasure of working with DoTerra. They’re the world leader in essential oils. They’re science department was evaluting my employer’s Vaporsens’ GCMS-like technology. Funly enough, the project was a few years old and I had just transitioned in the data science roll at Vaporsens, so not only...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/portfolio/DoterraVaporsens/",
+        "teaser": "http://localhost:4000/Images/DoterraVaporsens/ROCHAveryVersion.jpg"
+      },{
         "title": "Family History Hacking",
         "excerpt":"Genealogy often gets a boring rap, but knowing where you come from and who made you can be fun and exciting. Family history is big in my family, and in my culture so I thought, “This is a lot of data. What else can you do with it? How else...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/portfolio/FamilyHistoryHacking/",
         "teaser": "http://localhost:4000/Images/Family%20History%20Hacking/NameCloudTreeSmith.png"
+      },{
+        "title": "Fault Detection on Big Data ",
+        "excerpt":"In January 2018 - May 2018, I worked with Dr. Kody Powell on using machine learning to perform fault detection on big data in industrial systems. We created an algorithm that took traditional multivariate control approaches and made it a big more distributed and nuanced. The end paper ended up...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/portfolio/FaultDetection/",
+        "teaser": "http://localhost:4000/Images/FaultDetection/Group3Demo.jpg"
+      },{
+        "title": "What jobs make the most?",
+        "excerpt":"         ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/portfolio/JobSalary/",
+        "teaser": "http://localhost:4000/Images/JobSalary/WhatJobsMakeTheMost.png"
       },{
         "title": "Popularity of Netflix Originals",
         "excerpt":"photo by https://www.instagram.com/freestocks/ Tiger King felt all-encompassing Flash back to mid March 2020. The Corona virus was just hitting America seriously, or rather, the US had suddenly realized the threat of COVID19. The NBA was suspended, late night shows canceled, movie theaters closed, and the world was starting to #StayAtHome....","categories": [],
@@ -292,6 +322,12 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/portfolio/TigerKingTweets/",
         "teaser": "http://localhost:4000/Images/TigerKing/WordArt.png"
+      },{
+        "title": "Can Trump Take Credit for Low Unemployment?",
+        "excerpt":"In a tweet in October 2019, Trump pat himself on the back for the wonderful job he’d been doing to get unemployment to record lows. But I wondered, had he really done that much? How was unemployment trending historically? Turns out the transition between him and Obama was pretty smooth…and...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/portfolio/TrumpUnemployment/",
+        "teaser": "http://localhost:4000/Images/TrumpUnemployment/TrumpTakesCreditForUnemployment.png"
       },{
         "title": "Post Title",
         "excerpt":"THis is my first post…where does it go  ","categories": [],

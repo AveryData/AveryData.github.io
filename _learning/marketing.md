@@ -94,6 +94,10 @@ Cost per acquisition or per lead
 #### CPS
 Cost per sale
 
+#### CRO
+CRO (Conversion Rate Optimization): How to we convert more users to our product? Increase traffic, increase quality of leads, increase leads, grow sales, 
+
+
 As a company, the riskiest thing is to pay CPM (click per 1k) with the safest being CPS (click per sale). Think about it, you don't pay anything until it is sold! I guess that's why the Amazon affiliate program exists and your content is basically CPS for amazon.
 
 ### Display Advertising
@@ -141,4 +145,9 @@ Everyone and their dog (literally) is on social media. Lots of eyes = lots of ad
 - Google analytics
 - Google Adwords
 - Facebook ads
-- Lots others 
+- Lots others
+
+## Websites are the center pieces of business
+- Product/Services sale
+- Brand awareness
+- Lead generation
