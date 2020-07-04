@@ -7,4 +7,4 @@ header:
 ---
 
 
-{% include figure image_path="/Images/DeathsinUS/Deaths_clean.png" alt="this is a placeholder image"  url ="/Images/DeathsinUS/Deaths_clean.png" %}
+{% include figure image_path="/Images/DeathsInUS/Deaths_clean.png" alt="this is a placeholder image"  url ="/Images/DeathsInUS/Deaths_clean.png" %}
