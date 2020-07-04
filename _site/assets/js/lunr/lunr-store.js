@@ -89,6 +89,12 @@ var store = [{
         "url": "http://localhost:4000/learning/barcharts_2/",
         "teaser": null
       },{
+        "title": "Business Ideas",
+        "excerpt":"Going To Freelancing Can find jobs online via Upwork LinkedIn Toptal Angel.co But are you going to spend a ton of time on small projects? Are you okay with just lots of small projects? Do you want to work on something more long term? How much time are you going...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/learning/business_ideas/",
+        "teaser": null
+      },{
         "title": "Classification",
         "excerpt":"Classifying This is a supervised learning method in which we have a matrix with labels to train our model. It is similar to clustering, but clustering is unsupervised and hence contains no labels. Clustering wants to find inherent structures within a data set. Classification solves I have a new point...","categories": [],
         "tags": ["data science","cool stuff","frozen"],
@@ -156,7 +162,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Jobs",
-        "excerpt":"[LinkedIn.com] has a lot of great jobs. The EasyApply make it especially easy to apply to many jobs quickly.   Start Ups   [angel.co] has start up company positions open  ","categories": [],
+        "excerpt":"[LinkedIn.com] has a lot of great jobs. The EasyApply make it especially easy to apply to many jobs quickly. [GlassDoor.com] has some good jobs [https://stackoverflow.com/jobs] is pretty powerful for software/developer jobs. I like it because the filters are really built for my needs. There’s a background filter that let’s you...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/learning/jobs/",
         "teaser": null
@@ -227,6 +233,12 @@ var store = [{
         "url": "http://localhost:4000/learning/smart_manufacturing/",
         "teaser": null
       },{
+        "title": "Sports Analytics",
+        "excerpt":"Jobs  NBA Analytics folks  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/learning/sportsanalytics/",
+        "teaser": null
+      },{
         "title": "Statistics Basics",
         "excerpt":"Correlation vs Causation Correlation Correlation is a measure of linear relationship between X and Y. $ Corr(X,Y) = \\frac{ um_{i=1}{n} ( (x_i - \\bar x) (y_i - \\bar y) ) } {\\sqrt(\\Sum_{i=1}{n}(x_i-\\bar x)^2) \\cdot \\sqrt(\\Sum_{i=1}{n}(y_i-\\bar y)^2) } $ A function like has perfect relation, but a correlation of 0, because...","categories": [],
         "tags": [],
@@ -268,6 +280,12 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/portfolio/SpatialNBAAalysis/",
         "teaser": "http://localhost:4000/Images/SpatialNBAAnalysis/DwadeAndWhiteside.png"
+      },{
+        "title": "Utah Jazz: Shot Analysis",
+        "excerpt":"In Spring 2018, I had a class where we needed to do a group project. My teammates and I chose to do some analysis of the Utah Jazz. Here is the results in a 3 minute video: The work actually won best project in the class of about 60 students....","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/portfolio/TakeYourShot/FinalVersion/",
+        "teaser": "http://localhost:4000/Images/TakeYourShotJazz/ClustersPreview.jpeg"
       },{
         "title": "Understanding Tiger King through NLP",
         "excerpt":"Sweet! Thanks for checking out this post. Please check out my Medium post about it to see the whole process, but enjoy the final outcome below. Joe Exotic Twitter Portrait Summart of Process on TikTok You could also watch a short, action-packed summary of the process on my TikTok. @verydata...","categories": [],

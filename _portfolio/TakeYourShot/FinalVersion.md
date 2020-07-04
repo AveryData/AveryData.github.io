@@ -1,3 +1,33 @@
+---
+title: "Utah Jazz: Shot Analysis"
+excerpt: "A project from my frist Data Science class"
+header:
+  #image: /Images/Family History Hacking/NameCloudTreeSmith.png
+  teaser: /Images/TakeYourShotJazz/ClustersPreview.jpeg
+---
+
+In Spring 2018, I had a class where we needed to do a group project. My teammates and I chose to do some analysis of the Utah Jazz.
+
+Here is the results in a 3 minute video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HDrmcKn1qhI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+The work actually won best project in the class of about 60 students. You can see our names in the hall of fame in the class at [http://datasciencecourse.net/2020/fame/](http://datasciencecourse.net/2020/fame/).
+
+Below is our winning submission report of the project, including most the code and details.
+
+During this project we:
+- Webscraped ESPN shotcharts using BeautifulSoup
+- Used Regex to find the types of shots
+- Utilized Pandas to wrangle the data
+- Ran k-means clustering on the court
+- Calculated average shot worth for each player in each cluster
+- Evaluated how these differences compared using ANOVA
+- Predicted the outcome of a game based on the averages
+
+
+***
+
 # Take Your Shot
 ## Final Submission
 ### Jacob Brown, Avery Smith, and Kyle Salisbury
@@ -11,11 +41,11 @@ Kyle Salisbury | Kcsals@gmail.com |  u0711328
 
 ### Primary Questions:
 
-What are the natural groupings/clusters of shots on a basketball court? 
+What are the natural groupings/clusters of shots on a basketball court?
 
-Which combinations of player and shooting location have the highest expected value (shooting pct * points)? 
+Which combinations of player and shooting location have the highest expected value (shooting pct * points)?
 
-Are the differences in shooting percentage statistically significant? 
+Are the differences in shooting percentage statistically significant?
 
 How does shooting pct vary at Home vs. Away?
 
@@ -25,20 +55,20 @@ Given only the location and shooters for a game not in our dataset, can we predi
 
 ## Accomplished:
  - Web scraped all data from sources and created "final" csv
- 
+
  - Obtained key data points using Regex
- 
+
  - Cleaned data and created various dataframes
- 
+
  - Unsupervised clustering (k-means) to divide court into 6 clusters (futher divided by 2 pointer and 3 pointer)
- 
+
  - Calculated expected value for each player in each court position and reported them on shot charts
- 
+
  - Calculated significance for shooting percentages by player and location
- 
+
  - Explored expected value difference for Home VS Away games
- 
- - Predicted the score of Jazz game, along with individual player totals. 
+
+ - Predicted the score of Jazz game, along with individual player totals.
 
 
 
@@ -46,20 +76,20 @@ Given only the location and shooters for a game not in our dataset, can we predi
 
 ### Methods Used:
  - Web scraping
- 
+
  - Regex
- 
+
  - Dataframes (including masking)
- 
+
  - Unsupervised clustering (k-means)
- 
+
  - Loops and logic
- 
+
  - Hypothesis Testing
- 
+
  - Visualizations (Scatter plots, heat maps)
- 
- - Predictions via pseduo-model 
+
+ - Predictions via pseduo-model
 
 ## Programming and Methods:
 
@@ -67,7 +97,7 @@ Given only the location and shooters for a game not in our dataset, can we predi
 ```python
 # Import All Library Packages
 
-from bs4 import BeautifulSoup 
+from bs4 import BeautifulSoup
 import requests
 import urllib.request
 import re
@@ -100,18 +130,18 @@ We scraped shot charts for the Utah Jazz from http://www.espn.com .  We used the
 ```python
 # Function to get soups for a given URL
 def getWebsiteAsSoup(url):
-    """ 
+    """
     Retrieve a website and return it as a BeautifulSoup object.   
     """
- 
+
     req = urllib.request.Request(url)
     with urllib.request.urlopen(req) as response:
         classlist_html = response.read()
-    
+
     class_soup = BeautifulSoup(classlist_html, 'html.parser')
     with open('class_list.html', 'w') as new_file:
         new_file.write(str(class_soup))
-        
+
     return class_soup
 ```
 
@@ -136,20 +166,20 @@ print(len(url_endings))  # shows how many games the Jazz have played so far
 ```python
 # Function to save html for a given URL
 def saveWebsiteToLocal(url, number):
-    """ 
+    """
     Retrieve a website and save it locally as an html.  
     """
- 
+
     req = urllib.request.Request(url)
     with urllib.request.urlopen(req) as response:
         classlist_html = response.read()
-    
+
     # print(classlist_html)
-    
+
     class_soup = BeautifulSoup(classlist_html, 'html.parser')
     with open('html/game_' + str(number) + '.html', 'w') as new_file:
         new_file.write(str(class_soup))
-        
+
     return
 ```
 
@@ -169,7 +199,7 @@ The following image was screenshotted from the url http://www.espn.com/nba/game?
 
 ![title](ShotChart.png)
 
-We used beautiful soup to identify the html element for each shot, and used regular expressions to extract the interesting data from each shot. This is what the HTML looks like. We were mostly interested in data-text, data-homeaway, data-shooter, and left and top positions. 
+We used beautiful soup to identify the html element for each shot, and used regular expressions to extract the interesting data from each shot. This is what the HTML looks like. We were mostly interested in data-text, data-homeaway, data-shooter, and left and top positions.
 
 ![title](Inspection of HTML.jpeg)
 
@@ -265,7 +295,7 @@ for i in range(1, tot_games+1):
             three = 0
         else:
             three = 1
-        game_array = [game, shot, homeaway, made_missed, period, shooter, shooter_name, distance, shot_type, 
+        game_array = [game, shot, homeaway, made_missed, period, shooter, shooter_name, distance, shot_type,
                      assist, left, top, three]
         array.append(game_array)
 end = time.clock()
@@ -277,7 +307,7 @@ print("This took " + str(end-start) + " seconds to run")
 
 
 ```python
-columns = ["game", "shot", "home/away", "made/missed", "period", "shooter", "shooter_name", 
+columns = ["game", "shot", "home/away", "made/missed", "period", "shooter", "shooter_name",
            "distance", "shot_type", "assist", "left", "top", "ThreePt"]
 print('Total Number of Shots: ' + str(len(array)))  # total number of shots
 print('Average Shots Per Game: ' + str(len(array)/tot_games))  # avg shots per game
@@ -585,8 +615,8 @@ print(ShotsPD['shooter_name'].value_counts(), '\n')
     David Stockton         3
     Erik McCree            2
     Naz Mitrou             1
-    Name: shooter_name, dtype: int64 
-    
+    Name: shooter_name, dtype: int64
+
 
 
 
@@ -648,8 +678,8 @@ print(ShotsPD['shot_type'].value_counts(), '\n')
     jump bank shot                     1
     step back jumpshot                 1
     driving floating jump shot         1
-    Name: shot_type, dtype: int64 
-    
+    Name: shot_type, dtype: int64
+
 
 
 ### Unsupervised clustering via kmeans to find natural clusters of the shots
@@ -841,12 +871,12 @@ for i in range(0,6):
         PercMadeDif3.append(PercMade)
     else:
         PercMadeDif3.append(0)
-    
+
     ExpectedValue3.append(PercMadeDif3[i]*PtVal)
-    
+
     AvLeft3.append(np.mean(Location['left']))
     AvTop3.append(np.mean(Location['top']))
-    
+
 print('---- 3 Pointers ----')
 print('Percentages')
 print(PercMadeDif3)
@@ -882,10 +912,10 @@ for i in range(0,6):
     PercMade = NumMade[i] / NumShots[i]
     PercMadeDif2.append(PercMade)
     ExpectedValue2.append(PercMadeDif2[i]*PtVal)
-    
+
     AvLeft2.append(np.mean(Location['left']))
     AvTop2.append(np.mean(Location['top']))
-    
+
 print('---- 2 Pointers ----')
 print('Percentages')
 print(PercMadeDif2)
@@ -910,8 +940,8 @@ for i in range(0, len(AvLeft3)):
     if  xx[i] == True:
         DeleteVar = i
 DeleteVar
-del AvLeft3[DeleteVar] 
-del AvTop3[DeleteVar] 
+del AvLeft3[DeleteVar]
+del AvTop3[DeleteVar]
 ```
 
 
@@ -924,12 +954,12 @@ df = pd.DataFrame({
 'y': AvTop3 + AvTop2,
 'group': ['0','1', '2','3','4','5','6','7','8','9','10']
 })
- 
+
 p1=sns.regplot(data=df, x="x", y="y", fit_reg=False, marker="o", color="skyblue", scatter_kws={'s':400})
 for line in range(0,df.shape[0]):
-    p1.text(df.x[line]+0.2, df.y[line], df.group[line], horizontalalignment='left', size='medium', 
+    p1.text(df.x[line]+0.2, df.y[line], df.group[line], horizontalalignment='left', size='medium',
             color='black', weight='semibold')
- 
+
 plt.imshow(img, zorder=0, extent=[0, 100, 0, 100.0])
 plt.grid(False)
 plt.show()
@@ -951,7 +981,7 @@ del ExpectedValue3[Extra]
 
 # Create expected values and round it for simplicity
 ExpectedValue = ExpectedValue3 + ExpectedValue2
-ExpectedValueRound = np.round_(ExpectedValue, decimals=2) 
+ExpectedValueRound = np.round_(ExpectedValue, decimals=2)
 ```
 
 ## Analysis
@@ -970,12 +1000,12 @@ df = pd.DataFrame({
           str(ExpectedValueRound[6]),str(ExpectedValueRound[7]),str(ExpectedValueRound[8]),
           str(ExpectedValueRound[9]),str(ExpectedValueRound[10])]
 })
- 
+
 p1=sns.regplot(data=df, x="x", y="y", fit_reg=False, marker="o", color="skyblue", scatter_kws={'s':400})
 for line in range(0,df.shape[0]):
-    p1.text(df.x[line]+0.2, df.y[line], df.group[line], horizontalalignment='left', 
+    p1.text(df.x[line]+0.2, df.y[line], df.group[line], horizontalalignment='left',
             size='medium', color='black', weight='semibold')
- 
+
 plt.imshow(img, zorder=0, extent=[0, 100, 0, 100.0])
 plt.grid(False)
 sns.plt.show()
@@ -1007,7 +1037,7 @@ plt.show()
 ![png](output_52_0.png)
 
 
-#### As we can see, corner threes and twos in they key are the most efficient shots for the Jazz team overall. The longer jumper two's are the worst shot the Jazz can shoot as a team. Hence, from this plot we can take it that shooting a two pointer isn't really worth it, unless it is inside the paint. 
+#### As we can see, corner threes and twos in they key are the most efficient shots for the Jazz team overall. The longer jumper two's are the worst shot the Jazz can shoot as a team. Hence, from this plot we can take it that shooting a two pointer isn't really worth it, unless it is inside the paint.
 
 Using masking and loops with added logic, we are able to look at all the expected values on the court for each player. We will also print out the values and player name
 
@@ -1033,12 +1063,12 @@ for Name in range(0,NumOPlayers):
     NumMade2 = []
     ExpectedValue2 =[]
     ExpectedValueRound = []
- 
+
     AvLeft2 = []
     AvTop2 =[]
-    
+
     for i in range(0,6):
-        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==1) 
+        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==1)
                            & ( ShotsPD['shooter_name'] == PlayerNames[Name])]     
         NumShots3.append(len(Location['made/missed']))
         NumMade3.append(len(Location[Location['made/missed']==1]))
@@ -1048,17 +1078,17 @@ for Name in range(0,NumOPlayers):
             PercMadeDif3.append(PercMade3)
         else:
             PercMadeDif3.append(0)
-    
+
         ExpectedValue3.append(PercMadeDif3[i]*PtVal3)
-    
+
         AvLeft3.append(np.mean(Location['left']))
         AvTop3.append(np.mean(Location['top']))
-        
-        
-        
-    
-        
-        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==0) 
+
+
+
+
+
+        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==0)
                            & ( ShotsPD['shooter_name'] == PlayerNames[Name])]
         NumShots2.append(len(Location['made/missed']))
         NumMade2.append(len(Location[Location['made/missed']==1]))
@@ -1069,10 +1099,10 @@ for Name in range(0,NumOPlayers):
         else:
                 PercMadeDif2.append(0)
         ExpectedValue2.append(PercMadeDif2[i]*PtVal2)
-    
+
         AvLeft2.append(np.mean(Location['left']))
         AvTop2.append(np.mean(Location['top']))
-        
+
     print('---------------------------------------------------------------')
     print(PlayerNames[Name])
     print('---------------------')
@@ -1082,42 +1112,42 @@ for Name in range(0,NumOPlayers):
     print('---------------------')
     print('Expected Values')
     print(ExpectedValue3)
-    
 
-    
+
+
     print('---- 2 Pointers ----')
     print('Percentages')
     print(PercMadeDif2)
     print('---------------------')
     print('Expected Values')
     print(ExpectedValue2)
-    
+
     for mm in range(0,len(ExpectedValue3)):
         if ExpectedValue3[mm] == 0:
             Extra = mm
     del ExpectedValue3[Extra]
-    
+
     xx = np.isnan(AvLeft3)
     for mm in range(0, len(AvLeft3)):
         if  xx[mm] == True:
             DeleteVar = mm
-    
-    del AvLeft3[DeleteVar] 
+
+    del AvLeft3[DeleteVar]
     del AvTop3[DeleteVar]
-    
+
     ExpectedValue = ExpectedValue3 + ExpectedValue2
-    ExpectedValueRound = np.round_(ExpectedValue, decimals=2) 
-    
+    ExpectedValueRound = np.round_(ExpectedValue, decimals=2)
+
     AvLefts = AvLeft3 + AvLeft2
     AvTops = AvTop3 + AvTop2
-    
+
     for u in range(0,len(AvLefts)):
         if math.isnan(AvLefts[u]):
             AvLefts[u]=90
         if math.isnan(AvTops[u]):
             AvTops[u]= 0
-        
-    
+
+
     x = np.round(AvLefts,decimals=0)
     y = np.round(AvTops,decimals=0)
     valz = [str(ExpectedValueRound[0]),str(ExpectedValueRound[1]),str(ExpectedValueRound[2]),
@@ -1129,17 +1159,17 @@ for Name in range(0,NumOPlayers):
     'y': y,
     'group': valz
     })
- 
+
     p1=sns.regplot(data=df, x="x", y="y", fit_reg=False, marker="o", color="skyblue", scatter_kws={'s':400})
     for line in range(0,df.shape[0]):
-        p1.text(df.x[line]+0.2, df.y[line], df.group[line], horizontalalignment='left', 
+        p1.text(df.x[line]+0.2, df.y[line], df.group[line], horizontalalignment='left',
                 size='medium', color='black', weight='semibold')
- 
+
     plt.title(PlayerNames[Name])
     plt.imshow(img, zorder=0, extent=[0, 100, 0, 100.0])
     plt.grid(False)
     plt.show()
-    
+
 ```
 
     ---------------------------------------------------------------
@@ -1453,7 +1483,7 @@ Location p-test:
 
 
 ```python
-shots_array = np.array([["shooter", "three", "cluster", 'num_shots', "num_makes", "pct", "expectedval", 
+shots_array = np.array([["shooter", "three", "cluster", 'num_shots', "num_makes", "pct", "expectedval",
                          "Player_p", "Team_p", "Location_p"]])
 threemask = ShotsPD["ThreePt"] == 1
 twomask = ShotsPD["ThreePt"] == 0
@@ -1489,11 +1519,11 @@ for shooter in threePD["shooter_name"].unique():
         mu = num_shots*avg_pct
         sigma = sc.sqrt(mu*(1-avg_pct))
         location_p = 1-norm.cdf(num_makes, loc=mu, scale=sigma)
-        
-        shots_array = np.append(shots_array, [[shooter, 1, cluster, num_shots, 
-                                               num_makes, pct, expectedval, player_p, 
+
+        shots_array = np.append(shots_array, [[shooter, 1, cluster, num_shots,
+                                               num_makes, pct, expectedval, player_p,
                                                team_p, location_p]], axis=0)
-        
+
 for shooter in twoPD["shooter_name"].unique():
     mask = twoPD["shooter_name"] == shooter
     ShooterShots = twoPD[mask]
@@ -1505,7 +1535,7 @@ for shooter in twoPD["shooter_name"].unique():
         num_makes = len(ClusterShots[mask_made])
         pct = num_makes/num_shots
         expectedval = pct*2
-        
+
         avg_pct = len(ShooterShots[ShooterShots["made/missed"]==1])/len(ShooterShots)  
         #total 3 pt avg for this player
         mu = num_shots*avg_pct  # mean number of makes for this cluster
@@ -1523,9 +1553,9 @@ for shooter in twoPD["shooter_name"].unique():
         mu = num_shots*avg_pct
         sigma = sc.sqrt(mu*(1-avg_pct))
         location_p = 1-norm.cdf(num_makes, loc=mu, scale=sigma)
-        
-        shots_array = np.append(shots_array, [[shooter, 0, cluster, num_shots, 
-                                               num_makes, pct, expectedval, player_p, 
+
+        shots_array = np.append(shots_array, [[shooter, 0, cluster, num_shots,
+                                               num_makes, pct, expectedval, player_p,
                                                team_p, location_p]], axis=0)
 ```
 
@@ -1563,8 +1593,8 @@ print(NewLocationPD.dtypes, '\n')
     Player_p       float64
     Team_p         float64
     Location_p     float64
-    dtype: object 
-    
+    dtype: object
+
 
 
 
@@ -2146,10 +2176,10 @@ df = pd.DataFrame({
 'y': top_coordinates,
 'group': clusters
 })
- 
+
 p1=sns.regplot(data=df, x="x", y="y", fit_reg=False, marker="o", color="skyblue", scatter_kws={'s':400})
 for line in range(0,df.shape[0]):
-    p1.text(df.x[line]+0.2, df.y[line], df.group[line], horizontalalignment='left', 
+    p1.text(df.x[line]+0.2, df.y[line], df.group[line], horizontalalignment='left',
             size='medium', color='black', weight='semibold')
 
 plt.title('Clusters')
@@ -2605,12 +2635,12 @@ for Name in range(0,NumOPlayers):
     NumMade2 = []
     ExpectedValue2 =[]
     ExpectedValueRound = []
- 
+
     AvLeft2 = []
     AvTop2 =[]
-    
+
     for i in range(0,6):
-        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==1) 
+        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==1)
                            & ( ShotsPD['shooter_name'] == PlayerNames[Name])& ( ShotsPD['home/away'] == 0) ]     
         NumShots3.append(len(Location['made/missed']))
         NumMade3.append(len(Location[Location['made/missed']==1]))
@@ -2620,17 +2650,17 @@ for Name in range(0,NumOPlayers):
             PercMadeDif3.append(PercMade3)
         else:
             PercMadeDif3.append(0)
-    
+
         ExpectedValue3.append(PercMadeDif3[i]*PtVal3)
-    
+
         AvLeft3.append(np.mean(Location['left']))
         AvTop3.append(np.mean(Location['top']))
-        
-        
-        
-    
-        
-        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==0) 
+
+
+
+
+
+        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==0)
                            & ( ShotsPD['shooter_name'] == PlayerNames[Name]) & ( ShotsPD['home/away'] == 0) ]
         NumShots2.append(len(Location['made/missed']))
         NumMade2.append(len(Location[Location['made/missed']==1]))
@@ -2641,10 +2671,10 @@ for Name in range(0,NumOPlayers):
         else:
                 PercMadeDif2.append(0)
         ExpectedValue2.append(PercMadeDif2[i]*PtVal2)
-    
+
         AvLeft2.append(np.mean(Location['left']))
         AvTop2.append(np.mean(Location['top']))
-        
+
     print('---------------------------------------------------------------')
     print(PlayerNames[Name])
     print('---------------------')
@@ -2654,42 +2684,42 @@ for Name in range(0,NumOPlayers):
     print('---------------------')
     print('Expected Values')
     print(ExpectedValue3)
-    
 
-    
+
+
     print('---- 2 Pointers ----')
     print('Percentages')
     print(PercMadeDif2)
     print('---------------------')
     print('Expected Values')
     print(ExpectedValue2)
-    
+
     for mm in range(0,len(ExpectedValue3)):
         if ExpectedValue3[mm] == 0:
             Extra = mm
     del ExpectedValue3[Extra]
-    
+
     xx = np.isnan(AvLeft3)
     for mm in range(0, len(AvLeft3)):
         if  xx[mm] == True:
             DeleteVar = mm
-    
-    del AvLeft3[DeleteVar] 
+
+    del AvLeft3[DeleteVar]
     del AvTop3[DeleteVar]
-    
+
     ExpectedValue = ExpectedValue3 + ExpectedValue2
-    ExpectedValueRound = np.round_(ExpectedValue, decimals=2) 
-    
+    ExpectedValueRound = np.round_(ExpectedValue, decimals=2)
+
     AvLefts = AvLeft3 + AvLeft2
     AvTops = AvTop3 + AvTop2
-    
+
     for u in range(0,len(AvLefts)):
         if math.isnan(AvLefts[u]):
             AvLefts[u]=90
         if math.isnan(AvTops[u]):
             AvTops[u]= 0
-        
-    
+
+
     x = np.round(AvLefts,decimals=0)
     y = np.round(AvTops,decimals=0)
     valz = [str(ExpectedValueRound[0]),str(ExpectedValueRound[1]),str(ExpectedValueRound[2]),
@@ -2701,10 +2731,10 @@ for Name in range(0,NumOPlayers):
     'y': y,
     'group': valz
     })
- 
+
     p1=sns.regplot(data=df, x="x", y="y", fit_reg=False, marker="o", color="skyblue", scatter_kws={'s':400})
     for line in range(0,df.shape[0]):
-        p1.text(df.x[line]+0.2, df.y[line], df.group[line], horizontalalignment='left', 
+        p1.text(df.x[line]+0.2, df.y[line], df.group[line], horizontalalignment='left',
                 size='medium', color='black', weight='semibold')
     plt.imshow(img, zorder=0, extent=[0, 100, 0, 100.0])
     plt.grid(False)
@@ -3030,12 +3060,12 @@ for Name in range(0,NumOPlayers):
     NumMade2 = []
     ExpectedValue2 =[]
     ExpectedValueRound = []
- 
+
     AvLeft2 = []
     AvTop2 =[]
-    
+
     for i in range(0,6):
-        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==1) 
+        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==1)
                            & ( ShotsPD['shooter_name'] == PlayerNames[Name])& ( ShotsPD['home/away'] == 1) ]     
         NumShots3.append(len(Location['made/missed']))
         NumMade3.append(len(Location[Location['made/missed']==1]))
@@ -3045,17 +3075,17 @@ for Name in range(0,NumOPlayers):
             PercMadeDif3.append(PercMade3)
         else:
             PercMadeDif3.append(0)
-    
+
         ExpectedValue3.append(PercMadeDif3[i]*PtVal3)
-    
+
         AvLeft3.append(np.mean(Location['left']))
         AvTop3.append(np.mean(Location['top']))
-        
-        
-        
-    
-        
-        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==0) 
+
+
+
+
+
+        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==0)
                            & ( ShotsPD['shooter_name'] == PlayerNames[Name]) & ( ShotsPD['home/away'] == 1) ]
         NumShots2.append(len(Location['made/missed']))
         NumMade2.append(len(Location[Location['made/missed']==1]))
@@ -3066,10 +3096,10 @@ for Name in range(0,NumOPlayers):
         else:
                 PercMadeDif2.append(0)
         ExpectedValue2.append(PercMadeDif2[i]*PtVal2)
-    
+
         AvLeft2.append(np.mean(Location['left']))
         AvTop2.append(np.mean(Location['top']))
-        
+
     print('---------------------------------------------------------------')
     print(PlayerNames[Name])
     print('---------------------')
@@ -3079,42 +3109,42 @@ for Name in range(0,NumOPlayers):
     print('---------------------')
     print('Expected Values')
     print(ExpectedValue3)
-    
 
-    
+
+
     print('---- 2 Pointers ----')
     print('Percentages')
     print(PercMadeDif2)
     print('---------------------')
     print('Expected Values')
     print(ExpectedValue2)
-    
+
     for mm in range(0,len(ExpectedValue3)):
         if ExpectedValue3[mm] == 0:
             Extra = mm
     del ExpectedValue3[Extra]
-    
+
     xx = np.isnan(AvLeft3)
     for mm in range(0, len(AvLeft3)):
         if  xx[mm] == True:
             DeleteVar = mm
-    
-    del AvLeft3[DeleteVar] 
+
+    del AvLeft3[DeleteVar]
     del AvTop3[DeleteVar]
-    
+
     ExpectedValue = ExpectedValue3 + ExpectedValue2
-    ExpectedValueRound = np.round_(ExpectedValue, decimals=2) 
-    
+    ExpectedValueRound = np.round_(ExpectedValue, decimals=2)
+
     AvLefts = AvLeft3 + AvLeft2
     AvTops = AvTop3 + AvTop2
-    
+
     for u in range(0,len(AvLefts)):
         if math.isnan(AvLefts[u]):
             AvLefts[u]=90
         if math.isnan(AvTops[u]):
             AvTops[u]= 0
-        
-    
+
+
     x = np.round(AvLefts,decimals=0)
     y = np.round(AvTops,decimals=0)
     valz = [str(ExpectedValueRound[0]),str(ExpectedValueRound[1]),str(ExpectedValueRound[2]),
@@ -3126,12 +3156,12 @@ for Name in range(0,NumOPlayers):
     'y': y,
     'group': valz
     })
- 
+
     p1=sns.regplot(data=df, x="x", y="y", fit_reg=False, marker="o", color="skyblue", scatter_kws={'s':400})
     for line in range(0,df.shape[0]):
-        p1.text(df.x[line]+0.2, df.y[line], df.group[line], horizontalalignment='left', 
+        p1.text(df.x[line]+0.2, df.y[line], df.group[line], horizontalalignment='left',
                 size='medium', color='black', weight='semibold')
-    
+
     plt.imshow(img, zorder=0, extent=[0, 100, 0, 100.0])
     plt.grid(False)
 
@@ -3442,7 +3472,7 @@ From this, we can see that some players shoot different shots at much different 
 
 ![Ricky Rubio](RickyComparison.jpeg)
 
-### Score Prediction 
+### Score Prediction
 
 Finally, we were able to look at predicting a game based on the knowledge of the shot attempts to guess the team score and individual scores. We actually did quite well by looking at the boxscore listed below. This was the first game of the season. We over predicted Donavan Mitchel's score, probbly as this was his first game in the NBA, and he may have shot worse due to nerves and getting used to the flow. Alec Burks was playing better at the time,  so he actually did better than we predicted. We were able to decently predict a score based upon the expected values we found. However, our methods don't take into account free throws, so our final scores will be a little off depending on free throws.
 
@@ -3481,8 +3511,8 @@ for Name in range(0,NumOPlayers):
     ExpectedValue2 =[]
     ExpectedValueRound = []
 
-    
-    
+
+
     NumShotsRecreate3 = []
     NumShotsRecreate2 = []
     LocationRecreate2 = []
@@ -3490,8 +3520,8 @@ for Name in range(0,NumOPlayers):
     ExpectedPoints3Recreate = []
     ExpectedPoints2Recreate= []
     PlayerToalPts = []
-    
-    
+
+
     NumShotsRecreate3Actual = []
     NumShotsRecreate2Actual = []
     LocationRecreate2Actual = []
@@ -3499,10 +3529,10 @@ for Name in range(0,NumOPlayers):
     ExpectedPoints3RecreateActual = []
     ExpectedPoints2RecreateActual= []
     PlayerToalPts = []
-     
-    
+
+
     for i in range(0,6):
-        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==1) 
+        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==1)
                            & ( ShotsPD['shooter_name'] == PlayerNames[Name])]     
         NumShots3.append(len(Location['made/missed']))
         NumMade3.append(len(Location[Location['made/missed']==1]))
@@ -3512,17 +3542,17 @@ for Name in range(0,NumOPlayers):
             PercMadeDif3.append(PercMade3)
         else:
             PercMadeDif3.append(0)
-    
+
         ExpectedValue3.append(PercMadeDif3[i]*PtVal3)
-    
+
         AvLeft3.append(np.mean(Location['left']))
         AvTop3.append(np.mean(Location['top']))
-        
-        
-        
-    
-        
-        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==0) 
+
+
+
+
+
+        Location = ShotsPD[(ShotsPD['LocationCluster']==i) & (ShotsPD['ThreePt']==0)
                            & ( ShotsPD['shooter_name'] == PlayerNames[Name])]
         NumShots2.append(len(Location['made/missed']))
         NumMade2.append(len(Location[Location['made/missed']==1]))
@@ -3533,79 +3563,79 @@ for Name in range(0,NumOPlayers):
         else:
                 PercMadeDif2.append(0)
         ExpectedValue2.append(PercMadeDif2[i]*PtVal2)
-    
+
         AvLeft2.append(np.mean(Location['left']))
         AvTop2.append(np.mean(Location['top']))
-        
 
-              
-    
-    
-                         
-                         
-                         
-                         
-    
-    
 
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
     for i in range(0,6):
-        LocationRecreate3 = GameX[(GameX['LocationCluster']==i)& (GameX['ThreePt']==1) 
-                                  & ( GameX['shooter_name'] == PlayerNames[Name])] 
+        LocationRecreate3 = GameX[(GameX['LocationCluster']==i)& (GameX['ThreePt']==1)
+                                  & ( GameX['shooter_name'] == PlayerNames[Name])]
         NumShotsRecreate3.append(len(LocationRecreate3['made/missed']))
         ExpectedPoints3Recreate.append(NumShotsRecreate3[i]*ExpectedValue3[i])
-        
+
     for i in range(0,6):
-        LocationRecreate2 = GameX[(GameX['LocationCluster']==i)& (GameX['ThreePt']==0) 
-                                  & ( GameX['shooter_name'] == PlayerNames[Name])] 
+        LocationRecreate2 = GameX[(GameX['LocationCluster']==i)& (GameX['ThreePt']==0)
+                                  & ( GameX['shooter_name'] == PlayerNames[Name])]
         NumShotsRecreate2.append(len(LocationRecreate2['made/missed']))
         ExpectedPoints2Recreate.append(NumShotsRecreate2[i]*ExpectedValue2[i])
-       
-    
+
+
     Player3pts = np.sum(ExpectedPoints3Recreate)
     Player2pts = np.sum(ExpectedPoints2Recreate)
-    
+
     PlayerToalPts = Player3pts + Player2pts
-    
+
     TotalPts.append(int(PlayerToalPts))
-    
-    
-    
-    
+
+
+
+
     ## Actual Results of the Game
-    
+
     for i in range(0,6):
-        LocationRecreate3Actual = GameX[(GameX['LocationCluster']==i)& (GameX['ThreePt']==1) 
-                                        & ( GameX['shooter_name'] == PlayerNames[Name]) 
-                                        & ( GameX['made/missed'] == 1)] 
+        LocationRecreate3Actual = GameX[(GameX['LocationCluster']==i)& (GameX['ThreePt']==1)
+                                        & ( GameX['shooter_name'] == PlayerNames[Name])
+                                        & ( GameX['made/missed'] == 1)]
         NumShotsRecreate3Actual.append(len(LocationRecreate3Actual['made/missed']))
         ExpectedPoints3RecreateActual.append(NumShotsRecreate3Actual[i]*3)
-        
+
     for i in range(0,6):
-        LocationRecreate2Actual = GameX[(GameX['LocationCluster']==i)& (GameX['ThreePt']==0) 
-                                        & ( GameX['shooter_name'] == PlayerNames[Name]) 
-                                        & ( GameX['made/missed'] == 1)] 
+        LocationRecreate2Actual = GameX[(GameX['LocationCluster']==i)& (GameX['ThreePt']==0)
+                                        & ( GameX['shooter_name'] == PlayerNames[Name])
+                                        & ( GameX['made/missed'] == 1)]
         NumShotsRecreate2Actual.append(len(LocationRecreate2Actual['made/missed']))
         ExpectedPoints2RecreateActual.append(NumShotsRecreate2Actual[i]*2)
-    
-    
+
+
     Player3ptsActual = np.sum(ExpectedPoints3RecreateActual)
     Player2ptsActual = np.sum(ExpectedPoints2RecreateActual)
-    
+
     PlayerToalPtsActual = Player3ptsActual + Player2ptsActual
-    
+
     TotalPtsActual.append(int(PlayerToalPtsActual))
-    
-    
-    
+
+
+
     print('---------------------------------------------------------------')
     print(PlayerNames[Name])
     print('Predicted: ' + str(int(PlayerToalPts)))
     print('Actual: ' + str(PlayerToalPtsActual))
-    
-    
-    
+
+
+
 TotalTotalPts = np.sum(TotalPts)
 TotalTotalPtsActual = np.sum(TotalPtsActual)
 print('---------------------------------------------------------------')
@@ -3614,7 +3644,7 @@ print('Final Jazz Score:')
 print('Predicted: ' + str(TotalTotalPts))
 print('Actual: ' + str(TotalTotalPtsActual))
 
-    
+
 ```
 
     ---------------------------------------------------------------
@@ -3680,11 +3710,11 @@ We successfully were able to:
 ### Ideas for future study:
 
  - Effects on fatigue and overshooting in locations
- 
+
  - Correlation between shot selection and winning
- 
+
  - Compare losing streak with winning streak
- 
+
  - Predict fouls and foul shots
- 
+
  - Evolution of Donovan Mitchell over the season
