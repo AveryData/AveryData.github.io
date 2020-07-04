@@ -9,5 +9,5 @@ header:
 
 
 title: "Portfolio"
-author_profile: false
+author_profile: true
 ---
