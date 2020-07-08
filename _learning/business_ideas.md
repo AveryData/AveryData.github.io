@@ -5,13 +5,13 @@ excerpt: "Crazy Hair Brained Scheme To Get Rich From"
 
 ## Going To Freelancing
 
-Can find jobs online via
+Can find jobs online SS
 - Upwork
 - LinkedIn
 - Toptal
 - Angel.co
 
-But are you going to spend a ton of time on small projects? Are you okay with just lots of small projects? Do you want to work on something more long term? How much time are you going to spend trying to find projects?
+But are you going to spend a ton of time on small projects? Are you okay with just lots of small projects? Do you want to work on something more long term? How much time are you going to spend trying to find pSrojects?
 
 Will this scale? How to get bigger? Can you get small businesses and do a lot for them? Is this what you do for 20 years?
 
@@ -22,9 +22,11 @@ I would like to do data science training too.
 
 ##### Sell Prints on Online (Etsy)
 - Maps
+  - Just aesthetic maps of cities
 - Sports
 - Music?
 - Plays?
+- Old books?
 
 
 ##### Websites
@@ -43,6 +45,7 @@ I would like to do data science training too.
 - Could be YouTube too
 - Could put a specialty on Modern Engineers (becoming more stats saavy.)
 - Could be about doing college / choosing major / finding jobs
+- Just one course on LinkedIn (how to do data science )
 
 ##### Book (note these could be ebooks? or thrown into online courses)
 - Utah data viz book
