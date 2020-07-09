@@ -31,7 +31,7 @@
 
 
 
-  <meta property="article:published_time" content="2020-07-04T10:16:22-05:00">
+  <meta property="article:published_time" content="2020-07-09T07:54:02-05:00">
 
 
 
@@ -296,7 +296,9 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>The idea of neural nets comes from biological neurons in the human brain.</p>
+        <h2 id="background">Background</h2>
+
+<p>The idea of neural nets comes from biological neurons in the human brain.</p>
 
 <p>There are million of neurons in our brain. Each is a small decision maker that takes information in and makes an output. One neuron ever makes a decision, but a unique layered, network of them.</p>
 
@@ -311,6 +313,31 @@
   <li>sigmoid: between 0 and 1.</li>
   <li>hyperbolic tangent: between 1 and -1</li>
 </ul>
+
+<p>If your network only has one layer (i.e. no hidden layers, just input and output) and you use a sigmoid kernel, it ends up equivalent to logistic regression.</p>
+
+<p>The features are the same (qualities of the data) and the output is the classification prediction. Each feature has weights in the NN, which resemble the coefficients of logistic regression. They are staged in a linear combination of the features x their weights, which are then input into the logistic function.</p>
+
+<p>ANN’s can represent very complicated decision boundaries. That’s why they perform well with big data in complex situations.</p>
+
+<h3 id="training-hidden-units">Training Hidden Units</h3>
+
+<p>Training the hidden units is very similar to fitting logistic regression. But instead of a sigmoid function, you have a general activation function.</p>
+
+<script type="math/tex; mode=display">\underset{w,\alpha,\beta}{\text{min }} l(w,\alpha, \beta) = \sum_i^n(y^i-\sigma(W^Tz^i))</script>
+
+<p>$z^i$ is the output of each hidden unit.</p>
+
+<p>These are non-convex optimization problems without a closed form expression. Hence we use gradient descent to find the solution as a local optimum.</p>
+
+<h4 id="imagenet">ImageNet</h4>
+<p>Large image dataset with 1.3 colored images with 1000 different classes. ANN’s have been really successful in classifying the images.</p>
+
+<p><strong>Convolution networks</strong>: takes a 224x224 image and smashes it into 11x11 by finding ways of combining these pixels. Find the significant output from the previous layer and feed into the next layer. Combined in the end to make once decision.</p>
+
+<p>It can be also thought of comparing the image to a template image.</p>
+
+<p>Tons of parameters which means a lot of tuning and requires a lot of GPU. The more samples you have, the better your CN can be.</p>
 
         
       </section>
@@ -339,7 +366,7 @@
       
   <nav class="pagination">
     
-      <a href="/learning/D3/" class="pagination--pager" title="D3.js
+      <a href="/learning/LinkedIn/" class="pagination--pager" title="LinkedIn
 ">Previous</a>
     
     

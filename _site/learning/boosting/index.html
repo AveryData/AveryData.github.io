@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Classification - (A)Very Data</title>
-<meta name="description" content="Does this data point belong in group A or B? ">
+<!-- begin _includes/seo.html --><title>Boosting - (A)Very Data</title>
+<meta name="description" content="Machine learning that sounds cool ">
 
 
   <meta name="author" content="Avery Smith">
@@ -19,11 +19,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="(A)Very Data">
-<meta property="og:title" content="Classification">
-<meta property="og:url" content="http://localhost:4000/learning/classification/">
+<meta property="og:title" content="Boosting">
+<meta property="og:url" content="http://localhost:4000/learning/boosting/">
 
 
-  <meta property="og:description" content="Does this data point belong in group A or B? ">
+  <meta property="og:description" content="Machine learning that sounds cool ">
 
 
 
@@ -42,7 +42,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/learning/classification/">
+<link rel="canonical" href="http://localhost:4000/learning/boosting/">
 
 
 
@@ -103,7 +103,7 @@
 
   </head>
 
-  <body class="layout--posts">
+  <body class="layout--single">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -279,152 +279,95 @@
 
 
 
-  <div class="archive">
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Boosting">
+    <meta itemprop="description" content="Machine learning that sounds cool">
     
-      <h1 id="page-title" class="page__title">Classification</h1>
     
-    <h2 id="classifying">Classifying</h2>
-<p>This is a supervised learning method in which we have a matrix with labels to train our model.</p>
 
-<p>It is similar to clustering, but clustering is unsupervised and hence contains no labels. Clustering wants to find inherent structures within a data set. Classification solves I have a new point and don’t know where it belongs, use the past history to determine where it best fits.</p>
-
-<h2 id="things-you-can-classify">Things you can classify</h2>
-<ul>
-  <li>Anything that has groups</li>
-  <li>Cats from dogs</li>
-  <li>Different type of flowers</li>
-  <li>Different types of customers</li>
-  <li>Different flavors or scents</li>
-  <li>Is this tumor malignant or benign?</li>
-  <li>Who will this citizen vote for?</li>
-</ul>
-
-<h3 id="main-approaches-to-classify">Main Approaches To Classify</h3>
-
-<ul>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>Bayes Rule $p(x</td>
-          <td>y=1)$</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li>Use geometric intutions
-    <ul>
-      <li>knn</li>
-      <li>svm</li>
-    </ul>
-  </li>
-  <li>Direct Decision Boundary
-    <ul>
-      <li>logistic regression</li>
-      <li>neural network</li>
-    </ul>
-  </li>
-</ul>
-
-<p>You need some “decision boundary” to split your data into the separate groups. It is usually said if you belong in certain spaces, you belong to that space’s group. This space is easiest seen in 2D but can be in much deeper dimensions than two.</p>
-
-<h2 id="k-nearest-neighbor">K-nearest Neighbor</h2>
-<p>If you get a new point, calculate the <em>k</em> closest points, what groups do those points belong to? Weight them by the distance, majority rules.</p>
-
-<ul>
-  <li>Non parametric</li>
-  <li>Non linear</li>
-  <li>Easy to kernelize</li>
-</ul>
-
-<p>Relies on Vornoi partitions.</p>
-
-<h2 id="decision-tree">Decision Tree</h2>
-
-<h2 id="svm">SVM</h2>
-<p>Kernel constructed decision bounderies based on minimizing the margin between the closest points. Easiet to think as linear, but can be non-linear including gaussian.</p>
-
-<h2 id="logistic-regression">Logistic Regression</h2>
-
-<p>Probability of seeing this class based on the data…set a threshold cut off to classify.</p>
-
-<h2 id="naive-bayes">Naive Bayes</h2>
-
-<p>Based upon multivariate gaussian distributions</p>
-
-<p><strong>Bayes Rule</strong>
-<script type="math/tex">P(y|x)= \frac{P(x|y)P(y)}{P(x)} = \frac {P(x,y)}{\Sigma P(x,y)}</script>
-y is the label, x is the feature. What is the chance for the label to be one of these classes.</p>
-
-<p><strong>Bayes Decision Rule</strong>
-Assign the data point to whatever group has the highest probability of belonging.</p>
-
-<p>Can be difficult with lots of data, due to large covariance matrix. If you assume the covariance is the identity matrix, hence all the x’s are independent this give you <strong>Naive Bayes</strong></p>
-
-<h2 id="metrics">Metrics</h2>
-<p>No model is perfect, but some are better than others. How do we know which to use?</p>
-
-<h3 id="false-negative-type-ii-error">False Negative (Type II Error)</h3>
-<p>Falsely accept the null hypothesis
-You actually have COVID19 and the test says you don’t.</p>
-
-<h3 id="false-positive-type-i-error">False Positive (Type I Error)</h3>
-<p>Falsely reject the null hypothesis.
-The test says you have COVID19 but you actually don’t.</p>
-
-<h3 id="confusion-matrix">Confusion Matrix</h3>
-<p>A confusion matrix shows the True Negatives, True Positives on the diagonol with, False Negatives and False positives on the opposite diagonal.</p>
-
-<h3 id="sensitivity">Sensitivity</h3>
-<p>Sensitivity = True Positive Rate. Also called precision?
-$ Sensitivity = \frac{true positive}{true positive + false negative}$</p>
-
-<h3 id="specificity">Specificity</h3>
-<p>Specificity = True Negative Rate
-$ Specificity = \frac {True Negative} {TrueNegative+FalsePositive}</p>
-
-<h4 id="accuracy">Accuracy</h4>
-<p>How many your model predicted right
-$ Accuracy = \frac{True Positive + True Negative}{All Data Points}</p>
-
-<h4 id="roc">ROC</h4>
-<p>Receiver Operating Characteristic curve
-Binary cut off classifier visualization.
-Plot False Positive (x) by True Positive (y)</p>
-
-<h2 id="code">Code</h2>
-
-<h3 id="logistic-regression-1">Logistic Regression</h3>
-
-<h5 id="r">R</h5>
-<h4 id="logistic-regression-2">Logistic Regression</h4>
-<p>’’‘{r}
-logreg = glm(Survived ~ Sex, data = titantic, family = “binomial”)
-‘’’</p>
-
-
-<ul class="taxonomy__index">
-  
-  
-    <li>
-      <a href="#2020">
-        <strong>2020</strong> <span class="taxonomy__count">1</span>
-      </a>
-    </li>
-  
-</ul>
-
-
-
-  <section id="2020" class="taxonomy__section">
-    <h2 class="archive__subtitle">2020</h2>
-    <div class="entries-list">
+    <div class="page__inner-wrap">
       
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Boosting
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="what-is-boosting">What is Boosting?</h2>
+<p>Machine learning algorithm to create classification model</p>
+
+<h3 id="no-algorithm-is-perfect">No Algorithm is Perfect</h3>
+<p>No single algorithm is going to be most accurate. Every algorithm has its weaknesses and draw backs. What if we could combine all the results of several classifiers?</p>
+
+<p>Have several basic classifiers (called <em>v classifiers</em> or <em>learners</em>) and combine them to form a <em>strong classifier</em>.</p>
+
+<p><strong>Decision Stump:</strong> A simple decision that uses only one feature. Basically a horizontal or vertical line in your data set (not diagonal, that would be multiple dimensions).</p>
+
+<script type="math/tex; mode=display">h(x;\theta_j)=sign(w_jx_j+b_j)</script>
+
+<p><strong>Boosting is how to combine all these week learners.</strong></p>
+
+<h2 id="adaboosting">Adaboosting</h2>
+<p>The <em>Ada</em> comes from <em>Adaptive</em>. The idea is you take a classification model (weak classifier) and use the training data to teach that classifier. Wherever the classifier performs well, that model is implemented. But wherever the classifier failed, that data is then sent to learner two to see if it can do better. This continues with classifiers seeing a subset of the data and attempting to classify well. Each classifier focuses on the samples that the previous classifier was not able to classify right.</p>
+
+<p>You have to weight the samples and we use <em>D</em> to denote the weights.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
         
 
 
+        
+      </footer>
 
-<div class="list__item">
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Boosting%20http%3A%2F%2Flocalhost%3A4000%2Flearning%2Fboosting%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Flearning%2Fboosting%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Flearning%2Fboosting%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/learning/barcharts_2/" class="pagination--pager" title="bar charts extreme
+">Previous</a>
+    
+    
+      <a href="/learning/business_ideas/" class="pagination--pager" title="Business Ideas
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+          
+
+
+
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -448,14 +391,12 @@ logreg = glm(Survived ~ Sex, data = titantic, family = “binomial”)
   </article>
 </div>
 
-      
+        
+      </div>
     </div>
-    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
-  </section>
-
-
-  </div>
+  
 </div>
+
     </div>
 
     

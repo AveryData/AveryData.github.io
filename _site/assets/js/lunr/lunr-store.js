@@ -11,14 +11,26 @@ var store = [{
         "url": "http://localhost:4000/learning/D3/",
         "teaser": null
       },{
+        "title": "Data Sets",
+        "excerpt":"Twitter     @jburnmurdoch   @AlbertoCairo   @EdwardTufte   @NateSilver  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/learning/DataInfluencers/",
+        "teaser": null
+      },{
+        "title": "LinkedIn",
+        "excerpt":"Why LinkedIn Social media is the fuel to starting any business or brand. Websites were first, then the revolution of Facebook, which rolled into Instagram. That’s probably the mainstream way of showing off your brand currently, Instagram. But think about it, only a fraction of your followers see your posts,...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/learning/LinkedIn/",
+        "teaser": null
+      },{
         "title": "Neural Nets",
-        "excerpt":"The idea of neural nets comes from biological neurons in the human brain. There are million of neurons in our brain. Each is a small decision maker that takes information in and makes an output. One neuron ever makes a decision, but a unique layered, network of them. Highly parallel,...","categories": [],
+        "excerpt":"Background The idea of neural nets comes from biological neurons in the human brain. There are million of neurons in our brain. Each is a small decision maker that takes information in and makes an output. One neuron ever makes a decision, but a unique layered, network of them. Highly...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/learning/NeuralNets/",
         "teaser": null
       },{
         "title": "Master of Analytics @ Georiga Tech",
-        "excerpt":"Why I Choose to Get A Master’s? The reason I chose to get a Master’s in Data Science really stems from choosing Chemical Engineering as my undergrad. About the end of my sophomore year I really wasn’t sure I liked Chemcial Engineering too much. By my junior year, I was...","categories": [],
+        "excerpt":"Why I Choose to Get a Graduate Degree? The reason I chose to get a Master’s really stems from choosing Chemical Engineering as my undergrad. About the end of my sophomore year I really wasn’t sure I enjoyed Chemical Engineering too much. By my junior year, I was pretty sure...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/learning/OSMA/",
         "teaser": null
@@ -33,18 +45,6 @@ var store = [{
         "excerpt":"Data Dimensionality There is a lot of data in the world, and that data has lots of data. Sometimes, it is too much data. Too much for a human to digest surely, but even sometimes too much for a computer to handle in reasonable amounts of time. In these cases,...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/learning/PCA/",
-        "teaser": null
-      },{
-        "title": "Principal Component Analysis",
-        "excerpt":"Data Dimensionality There is a lot of data in the world, and that data has lots of data. Sometimes, it is too much data. Too much for a human to digest surely, but even sometimes too much for a computer to handle in reasonable amounts of time. In these cases,...","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/learning/PCA0/",
-        "teaser": null
-      },{
-        "title": "Principal Component Analysis",
-        "excerpt":"Data Dimensionality There is a lot of data in the world, and that data has lots of data. Sometimes, it is too much data. Too much for a human to digest surely, but even sometimes too much for a computer to handle in reasonable amounts of time. In these cases,...","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/learning/PCA1/",
         "teaser": null
       },{
         "title": "Lists in Python",
@@ -95,8 +95,14 @@ var store = [{
         "url": "http://localhost:4000/learning/barcharts_2/",
         "teaser": null
       },{
+        "title": "Boosting",
+        "excerpt":"What is Boosting? Machine learning algorithm to create classification model No Algorithm is Perfect No single algorithm is going to be most accurate. Every algorithm has its weaknesses and draw backs. What if we could combine all the results of several classifiers? Have several basic classifiers (called v classifiers or...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/learning/boosting/",
+        "teaser": null
+      },{
         "title": "Business Ideas",
-        "excerpt":"Going To Freelancing Can find jobs online via Upwork LinkedIn Toptal Angel.co But are you going to spend a ton of time on small projects? Are you okay with just lots of small projects? Do you want to work on something more long term? How much time are you going...","categories": [],
+        "excerpt":"Going To Freelancing Can find jobs online SS Upwork LinkedIn Toptal Angel.co But are you going to spend a ton of time on small projects? Are you okay with just lots of small projects? Do you want to work on something more long term? How much time are you going...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/learning/business_ideas/",
         "teaser": null
@@ -117,6 +123,12 @@ var store = [{
         "excerpt":"Best/Easiest Resource My current go-to Input Hex, RGB, or use color picker…then see complementary, triadic, monochromic schemes, conversions (hex, RGB, HSL, HSV, and a bunch I don’t know about) alternatives, shades and tints, tones, even color blindness simulators. Help you find themes, translate My close second favorite color resource Good...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/learning/colors/",
+        "teaser": null
+      },{
+        "title": "Control Charts",
+        "excerpt":"Control charts try to show when the mean or variance of a population has changed. An ongoing hypothesis test that the variance and mean will not change. Stability Index Close to 1 means the within variance is close to the overall variance. See this link Western Electric Rules See this...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/learning/control_charts/",
         "teaser": null
       },{
         "title": "Cross Validation",
@@ -168,7 +180,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Jobs",
-        "excerpt":"[LinkedIn.com] has a lot of great jobs. The EasyApply make it especially easy to apply to many jobs quickly. [GlassDoor.com] has some good jobs [https://stackoverflow.com/jobs] is pretty powerful for software/developer jobs. I like it because the filters are really built for my needs. There’s a background filter that let’s you...","categories": [],
+        "excerpt":"[LinkedIn.com] has a lot of great jobs. The EasyApply make it especially easy to apply to many jobs quickly. I’m a big fan of LinkedIn so I find myself using this quite a bit. [https://stackoverflow.com/jobs] is pretty powerful for software/developer jobs. I like it because the filters are really built...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/learning/jobs/",
         "teaser": null
@@ -221,6 +233,12 @@ var store = [{
         "url": "http://localhost:4000/learning/pandas_basic/",
         "teaser": null
       },{
+        "title": "Podcasts",
+        "excerpt":"Apple’s Instructions You can read how Apple suggest to do podcasts. It might be better than my instructions. Read here 1) Record Your Audio I use Audacity to record my audio. I’m not in love with it…but I might have an older version. There is probably better software out there...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/learning/podcasts/",
+        "teaser": null
+      },{
         "title": "Probability",
         "excerpt":"Odds Odds are a way to express the likelihood of an event taking place. For instance, what are the odds of Seabiscuit winning this horse race? They’re often written X to Y or X:Y, or X/Y. In gambling, you use odds as in odds of not happening. 10:1 odds mean...","categories": [],
         "tags": [],
@@ -267,7 +285,7 @@ var store = [{
         "excerpt":"         ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/portfolio/DeathUS/",
-        "teaser": "http://localhost:4000/Images/DeathsinUS/Deaths_clean.png"
+        "teaser": "http://localhost:4000/Images/DeathsInUS/Deaths_clean.png"
       },{
         "title": "Smart Manufacturing of Essential Oils Through Artificial Intelligence",
         "excerpt":"In 2017, I had pleasure of working with DoTerra. They’re the world leader in essential oils. They’re science department was evaluting my employer’s Vaporsens’ GCMS-like technology. Funly enough, the project was a few years old and I had just transitioned in the data science roll at Vaporsens, so not only...","categories": [],

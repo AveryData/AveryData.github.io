@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Operations Management - (A)Very Data</title>
-<meta name="description" content="You know, operating management ">
+<meta name="description" content="You know, managing operations ">
 
 
   <meta name="author" content="Avery Smith">
@@ -23,7 +23,7 @@
 <meta property="og:url" content="http://localhost:4000/learning/OperationsManagement/">
 
 
-  <meta property="og:description" content="You know, operating management ">
+  <meta property="og:description" content="You know, managing operations ">
 
 
 
@@ -31,7 +31,7 @@
 
 
 
-  <meta property="article:published_time" content="2020-07-04T10:16:22-05:00">
+  <meta property="article:published_time" content="2020-07-09T07:54:02-05:00">
 
 
 
@@ -281,7 +281,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Operations Management">
-    <meta itemprop="description" content="You know, operating management">
+    <meta itemprop="description" content="You know, managing operations">
     
     
 
@@ -323,6 +323,86 @@
   <li>What is the priority?</li>
   <li>Job scheduling?</li>
 </ul>
+
+<h2 id="queueing-theoryques--lines">Queueing Theory(Ques = Lines)</h2>
+<p>We wait in line for any service: food, voting, check out, ect. If your line is too long, you run the risk of having a customer enter, see the line, say “no way I’m waiting that long”, and decide to leave (and go to the competition).</p>
+
+<ul>
+  <li>What is an acceptable waiting time for your customers</li>
+  <li>Keep them entertained while waiting; divert attention</li>
+  <li>Inform the customer of what to expect</li>
+  <li>Keep employees that aren’t serving customers out of site (looks bad/lazy</li>
+  <li>Segment customers (TSA precheck, elite customers, VIP</li>
+  <li>Have friendly employees</li>
+  <li>Encourage customers to come during off-peak times (happy hours</li>
+</ul>
+
+<h3 id="timeline">Timeline</h3>
+<p>1) Arrival
+2) Queue
+3) Service
+4) Exit</p>
+
+<p>Arrival Rate ($\lambda$): i.e. 1 customer every 6 minutes.</p>
+
+<p>Exponential Distribution (when people show up distribution):
+$f(t)=\lambda\cdot e ^{-\lambda \cdot t}$</p>
+
+<p>Interarrival Rate (take a time T, how many people show up):
+$P_T(n)=\frac{(\lambda T)^n\cdot e^{-\lambda T}}{n!}$</p>
+
+<ul>
+  <li>Is there a limit to how many people can be in your queue? (How many cars till you block the road?)</li>
+  <li>Number of lines?</li>
+  <li>How do you decide who is serviced next? (FCFC (first come first serve), priority)</li>
+</ul>
+
+<p>Service Rate ($\mu$): i.e. how many people can an employee service in a hour</p>
+
+<ul>
+  <li>How many employees do you have?</li>
+  <li>Phases: are there multiple steps?</li>
+  <li>Any probability of reservice? (Going back in line?)</li>
+</ul>
+
+<p>Service Distribution:
+$f(t)=\mu\cdot e ^{-\mu \cdot t}$</p>
+
+<h2 id="mm1-model">M/M/1 Model</h2>
+
+<p>Assumptions:</p>
+<ul>
+  <li>Infinite Customer Population</li>
+  <li>Random arrivals (Poisson)</li>
+  <li>Unlimited queue length</li>
+  <li>Single line</li>
+  <li>FCFS</li>
+  <li>Single channel (one server)(exponential)</li>
+  <li>Single phase (only one step)</li>
+</ul>
+
+<p>You only need to know the average arrival rate ($\lambda$) and the average service rate ($\mu$), and then you can really understand your system!</p>
+
+<p>Utilization:
+$\rho = \frac{\lambda}{\mu}$</p>
+
+<p>Average # of Customers in the system:
+$L_s = \frac{\lambda}{\mu - \lambda}$</p>
+
+<p>Average # of Customers in queue:
+$L_q=\frac{\lambda^2}{\mu(\mu-\lambda)}=L_s\cdot\rho$</p>
+
+<p>Average time a customer spends in the system:
+$W_s=\frac{1}{\mu-\lambda}$</p>
+
+<p>Average time a customer spends in the queue:
+$W_q=\frac{\lambda}{\mu(\mu-\lambda)}=\frac{L_q}{\lambda}$</p>
+
+<p>Probability of <em>n</em> units in the system:
+$P_n=(1-\frac{\lambda}{\mu})(\frac{\lambda}{\mu})^n=(1-\rho)(\rho)^n$</p>
+
+<p>What’s the probability of fewer than <em>N</em> people?
+$P_n&lt;N=\sum_n^N P_n$</p>
 
         
       </section>

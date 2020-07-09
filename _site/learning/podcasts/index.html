@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Classification - (A)Very Data</title>
-<meta name="description" content="Does this data point belong in group A or B? ">
+<!-- begin _includes/seo.html --><title>Podcasts - (A)Very Data</title>
+<meta name="description" content="Learning via Listening ">
 
 
   <meta name="author" content="Avery Smith">
@@ -19,11 +19,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="(A)Very Data">
-<meta property="og:title" content="Classification">
-<meta property="og:url" content="http://localhost:4000/learning/classification/">
+<meta property="og:title" content="Podcasts">
+<meta property="og:url" content="http://localhost:4000/learning/podcasts/">
 
 
-  <meta property="og:description" content="Does this data point belong in group A or B? ">
+  <meta property="og:description" content="Learning via Listening ">
 
 
 
@@ -42,7 +42,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/learning/classification/">
+<link rel="canonical" href="http://localhost:4000/learning/podcasts/">
 
 
 
@@ -103,7 +103,7 @@
 
   </head>
 
-  <body class="layout--posts">
+  <body class="layout--single">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -279,152 +279,105 @@
 
 
 
-  <div class="archive">
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Podcasts">
+    <meta itemprop="description" content="Learning via Listening">
     
-      <h1 id="page-title" class="page__title">Classification</h1>
     
-    <h2 id="classifying">Classifying</h2>
-<p>This is a supervised learning method in which we have a matrix with labels to train our model.</p>
 
-<p>It is similar to clustering, but clustering is unsupervised and hence contains no labels. Clustering wants to find inherent structures within a data set. Classification solves I have a new point and don’t know where it belongs, use the past history to determine where it best fits.</p>
-
-<h2 id="things-you-can-classify">Things you can classify</h2>
-<ul>
-  <li>Anything that has groups</li>
-  <li>Cats from dogs</li>
-  <li>Different type of flowers</li>
-  <li>Different types of customers</li>
-  <li>Different flavors or scents</li>
-  <li>Is this tumor malignant or benign?</li>
-  <li>Who will this citizen vote for?</li>
-</ul>
-
-<h3 id="main-approaches-to-classify">Main Approaches To Classify</h3>
-
-<ul>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>Bayes Rule $p(x</td>
-          <td>y=1)$</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li>Use geometric intutions
-    <ul>
-      <li>knn</li>
-      <li>svm</li>
-    </ul>
-  </li>
-  <li>Direct Decision Boundary
-    <ul>
-      <li>logistic regression</li>
-      <li>neural network</li>
-    </ul>
-  </li>
-</ul>
-
-<p>You need some “decision boundary” to split your data into the separate groups. It is usually said if you belong in certain spaces, you belong to that space’s group. This space is easiest seen in 2D but can be in much deeper dimensions than two.</p>
-
-<h2 id="k-nearest-neighbor">K-nearest Neighbor</h2>
-<p>If you get a new point, calculate the <em>k</em> closest points, what groups do those points belong to? Weight them by the distance, majority rules.</p>
-
-<ul>
-  <li>Non parametric</li>
-  <li>Non linear</li>
-  <li>Easy to kernelize</li>
-</ul>
-
-<p>Relies on Vornoi partitions.</p>
-
-<h2 id="decision-tree">Decision Tree</h2>
-
-<h2 id="svm">SVM</h2>
-<p>Kernel constructed decision bounderies based on minimizing the margin between the closest points. Easiet to think as linear, but can be non-linear including gaussian.</p>
-
-<h2 id="logistic-regression">Logistic Regression</h2>
-
-<p>Probability of seeing this class based on the data…set a threshold cut off to classify.</p>
-
-<h2 id="naive-bayes">Naive Bayes</h2>
-
-<p>Based upon multivariate gaussian distributions</p>
-
-<p><strong>Bayes Rule</strong>
-<script type="math/tex">P(y|x)= \frac{P(x|y)P(y)}{P(x)} = \frac {P(x,y)}{\Sigma P(x,y)}</script>
-y is the label, x is the feature. What is the chance for the label to be one of these classes.</p>
-
-<p><strong>Bayes Decision Rule</strong>
-Assign the data point to whatever group has the highest probability of belonging.</p>
-
-<p>Can be difficult with lots of data, due to large covariance matrix. If you assume the covariance is the identity matrix, hence all the x’s are independent this give you <strong>Naive Bayes</strong></p>
-
-<h2 id="metrics">Metrics</h2>
-<p>No model is perfect, but some are better than others. How do we know which to use?</p>
-
-<h3 id="false-negative-type-ii-error">False Negative (Type II Error)</h3>
-<p>Falsely accept the null hypothesis
-You actually have COVID19 and the test says you don’t.</p>
-
-<h3 id="false-positive-type-i-error">False Positive (Type I Error)</h3>
-<p>Falsely reject the null hypothesis.
-The test says you have COVID19 but you actually don’t.</p>
-
-<h3 id="confusion-matrix">Confusion Matrix</h3>
-<p>A confusion matrix shows the True Negatives, True Positives on the diagonol with, False Negatives and False positives on the opposite diagonal.</p>
-
-<h3 id="sensitivity">Sensitivity</h3>
-<p>Sensitivity = True Positive Rate. Also called precision?
-$ Sensitivity = \frac{true positive}{true positive + false negative}$</p>
-
-<h3 id="specificity">Specificity</h3>
-<p>Specificity = True Negative Rate
-$ Specificity = \frac {True Negative} {TrueNegative+FalsePositive}</p>
-
-<h4 id="accuracy">Accuracy</h4>
-<p>How many your model predicted right
-$ Accuracy = \frac{True Positive + True Negative}{All Data Points}</p>
-
-<h4 id="roc">ROC</h4>
-<p>Receiver Operating Characteristic curve
-Binary cut off classifier visualization.
-Plot False Positive (x) by True Positive (y)</p>
-
-<h2 id="code">Code</h2>
-
-<h3 id="logistic-regression-1">Logistic Regression</h3>
-
-<h5 id="r">R</h5>
-<h4 id="logistic-regression-2">Logistic Regression</h4>
-<p>’’‘{r}
-logreg = glm(Survived ~ Sex, data = titantic, family = “binomial”)
-‘’’</p>
-
-
-<ul class="taxonomy__index">
-  
-  
-    <li>
-      <a href="#2020">
-        <strong>2020</strong> <span class="taxonomy__count">1</span>
-      </a>
-    </li>
-  
-</ul>
-
-
-
-  <section id="2020" class="taxonomy__section">
-    <h2 class="archive__subtitle">2020</h2>
-    <div class="entries-list">
+    <div class="page__inner-wrap">
       
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Podcasts
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h3 id="apples-instructions">Apple’s Instructions</h3>
+<p>You can read how Apple suggest to do podcasts. It might be better than my instructions. <a href="https://itunespartner.apple.com/podcasts/">Read here</a></p>
+
+<h3 id="1-record-your-audio">1) Record Your Audio</h3>
+<p>I use Audacity to record my audio. I’m not in love with it…but I might have an older version. There is probably better software out there for recording audio. Export that audio file.</p>
+
+<h3 id="2-load-file-to-host">2) Load File to Host</h3>
+<p>Your audio has to be hosted somewhere. I use SoundCloud. Once again, not in love, but it works. Upload your audio files to the hoster. Most have a free version and if you want a certain number of hosted hours, you’d have to more to premium.</p>
+
+<p>Here’s how my podcast for my old spirituality podcasts looks like:</p>
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/310229426&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/avery-smith-478793378" title="Tender Mercies" target="_blank" style="color: #cccccc; text-decoration: none;">Tender Mercies</a></div>
+
+<p>You might have to make an RSS feed, I can’t quite remember.</p>
+
+<h3 id="3-go-to-apples-submit-a-podcast-page">3) Go to Apple’s <a href="https://help.apple.com/itc/podcasts_connect/#/itcd88ea40b9">Submit a Podcast</a> page</h3>
+
+<p>Follow the instructions here.</p>
+
+<h3 id="faq">FAQ</h3>
+
+<h4 id="is-it-free">Is it free?</h4>
+<p>It’ll all depend on who is hosting your files. It ain’t cheap to host bigger audio files. Most sites will give you like 100 free hours hosted. If you have 100 episodes, that are one hour long, and want to keep all those previous podcasts available, you’d have to pay for the 101st.</p>
+
+<h4 id="what-do-you-need">What do you need?</h4>
+<p>1) Recording Software (like Audacity)
+2) Hosting Account (like SoundCloud)
+3) Submit to Podcast App (like Apple Podcasts)</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
         
 
 
+        
+      </footer>
 
-<div class="list__item">
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Podcasts%20http%3A%2F%2Flocalhost%3A4000%2Flearning%2Fpodcasts%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Flearning%2Fpodcasts%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Flearning%2Fpodcasts%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/learning/pandas_basic/" class="pagination--pager" title="Pandas Basics
+">Previous</a>
+    
+    
+      <a href="/learning/probability/" class="pagination--pager" title="Probability
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+          
+
+
+
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -448,14 +401,12 @@ logreg = glm(Survived ~ Sex, data = titantic, family = “binomial”)
   </article>
 </div>
 
-      
+        
+      </div>
     </div>
-    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
-  </section>
-
-
-  </div>
+  
 </div>
+
     </div>
 
     

@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Principal Component Analysis - (A)Very Data</title>
-<meta name="description" content="From 100 dimensions to 2 using PCA ">
+<!-- begin _includes/seo.html --><title>Data Sets - (A)Very Data</title>
+<meta name="description" content="Data is the new oil ">
 
 
   <meta name="author" content="Avery Smith">
@@ -19,30 +19,30 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="(A)Very Data">
-<meta property="og:title" content="Principal Component Analysis">
-<meta property="og:url" content="http://localhost:4000/learning/PCA0/">
+<meta property="og:title" content="Data Sets">
+<meta property="og:url" content="http://localhost:4000/learning/DataInfluencers/">
 
 
-  <meta property="og:description" content="From 100 dimensions to 2 using PCA ">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2020-07-04T10:16:22-05:00">
+  <meta property="og:description" content="Data is the new oil ">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2020-07-09T07:54:02-05:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/learning/PCA0/">
+
+<link rel="canonical" href="http://localhost:4000/learning/DataInfluencers/">
 
 
 
@@ -280,15 +280,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Principal Component Analysis">
-    <meta itemprop="description" content="From 100 dimensions to 2 using PCA">
+    <meta itemprop="headline" content="Data Sets">
+    <meta itemprop="description" content="Data is the new oil">
     
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Principal Component Analysis
+          <h1 id="page-title" class="page__title" itemprop="headline">Data Sets
 </h1>
           
         </header>
@@ -296,81 +296,13 @@
 
       <section class="page__content" itemprop="text">
         
-        <h1 id="data-dimensionality">Data Dimensionality</h1>
-<p>There is a lot of data in the world, and that data has lots of data. Sometimes, it is too much data. Too much for a human to digest surely, but even sometimes too much for a computer to handle in reasonable amounts of time. In these cases, we choose some sort of dimensionality reduction to allow for simpler, quicker calculations.</p>
-
-<p>We do this by not using the original data points ,but combine, transforming, and selecting variables.</p>
-
-<p>It is especially useful in plotting as we can really only see 3 dimensions at one time.</p>
-
-<p>This is also important for aggregating weak signals in data.</p>
-
-<h1 id="principal-component-analysis-and-the-mighty-multivariate-decomposition">Principal Component Analysis and the Mighty Multivariate Decomposition</h1>
-<p>Principal Component Analysis is the primary technique for data compression. It relies heavily upon linear algebra and eigenvectors. It works well when variables are linearly correlated.</p>
-
-<p>Goals:
-1) Make the data set smaller
-2) Finding or revealing hidden</p>
-
-<p>Dimensionality Reduction: Reduces N dimensions down.</p>
-
-<p>Captures the most variation in the data, with fewest dimensions. Variations are “signals” or information in the data.
-Discovers variables or dimensions that are highly correlated or redundant, leading to simpler presentation.</p>
-
-<p>Examples when to use it:</p>
+        <p>Twitter</p>
 <ul>
-  <li>Pictures. A simple picture could have millions of pixels, but you can recreate the image with a compressed version that is pretty much the same with only 10% the data load.</li>
-  <li>Iris Data Set: classifying flowers based on their petals and sepal characteristics.</li>
+  <li>@jburnmurdoch</li>
+  <li>@AlbertoCairo</li>
+  <li>@EdwardTufte</li>
+  <li>@NateSilver</li>
 </ul>
-
-<p>Good Resources:</p>
-<ul>
-  <li>[Setosa] (https://setosa.io/ev/principal-component-analysis/)</li>
-</ul>
-
-<h1 id="steps">Steps</h1>
-<p>1) Estimate Mean and Covariance
-2) Take the eigenvectors corresponding to the biggest eigenvalues
-3) Compute reduced representation (project your data)</p>
-
-<p>Truncated Singular Value Decomposition (SVD)</p>
-<ul>
-  <li>Computes eigenvectors</li>
-</ul>
-
-<p>Diagnal entries are single values</p>
-
-<h1 id="non-linear-dimensionality-reduction">Non-Linear Dimensionality Reduction</h1>
-
-<p>PCA is really only suitable when variables are linearly correlated.</p>
-
-<p>Examples where PCA might fail:</p>
-<ul>
-  <li>Two coincentric rings</li>
-  <li>Swiss Roll example</li>
-</ul>
-
-<p>How do you reduce non-linear dimensions?</p>
-
-<p>First you need a way to measure distance. Since these day sets are based on connectivity, we can define distance as the sum of euclidean distances to get to one point to another, traveling through the data cloud.</p>
-
-<p>This eventually leads to the idea of the Isomap</p>
-
-<h1 id="isomap">Isomap</h1>
-
-<p>Step 1: Build a weighted graph A using nearest neighbors, and compute pairwise shortest distance matrix D.
-Step 2: Use a centering matrix $H=I-\frac{1}{M} \cdot1 1^T$ to get a C matrix: $C=-\frac{1}{2m} H D^2 H
-Step 3: Compute leading eigenvectors of the C matrix</p>
-
-<p>PCA performs singular value decomposition on the data matrix and eigendecomposition on the covariance matrix.</p>
-
-<p>Check out some isomap results:
-[https://www.researchgate.net/figure/The-Isomap-algorithm-when-applied-to-a-synthetic-face-database-of-698-images-The-number_fig5_250747602]
-https://benalexkeen.com/isomap-for-dimensionality-reduction-in-python/</p>
-
-<p>Some other good resources:
-http://blog.shriphani.com/2014/11/12/the-isomap-algorithm/
-https://towardsdatascience.com/step-by-step-signal-processing-with-machine-learning-manifold-learning-8e1bb192461c</p>
 
         
       </section>
@@ -388,22 +320,22 @@ https://towardsdatascience.com/step-by-step-signal-processing-with-machine-learn
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Principal+Component+Analysis%20http%3A%2F%2Flocalhost%3A4000%2Flearning%2FPCA0%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Data+Sets%20http%3A%2F%2Flocalhost%3A4000%2Flearning%2FDataInfluencers%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Flearning%2FPCA0%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Flearning%2FDataInfluencers%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Flearning%2FPCA0%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Flearning%2FDataInfluencers%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/learning/PCA/" class="pagination--pager" title="Principal Component Analysis
+      <a href="/learning/D3/" class="pagination--pager" title="D3.js
 ">Previous</a>
     
     
-      <a href="/learning/PCA1/" class="pagination--pager" title="Principal Component Analysis
+      <a href="/learning/LinkedIn/" class="pagination--pager" title="LinkedIn
 ">Next</a>
     
   </nav>
