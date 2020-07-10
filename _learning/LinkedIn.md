@@ -12,6 +12,10 @@ LinkedIn, shows you people's comments; shows you posts you don't even follow. Be
 There is a golden opportunity to make content on LinkedIn. There is less competition for views, which a hungry audience.
 
 
+## Spice Up Your Profile
+You can add some emoji's to your header or about by using this [article.](https://www.linkedin.com/pulse/add-emoji-your-linkedin-profile-simple-copy-paste-brynne-tillman/)
+
+
 ## What Makes A Good Post
 1) *Strong Start*: LinkedIn posts really only have 3 lines to hook someone in. That's all you see while you're scrolling. You must ensure you have a great hook.
 

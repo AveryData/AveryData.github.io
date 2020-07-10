@@ -33,6 +33,10 @@ It is similar to clustering, but clustering is unsupervised and hence contains n
 You need some "decision boundary" to split your data into the separate groups. It is usually said if you belong in certain spaces, you belong to that space's group. This space is easiest seen in 2D but can be in much deeper dimensions than two.
 
 
+# Different algorithms
+
+Here's a great demo of how different classifiers do on different data. [SKLearn's Classification Comparison](https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html)
+
 ## K-nearest Neighbor
 If you get a new point, calculate the *k* closest points, what groups do those points belong to? Weight them by the distance, majority rules.
 
@@ -43,9 +47,10 @@ If you get a new point, calculate the *k* closest points, what groups do those p
 Relies on Vornoi partitions.
 
 ## Decision Tree
+Think about twenty questions with Alexa. Is it an animal? No, leading to a new question. Is it this? Does it have horns? And so on. Find the optimal way to split based on misclassification errors. Similar to AdaBoosting, but not combining weak learners. Good computing efficiency but accuracy in predictions might be low. Hence we combine trees.
 
 ## SVM
-Kernel constructed decision bounderies based on minimizing the margin between the closest points. Easiet to think as linear, but can be non-linear including gaussian. 
+Kernel constructed decision bounderies based on minimizing the margin between the closest points. Easiet to think as linear, but can be non-linear including gaussian.
 
 ## Logistic Regression
 

@@ -104,7 +104,7 @@ You can take the coefficient and raise *e* to it, subtract 1, and multiply by 10
 
 **If you've logged by x and y**, $log(y) + log(x)$
 
-For every % change in the in the x, you'll get a y % increase of this: $((1+\%_{x})^{coeff}-1)\cdot 100$
+For every % change in the in the x, you'll get a y % increase of this: $((1+\perc_{x})^{coeff}-1)\cdot 100$
 
 ## OLS - Ordinary Least Squares
 Fit a line that minimizes sum of squared errors (SSE).
@@ -192,6 +192,7 @@ Scatter Y against all x's...see if it is well correlated and linear.
         - Coefficients are interpreted as the dependent variable chances by coeff * 100 for a one unit increase in the X.
     - Did you try loging both x and y?
 - Did you possibly leave any important predictor variables out?
+- Can you use a regression tree instead?
 
 - Are the residuals (errors) normal?
 Make a q-plot or histogram of the residuals. If a histogram, does it look normal? If q-q plot, is it linear? Does it have tail deviations at the ends? That may suggest outliers.
