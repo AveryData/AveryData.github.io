@@ -10,3 +10,12 @@ Twitter
 - @AlbertoCairo
 - @EdwardTufte
 - @NateSilver
+
+
+
+LinkedIn
+
+
+
+
+Instagram 

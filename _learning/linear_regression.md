@@ -177,6 +177,15 @@ You can identify outliers by **Cook's Distance**
 ### High Leverage points
 A predictor value outside the observations. If it is removed and the model changes significantly, it is thought to be high leverage.
 
+## Overfitting
+If you have non linear data and you fit with just a constant, your fit will be a horizontal line, and not be great. If you add a slope, it'll be better, but not great. If you add another degree, it gets better and so on and so on. But eventually, you're not only fitting the data trend, but also the noise. When that model is used on test data or different data, your model will not generalize well and you will experience poor performance.
+
+You want to have enough non linearity to capture the true trend, but not so much that you grab the noise as well.
+
+$Expect Loss (Real Test Error) = bias^2 + variance + noise$
+
+So when do you stop? A model complexity that's medium to minimize total loss. Variance increases with model complexity, bias decreases with model complexity. You add these curves and you end up with a parabola and in the vertex, loss is minimized.
+
 ## Things to check
 
 - Is the relationship linear?
@@ -206,6 +215,12 @@ Residuals vs fitted values. We want to see no patterns, otherwise we have correl
 Categorical variables can be a bit trickier. Basically, if you have 3 categories, you'd going to split those categories into 2 binary dummy column. The two dummy groups will represent two, respective categories while the third category is represented by both dummy variables are off (0).
 
 Those two dummy variables will get coefficients and represent the change in the y, if those dummys are true, *from the base case*. You always have to compare it to the base case.
+
+## Ridge Regression
+Adding a penalty function to regression. $\lambda$ is a regularization term, the smaller the $\lambda$, the more complex the model. The larger $lambda$ means a larger weight on the penalty and hence simpler models.
+
+## Lasso Regression
+Encourage sparse coefficients through setting coefficients to zero.
 
 ## Linear Regression in R
 

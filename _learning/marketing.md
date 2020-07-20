@@ -95,7 +95,10 @@ Cost per acquisition or per lead
 Cost per sale
 
 #### CRO
-CRO (Conversion Rate Optimization): How to we convert more users to our product? Increase traffic, increase quality of leads, increase leads, grow sales, 
+CRO (Conversion Rate Optimization): How to we convert more users to our product? Increase traffic, increase quality of leads, increase leads, grow sales,
+
+### Performance-based adversiting
+Purchaser pays only when there are measureable results. Becoming more popular with the spread of digital marketing.
 
 
 As a company, the riskiest thing is to pay CPM (click per 1k) with the safest being CPS (click per sale). Think about it, you don't pay anything until it is sold! I guess that's why the Amazon affiliate program exists and your content is basically CPS for amazon.
@@ -125,9 +128,14 @@ Ad formats usually have headline 1, headline 2, ad indicator, primary domain, de
 ##### SERP = Search Engine Results Page
 Your position on the SERP really affects your click-through rate. Usually, if you're ranked 1, you have a rate ~20% and by the time you get to 6th, you fall to ~5%.
 
-##### Landing page = page the search engine takes you to
+##### Landing page
+Page the search engine takes you to
 
-##### Keyword = a word found in a search query that brings a page up
+##### Keyword
+A word found in a search query that brings a page up
+
+##### Bounce Rate
+Percentage of visitors who enter teh site and then leave rather than continue to view other pages.
 
 #### Vickrey Auction Model
 Space on the SERP has an auction model. Company A, B and C say I'll pay X, Y, Z as my most expensive ad, and hence they outbid eachother at 1cent more than the lowest spot.

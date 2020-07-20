@@ -28,3 +28,17 @@ I'm not as familiar with Nightingale, but it is the publication journal that acc
 [Nightingale](https://medium.com/nightingale)
 
 If you want to write an article for this publication, see [here.](https://medium.com/nightingale/how-to-write-for-nightingale-d5b152545353)
+
+
+## How To's
+
+### How to add a kicker and subtitle
+See this [link](https://medium.com/blogging-guide/medium-kicker-f203a2cb2f75).
+
+### View unlimited articles that may be protected via paywall
+Try incognito. You're welcome
+
+
+
+### Making a Table of Contents
+[Here's how you can make a table of contents section](https://medium.com/@AllienWorks/creating-table-of-contents-for-medium-articles-5f9087377b82#dc26)

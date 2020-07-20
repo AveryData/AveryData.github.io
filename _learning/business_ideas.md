@@ -18,18 +18,19 @@ Will this scale? How to get bigger? Can you get small businesses and do a lot fo
 I would like to do data science training too.
 
 
-## Residual income ideas
+# Residual income ideas
 
-##### Sell Prints on Online (Etsy)
+##Sell Prints on Online (Etsy)
 - Maps
   - Just aesthetic maps of cities
 - Sports
 - Music?
 - Plays?
 - Old books?
+- Twitter Portraits
 
 
-##### Websites
+## Websites
 - Help Me Decide Website
     - Helps you compare 2 jobs on different aspects: pay, environment, work, schedule, benefits, ects
     - Could generalize to schools, to boyfriends, to any choice
@@ -39,13 +40,33 @@ I would like to do data science training too.
 
 - Data Science Society
 
+- CPC marketing calculations
 
-##### Online Courses
+- Inventory and Queue management calculators 
+
+
+## Online Courses
 - Data Science / Python Courses
 - Could be YouTube too
 - Could put a specialty on Modern Engineers (becoming more stats saavy.)
 - Could be about doing college / choosing major / finding jobs
 - Just one course on LinkedIn (how to do data science )
+- Cheat sheets, how to's, resources
+
+### Courses
+- MLS Stats
+    - who is most underrated
+    - can you predict salary
+    - clustering players (most similar replacement)
+
+- Stocks + Python
+    - Predicting stocks
+
+- Dash
+
+- Data Viz
+
+
 
 ##### Book (note these could be ebooks? or thrown into online courses)
 - Utah data viz book

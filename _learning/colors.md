@@ -28,3 +28,7 @@ The Color Brwer: [https://colorbrewer2.org/#type=sequential&scheme=PuBuGn&n=3]
 ## Best Hip Colors
 [Color of The Year](https://www.w3schools.com/colors/colors_trends.asp)
 These colors are great subs to spice up any of your visualizations. It goes back to 2000, so you have about 20 unique options alone from this resource. Lists colors in Hex and RGB.
+
+
+## Converting RGB to Hex Python
+[Coming in Clutch!](http://python.omics.wiki/plot/colors/rgb2hex)
