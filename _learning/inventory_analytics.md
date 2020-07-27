@@ -39,6 +39,7 @@ Simple models start by assuming:
 - No limit on order quality
 - *H*: Annual holding cost per unit
 - *Q*: The limit to which we build back up
+- *P*: Price per unit
 
 This would mean *Q* units would be bought. They would be depleted linearly till 0, then a price *S* would be paid to order more back up to *Q* level. Hence the average inventory would be $Q/2$
 
@@ -81,6 +82,25 @@ In real life, a instant replenishment time is unrealstic and impossible. Hence, 
 - *L*: Lead time in days
 - *d*: average daily demand
 
+
 ROP = Reorder Point.
 
 $ROP = d\cdot L$
+
+But what if demand is not constant? How does ROP change?
+
+Well we can model it with a probability distribution. Will add a buffer of extra inventory and call it our safety pile. This size will depend on demand uncertainty, the penalty of running out, lead time.
+
+Use a normal curve for the probability of having enough stock.
+
+The safety stock can be lead to be represented as
+
+$Safety Stock = Safety Factor \cdot STD(Lead Time Demand)$
+
+The safety factor is just the Z from the % you don't want to be out of stock.
+
+Instead of standard deviation of the lead time, is set to be
+
+$STD(LeadTime) = Z\cdot \sigma_D \cdot \sqrt{LT}$
+
+Hence we end up with $ROP = d\cdot L + SS$
