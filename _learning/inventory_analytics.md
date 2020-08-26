@@ -41,7 +41,7 @@ Simple models start by assuming:
 - *Q*: The limit to which we build back up
 - *P*: Price per unit
 
-This would mean *Q* units would be bought. They would be depleted linearly till 0, then a price *S* would be paid to order more back up to *Q* level. Hence the average inventory would be $Q/2$
+This would mean *Q* units would be bought. They would be depleted linearly till 0, then a price *S* would be paid to order more back up to *Q* level. Hence the average inventory would be *Q/2*
 
 EOQ - Economic Order Quantity - The Size
 

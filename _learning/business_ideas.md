@@ -42,7 +42,7 @@ I would like to do data science training too.
 
 - CPC marketing calculations
 
-- Inventory and Queue management calculators 
+- Inventory and Queue management calculators
 
 
 ## Online Courses

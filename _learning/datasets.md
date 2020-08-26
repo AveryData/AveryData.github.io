@@ -17,3 +17,12 @@ This data set has data from an engine failure study. It can be useful for reliab
 - Tennesse Eastman Data
   - (Tanslated .mat files on my Github)[https://github.com/AveryData/DataSets/tree/master/Tennessee%20Eastman%20Data]
   - (Data in R)[https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/6C3JR1
+
+
+
+## Movies
+Check out [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction)
+
+
+- Crime City Data
+- NYC Data

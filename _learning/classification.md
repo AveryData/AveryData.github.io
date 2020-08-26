@@ -87,15 +87,18 @@ A confusion matrix shows the True Negatives, True Positives on the diagonol with
 
 ### Sensitivity
 Sensitivity = True Positive Rate. Also called precision?
-$ Sensitivity = \frac{true positive}{true positive + false negative}$
+
+$Sensitivity = \frac{true positive}{true positive + false negative}$
 
 ### Specificity
 Specificity = True Negative Rate
-$ Specificity = \frac {True Negative} {TrueNegative+FalsePositive}
+
+$Specificity = \frac {True Negative} {TrueNegative+FalsePositive}$
 
 #### Accuracy
 How many your model predicted right
-$ Accuracy = \frac{True Positive + True Negative}{All Data Points}
+
+$Accuracy = \frac{True Positive + True Negative}{All Data Points}$
 
 #### ROC
 Receiver Operating Characteristic curve

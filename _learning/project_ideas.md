@@ -17,3 +17,17 @@ excerpt: "Don't know what to do??"
 
 
 ## Stocks
+
+
+## Twitter
+
+
+
+
+
+## Random
+
+- In a given city, what paths could you take to see several attractions.
+- Based on historic fire locations, where is the optimal place to build a firestation?
+- Safe path reccomendations between point A and point B.
+- See how academic papers relate and cite eachother. 

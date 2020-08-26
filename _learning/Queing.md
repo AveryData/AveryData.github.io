@@ -1,6 +1,6 @@
 ---
-title: "Operations Management"
-excerpt: "You know, managing operations"
+title: "Queues and Service times"
+excerpt: "What Chick-Fil-A is way good at"
 ---
 
 ## Operations management is how to make stuff...on time, at low cost, high quality, meeting customer's demands
