@@ -194,3 +194,36 @@ Example in R:
 q7 = lm(df$Brk_exret ~ df$Mkt_rf + df$SMB + df$HML + df$Mom + df$BAB + df$QMJ)
 summary(q7)
 ```
+
+
+
+
+## Commodities Traders
+
+Quality Arbitrage, Location Arbitrage, Time Arbitrage!
+
+Arbitrage is the simultaneous buying and selling of securities, currency, or commodities.
+
+If you can store the commodity, send the commodity somewhere else, and do it for profit, you're making money trading!
+
+Might ship gasoline from US Gulf Coast to Europe. If I can sell the gasoline for more than what its worth and shipping price in the states, I've made money. This is location arbitrage.
+
+If I think the gasoline will be worth a lot more in 3 months, I can buy it now, store it, then sell for a profit. This is time arbitrage.
+
+Quality Arbitrage is when you can blend a bunch of stuff together and get a better product.
+
+ABT: Asset Backed Trading - trade tied to an asset.
+
+Paper trading means you'll never get the physical handeling.
+
+Some people believe the market is just a random walk.
+
+NYMEX = New York Mercantile Exchange is a commodity futures exchange.
+
+COMEX = Commodity Exchange
+
+Contango is when the futures price is higher than the spot price.
+
+Normal Backwardation is the opposite of contango. The spot price is higher today than they'll be in the future.
+
+Hedge is trying to reduce the risk of price volatility by taking an offsetting position. 

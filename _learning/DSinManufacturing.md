@@ -36,3 +36,4 @@ Each of these processes can use data science in different ways to provide value 
 - **Shipping Sales Decisions**
 - **Demand Forecasting**
 - **Transporting Timing**
+- **Is This A Ship?** See kaggle iceberg vs ship competition

@@ -67,10 +67,18 @@ Foreign keys allow for linking between two tables.
 ### Views
 SQL views are virtual tables. It is basically a saved SQL command to combine columns from multiple tables. The database **recreates** the data each time a user queries the view.
 
+You can learn more about [views] (https://www.w3schools.com/sql/sql_view.asp)
+
 
 ### Stored Procedures
 Stored Procedures are SQL code that is saved to be used repeatedly.
 
 
+## Database Table Partitioning
+Read about [partitioning] (https://www.sqlshack.com/database-table-partitioning-sql-server/)
 
+
+
+
+## More learning about SQL
 (See W3Schools for more information)[https://www.w3schools.com/sql]

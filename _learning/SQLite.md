@@ -63,4 +63,9 @@ group by id
 having avg(grade) > 90;
 '''
 
+## Indexes
 Indexes are really important for the speed of your query. Make sure to have them!
+
+
+## FTS
+FTS is virtual table modules that allow for full-text searches. Basically it's what Google does a search engine. 

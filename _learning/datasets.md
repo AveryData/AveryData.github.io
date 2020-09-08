@@ -3,6 +3,9 @@ title: "Data Sets"
 excerpt: "Data is the new oil"
 ---
 
+# What is Data?
+Data is information with potential for meaning. It is often stored digitally now.  
+
 ## Places to find data
 - Kaggle (Data Science Website)
 - UCI Machine Learning Repository
