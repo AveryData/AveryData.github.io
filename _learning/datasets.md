@@ -11,6 +11,15 @@ Data is information with potential for meaning. It is often stored digitally now
 - UCI Machine Learning Repository
 - ISLR (data sets for *Introduction to Statistical Learning with Applications in R*) Built into **R**. [See more info](https://cran.r-project.org/web/packages/ISLR/ISLR.pdf)
 
+## Big Data Sets
+
+- Twitter: Who follows who
+- Facebook: Who is friends with who
+- Amazon: Who buys what
+- Cellphones: Who calls who
+- Protein-Protein Interactions: 200 million different human protein interactions
+- Internet: 50 billion web pages (see [https://internet-map.net/])
+
 ## Fault Detection / Reliability
 - NASA Turbo Fan Fault Detection
 This data set has data from an engine failure study. It can be useful for reliability of fault detection algorithms.

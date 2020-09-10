@@ -3,7 +3,11 @@ title: "Jobs"
 excerpt: "Where to look for data science jobs?"
 ---
 
+## Small vs Big Company
 
+
+
+## Where to find jobs?
 
 [LinkedIn.com] has a lot of great jobs. The EasyApply make it especially easy to apply to many jobs quickly. I'm a big fan of LinkedIn so I find myself using this quite a bit.
 
@@ -13,4 +17,6 @@ excerpt: "Where to look for data science jobs?"
 
 [GlassDoor.com] has some good jobs. I also think they have the best salary and interview question checker.
 
-[Harnham](https://www.harnham.com/us/jobs?options=1111) does Data Science recruiting and have some higher paying positions. 
+[Harnham](https://www.harnham.com/us/jobs?options=1111) does Data Science recruiting and have some higher paying positions.
+
+[Find Y2 Combinator Jobs](https://workatastartup.com/) and work for the next Uber, AirBnB, ect.

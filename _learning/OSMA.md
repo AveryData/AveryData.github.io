@@ -11,6 +11,11 @@ The reason I chose to get a Master's really stems from choosing Chemical Enginee
 
 I knew I wanted data science and machine learning, but that's not really an undergraduate degree. And switching your degree can be costly financially and timely. Why not just spend that same money and time on getting a graduate degree that makes you more qualified?
 
+## Why Straight After School?
+I knew it was important to me and I knew if I didn't do grad school straight after undergrad, I might never make it back. Getting back in the grove of doing homework is no easy feat and hence I wanted a smooth transition. I actually tried to start a master's my senior year of undergrad. I had some classes that were dual undergrad/grad that could have been counted towards a masters, alas, the University of Utah wouldn't really let me in the end.
+
+I started work in June, and then started school in August. Those two months sure were nice!
+
 ## Didn't You Already Have The Skills?
 
 Yes and no. While I started working as a data scientist my sophomore year, I look back and realize I didn't know all that much. I knew more than a lot of people, but I didn't know nearly as much as I know now. Which is good! Growth and learning is good. For the start, I was entirely self-taught in data science. I used textbooks, YouTube, and Google as my course content, and learned a lot.

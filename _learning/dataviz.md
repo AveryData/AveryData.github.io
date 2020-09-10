@@ -3,13 +3,15 @@ title: "Data Visualization"
 excerpt: "A picture is worth 1000 words"
 ---
 
+Data visualization is the process of mapping data to visuals.
+
 Data visualization aids humans to make decisions or explorations.
 
 $7 \pm 2$ is the number of items an average human holds in working memory. -- George Miller, 1956.
 
 Highlight the important parts of complex big data. Data -> Insights.
 
-We are in Big Data, but data is only going to get bigger. That means distilling what is important and giving people a platform to explore will be key. 
+We are in Big Data, but data is only going to get bigger. That means distilling what is important and giving people a platform to explore will be key.
 
 
 
