@@ -86,6 +86,12 @@ See classification topic for more learning.
 As x increase by 1 unit, the log odds increase by the coefficient. Or you can find the odds change by taking $exp(coeff)$. This apparently approximates to 100*coeff%.
 
 
+## Regression To Classification
+Note that **any** regression problem can be turned into a classification problem simply by adding thresholds / binning into separate groups with specific ranges.
+
+You can predict how much a customer might buy, but you might just label them as small, medium, and large customers.
+
+
 ## Model Validation
 
 ## Interaction Terms

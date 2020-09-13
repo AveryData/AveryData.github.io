@@ -15,7 +15,14 @@ Data is often returned via JSON or JavaScript Object Notation, structured data w
 Could also have parameters that filter the data.
 
 ## Common API's
-Twitter or Google Maps or Instagram or Facebook Graph API.
+- Twitter
+- Google Maps
+- Instagram
+- Facebook Graph API
+- Google Graph API
+  - [Video Explanation](https://www.youtube.com/watch?v=mmQl6VGvX-c)
+  - [How it is used in SEO](https://ahrefs.com/blog/google-knowledge-graph/)
+  - [Docs](https://developers.google.com/knowledge-graph)
 
 Check out ProgrammableWeb.com
 

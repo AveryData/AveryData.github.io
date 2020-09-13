@@ -5,11 +5,13 @@ excerpt: "Rectangluar Data Nuggets"
 
 
 ## Bar Charts
-Bar charts represent categorical data with rectangular bars.
+Bar charts represent categorical data with rectangular bars. They've very effective because they utilize length which humans are very good at understanding.
+
+Bar charts should almost always start at a reference of 0 on the y-axis. On the categories are pretty long. In these cases, it is unwise to rotate the text; instead rotate the entire graph.
 
 
 ## Flourish
-Ever wondered how all those Instagram accounts of YouTube channels make the racing barcharts? Flourish makes it really easy. (Check it out)[https://app.flourish.studio/@flourish/bar-chart-race]
+Ever wondered how all those Instagram accounts of YouTube channels make the racing barcharts? Flourish makes it really easy. [Check it out](https://app.flourish.studio/@flourish/bar-chart-race)
 
 ## Python
 

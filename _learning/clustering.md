@@ -3,15 +3,19 @@ title: "Clustering"
 excerpt: "Finding natural groups within the data"
 ---
 
-## GOAL:
-Divide objects into groups
-Objects within group are more similar than out of group
+## What is Clustering?
+To group samples together into groups based on their similarity.
+
+Usually these samples do not have definite labels and are instead, unlabeled and we want similar samples to group together and hopefully a human can give those groups labels.
 
 
 ## Examples:
-- Clustering images: dogs from cats, sunsets from trees
+- Clustering images: dogs from cats, sunsets from trees (when the pictures are not labeled)
 - Clustering flowers: Iris data set
 - Hand written letters: MNIST data set
+- Topic analysis in Tweets
+- Segmenting Customers for sales or marketing
+- Understanding relationships between complex systems 
 
 
 ## Kmeans Clustering

@@ -4,7 +4,15 @@ excerpt: "Data is the new oil"
 ---
 
 # What is Data?
-Data is information with potential for meaning. It is often stored digitally now.  
+Data is information with potential for meaning. It is often stored digitally. It can be structured or unstructured.
+
+## What is Data Integration?
+Nearly always, data isn't located all in one place and some combining of data from multiple sources is needed. This is data integration.   
+
+A lot of businesses derive value through data integration alone!
+
+#### How to Combine?
+- Use multiple databases using JOIN
 
 ## Places to find data
 - Kaggle (Data Science Website)

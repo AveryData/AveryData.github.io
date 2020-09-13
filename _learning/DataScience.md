@@ -3,6 +3,37 @@ title: "Data Science"
 excerpt: "What is Data Science?"
 ---
 
+## Tasks
+
+### Classification
+Predicting what group or label a sample belongs to.
+
+- Is this email spam or not spam?
+- Is this behavior usual or abnormal?
+- Is this a cat or a dog?
+
+
+### Regression
+Predict a numerical value of interest.
+
+- How many points will this team score tonight?
+- What will the temperature be?
+- What is this stock's price?
+- Credit scores
+
+
+### Similarity Matching
+Find other samples (from a larger dataset) that are similar to what you are seeing
+
+- Similar gene sequences
+- Similar profiles for online dating
+- Previous patent searches
+- Carpool matching
+
+
+### Clustering
+Grouping samples together based on their similarity
+
 
 ## Data Analytics
 Data Analytics can be divided into 4 main sections:

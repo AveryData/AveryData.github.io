@@ -14,7 +14,9 @@ Manufacturing means to "make something on a large scale using machinery". This e
 
 ## How can data science be used?
 
+## Industry 4.0
 
+*Large Scale machine-to-machine communication via Internet of Things that increases automation and self-monitoring to perform tasks without human intervention*
 
 ## How can Data Science be used in **Oil and Gas**?
 
@@ -64,7 +66,7 @@ Each of these processes can use data science in different ways to provide value 
   - Where should I send my products?
 
 - **Chemical Reaction Modeling**
-  - If I have these materials going into my reactor, what can I expect coming out? 
+  - If I have these materials going into my reactor, what can I expect coming out?
 
 - **Satellite Image Information**
   - Is that an iceberg or something else.

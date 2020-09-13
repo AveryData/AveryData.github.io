@@ -6,14 +6,20 @@ tags: [data science, cool stuff, frozen]
 ---
 
 ## Classifying
+What class or group does a sample belong to? If we had to label this sample, what would the label be?
+
 This is a supervised learning method in which we have a matrix with labels to train our model.
 
 It is similar to clustering, but clustering is unsupervised and hence contains no labels. Clustering wants to find inherent structures within a data set. Classification solves I have a new point and don't know where it belongs, use the past history to determine where it best fits.
 
 ## Things you can classify
+- Spam or not spam?
+- Sentiment Analysis (is this tweet positive, negative, or neutral)
+- Is this face a baby, middle-aged, or old
 - Anything that has groups
 - Cats from dogs
 - Different type of flowers
+- Is this news article politics, sports, pop culture?
 - Different types of customers
 - Different flavors or scents
 - Is this tumor malignant or benign?

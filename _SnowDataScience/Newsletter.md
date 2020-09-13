@@ -23,6 +23,8 @@ https://www.websiteplanet.com/blog/best-email-marketing-beginners/
 ## Some Data Science Examples
 
 
+## Where to find content:
+[AlgorithmXLab?](https://algorithmxlab.com/)
 
 
 
@@ -39,6 +41,6 @@ https://www.websiteplanet.com/blog/best-email-marketing-beginners/
 
 ### New Releases / Recently Published Articles
 
-### Good Reads 
+### Good Reads
 
 ### Viz of week?

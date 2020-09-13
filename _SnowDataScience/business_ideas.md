@@ -114,3 +114,10 @@ A complete data science company
 But instead of first principals, data science?
 There is no outlier detector.
   FindOutlier.com
+
+- Stocks Visualiztions
+  Combine the dude who makes art out of stocks, chartfleau, your stock prediction algorithm, maybe a 3D printed stock toys???
+
+
+- Sports Viz
+  Basketball cards with the tracking or shot location. 

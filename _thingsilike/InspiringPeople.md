@@ -1,15 +1,42 @@
 ---
-title: "People Who Inspire Me"
+title: "Inpsiring People"
 excerpt: "INSPIRE"
 ---
 
 # Business
+
+
 
 ## Mark Cuban
 
 ## Elon Musk
 
 ## Gary Vanurchuk
+
+## Jamie Siminoff
+Jamie Siminoff started [Ring](https://ring.com/) which he later sold to Amazon for $1 billion.
+
+I fell in love with his story by listening to his ["How I Built This" interview](https://www.npr.org/2020/06/18/879959408/ring-jamie-siminoff) with Guy Raz.
+
+
+You can listen to the pod here.
+<iframe src="https://www.npr.org/player/embed/879959408/882040064" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>
+
+The thing I love about him is he went to college for business and started a company right away doing business plans. He had no idea how to do business plans but got lucky and got a client, then another, then another.
+
+He said "I didn't need to write business plans for the whole world, just my next client" indicating he knew he wasn't going to change the world but just needed the next person to pay him.
+
+He ends up in Voice Over IP, does some stuff. He finds himself, starting business, growing them up, and selling them to pretty much break even.
+
+He sits and comes up with Edison Jr which is a toy tinkering lab he runs with some "kids" where they brainstorm their next good idea. He tries a few things, like modular patio gardening. While workign in the garage, he can't hear or see his door and hence can't answer it. He tinkers up with DoorBot, but doesn't think much of it. He comes up with a CrowdSourcing website and goes to debut it with the first product being DoorBot.
+
+People love DoorBot and show interest. Just when he's beaten and not sure what to do, he luckily gets in touch with the folks at Shark Tank and lands on the show. He bets A LOT to be on the show, but can't strike a deal. Luckily, millions of Americans watched and had interest and started to order.
+
+There's a tragic event around Christmas where he lost all hope.
+
+His wife is so supportive. She is working and supporting them while he is at Edison Jr. And when the Christmas fiasco occurs she says, "Let's just mortgage the house!"
+
+You can read [his story on Inc](https://www.inc.com/magazine/201808/emily-canal/how-i-did-it-jamie-siminoff-ring.html)
 
 # Others
 ## John Krasinskyi
@@ -52,6 +79,10 @@ You can check out an [interview with him by Zane Lowe](https://podcasts.apple.co
 
 
 ## Chris Albon
+Really great resources on coding in general.
 
 ## Amelia Wattenberger
-[https://wattenberger.com/]
+Queen of D3[https://wattenberger.com/]
+
+## Will Koehrsen
+[Great medium material](https://towardsdatascience.com/@williamkoehrsen)
