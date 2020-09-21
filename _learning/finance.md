@@ -82,6 +82,8 @@ The payback period is how long it'll take to cover the initial investments.
 
 Penalizes long-term projects that take awhile to get off the ground.
 
+$PaybackPeriod=OriginalCost/CashInflows$
+
 
 ###### Probability Index (Benefit Cost Ratio)
 Highest PI is good, but bigger than 1 is profitable.
