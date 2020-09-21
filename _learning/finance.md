@@ -30,7 +30,8 @@ Money coming you to the future is worth less compared to receiving it today.
 You always have to include the interest, and maybe even opportunities cost.
 
 ###### Future Value
-$$Future Value = Present Value \cdot (1+i)^n$$
+
+$Future Value = Present Value \cdot (1+i)^n$
 
 Excel even has a Future Value function (FV).
 
