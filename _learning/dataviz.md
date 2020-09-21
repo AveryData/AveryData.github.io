@@ -9,6 +9,8 @@ Data visualization is the process of mapping data to visuals.
 
 Data visualization aids humans to make decisions or explorations.
 
+> "Visualization gives you answers to questions you didn't know you have" -- Ben Schneiderman
+
 More formally it is the use of computer-supported, interactive visual objects of data aimed to increase cognition.
 
 $7 \pm 2$ is the number of items an average human holds in working memory. -- George Miller, 1956.
@@ -116,6 +118,16 @@ People hate pie charts. Because it's hard to tell what the difference between th
 ### Google Data Studio
 
 ### Flourish
+
+### Excel
+
+### Qlik
+
+### Spotfire
+
+### Looker
+
+### Klipfolio
 
 
 

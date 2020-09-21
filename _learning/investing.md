@@ -226,4 +226,4 @@ Contango is when the futures price is higher than the spot price.
 
 Normal Backwardation is the opposite of contango. The spot price is higher today than they'll be in the future.
 
-Hedge is trying to reduce the risk of price volatility by taking an offsetting position. 
+Hedge is trying to reduce the risk of price volatility by taking an offsetting position.

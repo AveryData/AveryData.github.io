@@ -10,7 +10,7 @@ excerpt: "Where To Go If You Want To Learn More"
 
 ## Data Science In General
 - Data Science For Business: What you need to know about data mining and data-analytic thinking
-
+- Numsense: Data Science for the Layman 
 
 
 
@@ -33,4 +33,4 @@ excerpt: "Where To Go If You Want To Learn More"
 - Polo Chau's [Data and Visual Analytics Course](https://omscs.gatech.edu/cse-6242-data-and-visual-analytics-course-videos) from Georgia Tech
 
 ### Sites
-- David McCandless and Information is Beautiful 
+- David McCandless and Information is Beautiful

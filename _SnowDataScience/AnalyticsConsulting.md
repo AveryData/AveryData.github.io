@@ -118,3 +118,46 @@ Ugly site.
 
 ## Datascope
 [see site](https://datascopeanalytics.com/)
+
+## Tera Data
+[site](https://www.teradata.com/Answers-in-the-Cloud?utm_campaign=2020brand&utm_source=google&utm_medium=paidsearch&utm_content=TERA1_GS_Brand_NA-US_CV_NBKW_Exact&utm_creative=AnalyticsPlatform-Consulting&utm_term=data%20science%20consulting%20services&gclid=Cj0KCQjwhvf6BRCkARIsAGl1GGhXXj3wy-G7Xy3SQaf4NfE7ceYrLR1ow_8UAM9gpTGRQOPq7fxzg3EaAvgoEALw_wcB)
+
+
+## Moove IT
+[Bigger](https://moove-it.com/services/machine-learning-consulting?gclid=Cj0KCQjwhvf6BRCkARIsAGl1GGiNmxiMjCHq7Ttmed9YTloFPC5Gitp2z-qscvO-xLqslbTC1oStlsEaAlIqEALw_wcB)
+Bigger clients but pretty good site. I like how they say "What we can do for you". Also like how they say "Have a project in mind? Tell us more about it.
+
+## Strong Analytics
+[Decently Big ](https://www.strong.io/?gclid=Cj0KCQjwhvf6BRCkARIsAGl1GGjMxU6wZBDkoQTxnL7sGdkMnV2EnMrI8FLXN-oOzOZ2ZL6y-S9EAOwaAh2REALw_wcB)
+
+Good scrolling experinece
+
+
+## DataPine
+[DataPine](https://www.datapine.com/)
+
+Love their product page and blog.
+
+Product page has dashboards, self-service analytics, data alerts. The dashboards have healthcare, logistics, manufacturing, retail, energy
+
+
+
+## 6Sense
+[For marketing](https://6sense.com/?utm_source=google&utm_medium=cpc&utm_campaign=1729315662&utm_term=predictive%20analytics%20company&utm_content=g&gclid=CjwKCAjw74b7BRA_EiwAF8yHFCUnL322f209fcRZxZFVhoRd4Hf1AH3n6z4SseJ0uh9kooGt4-2kOxoCYz8QAvD_BwE)
+
+
+
+## Decision Analyst
+[Simple](https://www.decisionanalyst.com/analytics/predictiveanalytics/)
+
+## Levatas
+[Levatas](https://levatas.com/?kw=data%20science%20consulting&ad=437215613027&matchtype=p&adposition&gclid=CjwKCAjw74b7BRA_EiwAF8yHFI1EqjOwQMENkuMn6xbl3xEPOgd_jQmLIyt11b44B_FURNK5f1osdhoCvn0QAvD_BwE)
+
+Only do thermal anomaly and automate gauge reading.
+
+## Riterex
+[Riterex](https://itrexgroup.com/software-development-services/data-strategy-management-services/?utm_source=google&utm_medium=ppc&utm_campaign=usa-data-promo&utm_term=&utm_content=0&utm_term=data%20science%20consulting%20firms&utm_campaign=usa-data-promo&utm_source=adwords&utm_medium=ppc&hsa_acc=6031683072&hsa_cam=10310627415&hsa_grp=109481781824&hsa_ad=463023784793&hsa_src=g&hsa_tgt=kwd-302182425788&hsa_kw=data%20science%20consulting%20firms&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw74b7BRA_EiwAF8yHFLj-pU8V0mLm_Fp0gtxHtUSuMo7EYceYVinNQYq0vJhqYoTkQD0WRoCKTIQAvD_BwE#index)
+
+## InData Labs
+[InData Labs](https://indatalabs.com/)
+I like the industries we are transformting page

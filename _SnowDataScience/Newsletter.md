@@ -27,6 +27,12 @@ https://www.websiteplanet.com/blog/best-email-marketing-beginners/
 [AlgorithmXLab?](https://algorithmxlab.com/)
 
 
+## Things to Share
+Xeek.ai
+
+Benford's Law
+
+
 
 ## What Content To Include?
 
