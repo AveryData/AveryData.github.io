@@ -23,8 +23,14 @@ You can add some emoji's to your header or about by using this [article.](https:
 
 3) *Be Sure to Respond To Comments*: Responding will boost the interaction and number of times it is seen
 
-4) *Use Hashtags*: What hashtags are relevant to your post?
+4) *Use Hashtags*: What hashtags are relevant to your post? You can search a hashtag and 
 
 5) *Have a Call To Action*: Have them do something! The easiest (and maybe most effective) is to have them comment. Ask them a question. Answer yourself with the first comment.
 
 6) *Post at the Right Time*: Early morning on Tuesdays and Thursdays?
+
+8) *Use emojis*: Using emojies makes it easier, and more fun to read. If you're on your phone they're easy to add. On a computer, use this [link](https://www.linkedin.com/pulse/add-emoji-your-linkedin-profile-simple-copy-paste-brynne-tillman/) and copy and paste.
+
+9) *Use Line Breaks*: Having paragraphs make posts hard to read, use enter often.
+
+10) *Like and Comment Your Own Post*: Be the first to engage. Comments on posts make them viewed more.

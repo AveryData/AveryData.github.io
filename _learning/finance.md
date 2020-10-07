@@ -65,6 +65,18 @@ In Excel, the NPV(C's)+Original.
 
 Crossover Rate: $NPV_A=NPV_B$
 
+
+Gross Profit - Depreciation = Profits Before Tax
+
+Profits Before Tax - (Tax Rate * Profits Before Tax) = Profits After Tax
+
+After Tax Cash Flow = Profits After Tax + Depreciation
+
+
+
+**After Tax Cash Flows**
+$$ATCF=(Revenue - Costs - Depreciation)\cdot (1 - Tax) + Depreciation$$
+
 ###### Internal Rate of Return (IRR)
 IRR is the discount rate or interest rate that is the **minimum** return that would make the NPV of 0.
 
@@ -74,7 +86,11 @@ Activities like mining where end of project have a big cash requirement, you can
 
 Also, would you want 100% of $1 or 50% of $1,000. The answer: 50%! But IRR suggests differently.
 
-IRR and NPV usually give the same answer, unless non-convential cash flows (sign changes more than once) and mutually exlusive proejcts.
+IRR and NPV usually give the same answer, unless non-conventional cash flows (sign changes more than once) and mutually exclusive projects.
+
+Use IRR function in Excel.
+
+Combined IRR
 
 
 ###### Payback Period
@@ -83,6 +99,8 @@ The payback period is how long it'll take to cover the initial investments.
 Penalizes long-term projects that take awhile to get off the ground.
 
 $$PaybackPeriod=OriginalCost/CashInflows$$
+
+Discounts future cash flows and recognizes the time value of money.
 
 
 ###### Probability Index (Benefit Cost Ratio)
@@ -109,8 +127,7 @@ Cash flows are recorded when the money actually moves, not when the accountant u
 **Working Capital** is the amount you spend on things like initial inventory, so it is cash outflow at the beginning but can turn back into cash inflow on the way back.
 
 
-**After Tax Cash Flows**
-$$ATCF=(Revenue - Costs - Depreciation)\cdot (1 - Tax) + Depreciation$$
+
 
 
 ## Inflation
@@ -144,7 +161,7 @@ Stock ownership is pretty much cash flows from dividends and capital gains.
 The dividends remain the same forever. This is pretty much the preferred stock. The future value of all future dividends. Given by $P_0=\frac{Div}{R}$ where R is *equity model*.
 
 ### Constant Growth Model
-The dividends will grow at a constant rate, *g*. Simplifies to $P_0=\frac{Div_1}{R-g}$.
+The dividends will grow at a constant rate, *g*. Simplifies to $P_0=\frac{Div_1}{R-g}$. This can be shown as $R = \frac{Div_1 - P_0 \cdot g}{P_0}$
 
 ### Differential Growth Model
 Dividends will vary for awhile and
@@ -152,21 +169,52 @@ Dividends will vary for awhile and
 #### R
 R is the discount rate and can be broken into two parts: dividend yield, growth rate (in dividends)
 
-## OTHERS
 
-Undiscountod Payback Period
-
-IRR
-IRR on combined investment
-
-NPV
-
-Which investment should you take?
-
-Mutually Exclusive
 
 ###### Independent Projects
 Independent projects are those that acceptance/rejection decision are made independently of other projects. Each one can be decided by their own merits.
 
 ###### Mutually Exclusive
 You can't accept both projects. It is one or the other.
+
+## Cost of Capital
+Cost of capital is the rate of return the corporation must earn on its invested capital in order to compensate for the time value of money and risk. The break even rate!
+
+$WACC=CostOfDebt \cdot (1-TaxRate) \cdot (\frac{Debt}{Debt+Equity}) + CostOfEquity \cdot (\frac{Equity}{Debt+equity})$
+
+Interest rate on debt is deductible. This means the government incentivizes debt.
+
+
+### The Cost of Debt
+Rate of interest the firm would pay on a new bond. It is build upon the US Treasury bond and Default Risk. Treasury bonds are seen risk free and hence the lowest rate.
+
+Sandard and Poors and Moody's give bond ratings based on a company's ability to repay debt.
+
+Cost of Debt = 10 year Treasury Note + Bond Premium (basis points)
+
+### Risk
+You can never make risk go away, it decays exponentially. The market risk will always stay. The more stocks you have, the least risky the investment is.  
+
+Market risk is anything with tax cuts or interest rates or changes in fiscal policy. It can be measured by Beta. The SP500 beta is 1. The beta of the Treasury Bonds is 0. Total Portfolio Risk? Average Beta x Market Standard Deviation. A company with a beta of 0.5 will be half as volatile as the overall market. A portfolio with a beta of 2 will be twice as volatile as the overall stock market.
+
+Individual risk could be a CEO stepping down, bad press, ect.
+
+
+## Capital Asset Pricing Model (CAPM)
+
+Cost of Equity = US Treasury Rate + Market Risk Premium x Beta
+
+Market Risk Premium is the average differences in the rate of return on stocks and long-term US Treasury Bonds.
+
+Market Capable, The Debt Value, and Beta to compute Cost of Capital
+
+
+
+## Firm Valuation
+
+Firm Value = Equity + Debt
+
+Projects have finite life. Firms have unlimited life time.
+
+### Discounted Cash Flow Method
+CF = EBIT * (1-T) + DEPR - CAPEX - Delta(NWC)

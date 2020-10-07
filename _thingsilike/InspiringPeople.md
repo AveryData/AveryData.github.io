@@ -71,7 +71,7 @@ I just can't handle the confidence!
 ## Justin Bieber
 I remember years ago when JB got started. iTunes was still a thing and they used to have weekly, free songs. I remember seeing *Baby* and getting it for free. I played it having no idea about the artist, and I thought "Wow, Justin is usually a name for a boy." But after his preteen years, Justin has become an absolute force. His album [Changes](https://www.google.com/search?safe=active&sxsrf=ALeKk01EsMvG8ZLj1yZOf9t-8U8KV2cPNA:1592056181215&q=justin+bieber+changes+songs&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwrKs6KrzLIU0LlaolmJ1vp55YWZybrJ-YkleZaFefnpRcvYpXOKi0uycxTSMpMTUotUkjOSMxLTy1WAMvuYGUEABTdIURYAAAA&sa=X&ved=2ahUKEwjs7pK59_7pAhUtSjABHblRDQ8QMTAfegQIBhAK&biw=1812&bih=892) is one of my all time favorite albums.
 
-But I really grew admiration for Justin while watching [his min-docu series on YouTUbe](https://www.youtube.com/watch?v=IilZLGt_Ufo). The dude is just so good. He has incredible talent. And has he been perfect? No. But I've really seen a change in him lately and I admire his humility and change in his life.
+But I really grew admiration for Justin while watching [his min-docu series on YouTube](https://www.youtube.com/watch?v=IilZLGt_Ufo). The dude is just so good. He has incredible talent. And has he been perfect? No. But I've really seen a change in him lately and I admire his humility and change in his life.
 
 You can check out an [interview with him by Zane Lowe](https://podcasts.apple.com/us/podcast/justin-bieber/id1461515071?i=1000476088421) and learn more about *Changes*
 
@@ -86,3 +86,6 @@ Queen of D3[https://wattenberger.com/]
 
 ## Will Koehrsen
 [Great medium material](https://towardsdatascience.com/@williamkoehrsen)
+
+## Peter Beshair
+[Dope Data Viz Wize](https://peterbeshai.com)

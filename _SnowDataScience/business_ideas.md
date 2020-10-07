@@ -120,4 +120,10 @@ There is no outlier detector.
 
 
 - Sports Viz
-  Basketball cards with the tracking or shot location. 
+  Basketball cards with the tracking or shot location.
+
+
+
+- Social Media Data Aggregator
+  How have my customers done in the past little bit? Compared to me?
+  What are they doing different than me? 
