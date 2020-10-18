@@ -26,7 +26,7 @@ Dedicated to communication between other subsystems.
 The process of integrating subsystems according to their function. Quick, involves only the necessary vendors.
 
 ## Top-Down Design
-An overview of system is formulated without going into details for any part. Each part of it then refined into more details. 
+An overview of system is formulated without going into details for any part. Each part of it then refined into more details.
 
 ## Bottom-Up Design
 Individual parts of the system are specified in details. The parts are then linked to form larger components.
