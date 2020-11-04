@@ -2,22 +2,27 @@
 title: "Inventory Analytics"
 excerpt: "Keeping it all in stock through numbers"
 ---
+# Inventory
 
+Inventory is the raw material, component parks, or finished goods that are held at some location in the supply chain.
 
-# Types of Inventory
+## Types of Inventory
 - Raw materials (wood, steel, oil, ect)
 - Component parts (bought from somewhere else)
 - Finished goods (what you made)
 
-# Inventory Management
+## Inventory Management
 - Balance and matching of supply and demand in supply chain.  
+- It's important because inventories are a big company asset (big investment)
 
-# Reason to Keep Inventory
+
+## Reason to Keep Inventory
 - Protect against spikes in demand
 - Protects against supply disruptions (can't get stuff)
 - Discount on high quantity order  
+- Good for uncertain conditions
 
-# Reason to Not Have Inventory
+## Reason to Not Have Inventory
 - Inventory can become obsolete
 - Things can spoil
 - Opportunity costs (money not liquid)
@@ -25,12 +30,12 @@ excerpt: "Keeping it all in stock through numbers"
     - insurance, security, spacing, warehouse costs
 
 
-# Important Decisions
+## Important Decisions
 - HOW MUCH should we order?
 - WHEN should we order more?
 
 
-## How much should I order
+### How much should I order
 
 Simple models start by assuming:
 - *D*: Demand is known and constant

@@ -13,6 +13,8 @@ The easiest way is in a CSV (comma separated files). It is just a text file with
 ## SQLite
 SQLite is the most popular embedded database in the world. It is self-contained (only one file), serverless (on your very computer), and low configuration. It can also have multiple tables. It also has schemas that allow for relationships and variable types. It can also work very well cross platform (windows, mac, linux). It is also easier to search as well.
 
+SQLite can easily handle gigabytes, easy to work cross-platform, API's in many languages, has full-text search.
+
 
 ### How to use SQLite
 
@@ -68,4 +70,4 @@ Indexes are really important for the speed of your query. Make sure to have them
 
 
 ## FTS
-FTS is virtual table modules that allow for full-text searches. Basically it's what Google does a search engine. 
+FTS is virtual table modules that allow for full-text searches. Basically it's what Google does a search engine.

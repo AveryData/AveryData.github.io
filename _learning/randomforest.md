@@ -31,3 +31,13 @@ This technique can also be used for classification!
 Okay, now that we understand trees, let's talk about forests. Trees have good computer efficiency but can have low predicting accuracy. They can also be noisy. To improve accuracy and robustness, we can try to combine trees. The idea being combining a bunch of algorithms to enhance performance.
 
 How do we combine them? Just take the average!
+
+
+## Ensmble Methods
+Choosing a machine learning algorithm can be hard. If you can't decide, you can combine.
+
+Bagging = Bootstrap Aggregating. This is when you make multiple models from the same data set using sampling.
+
+You use a majority vote.
+
+You don't really need cross-validation with bagging.

@@ -23,7 +23,7 @@ You can add some emoji's to your header or about by using this [article.](https:
 
 3) *Be Sure to Respond To Comments*: Responding will boost the interaction and number of times it is seen
 
-4) *Use Hashtags*: What hashtags are relevant to your post? You can search a hashtag and 
+4) *Use Hashtags*: What hashtags are relevant to your post? You can search a hashtag and
 
 5) *Have a Call To Action*: Have them do something! The easiest (and maybe most effective) is to have them comment. Ask them a question. Answer yourself with the first comment.
 
@@ -34,3 +34,8 @@ You can add some emoji's to your header or about by using this [article.](https:
 9) *Use Line Breaks*: Having paragraphs make posts hard to read, use enter often.
 
 10) *Like and Comment Your Own Post*: Be the first to engage. Comments on posts make them viewed more.
+
+
+
+## Gary Vee's $1.80 Strategy for LinkedIn
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W7p_zL2yvPM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

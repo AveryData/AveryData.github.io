@@ -27,7 +27,7 @@ Corporate level strategy is for multiple industries and markets. You try to figu
 #### Functional Plans
 Smaller than strategic but support strategic plans. Usually about 1+ year timeline. Drive budget and staffing plans.
 
-Functional happens at a corporate level, not various businesses or strategic business units.
+Functional happens at a corporate level, not various businesses or strategic business units. Corporate does the scope of the firm and the allocation of resources.
 
 Thinking about product, price, place, and promotional considerations.
 
@@ -70,16 +70,26 @@ Competitive Advantage: superior performance relative to other companies within t
 
 An intangible resource is more likely to create a sustainable competitive advantage.
 
+Competitive advantages are determined by the characteristics of both the industry and the firm.
+
 ### Cost Leadership
 Cost Leadership: becoming the low cost producer in industry. Usually obtained by a combination of efficiency and experience. Pricing is at or below industry standard.
 
 Manufacturing simplicity, tight control on all production, efficient sales facilities, technology to reduce operating costs. Lack of advertising.
 
+**COST** is the key.
+
 **IKEA**: IKEA has customers shop alone, assemble, they use cheap materials, have warehouse and store the same place, bulk manufactured, ect.
+
+Lowest cost does not always equal lowest price. It's about having the lowest **cost** to make. The lowest cost could have good brand and price high. Or a brand could try to get more customers and have a low price even if they are not the lowest cost.
+
+There's always a risk that anything will erode margins (like new production or technology) which is bad for cost leaders.
 
 
 ### Differentiation
 Differentiation: is competitive advantage achieved through be unique in a broad market that allows you to price at a premium.
+
+**VALUE** is the key
 
 **Tesla**: Teslas are expensive, but they have batteries, they're electric, they're sleak, the doors open crazy, they have a tablet.
 
@@ -87,6 +97,9 @@ Differentiation: is competitive advantage achieved through be unique in a broad 
 A **Business Model** is the end results of decisions and tradeoffs made by management in formulating strategy.
 
 
+Combination strategies are often more difficult because they are inherently contradictory.
+
+Productivity Frontier: the best possible strategic positions that a girm can take relating to value and low cost. It is a concave curve.
 
 
 ## SWOT
@@ -142,6 +155,8 @@ If there is very high market growth rates, then you won't have competition. If y
 
 ## Concentration Ratio
 A concentration ratio is the ratio of the market share of the top 4 players to the entire market.
+
+Getting new core business lines, extending existing product lines, and running campaigns are all forms of concentration.
 
 ## Switching Costs
 Switching costs are the costs a consumer incurs as a result of changing brands.
@@ -204,8 +219,14 @@ A strategy that is characterized by an absence of significant change. You don't 
 ## Renewal Strategy
 A strategy that is characterized by an absence of significant change.  You're defensive. Bankruptcy mostly. Usually because you're reducing the size. Think Sears, Delta, Toys R Us.
 
+If you're in bankruptcy but hoping to come out the other end as a more financially viable firm with better skills, you're in *turnaround strategy*.
+
 ## Growth Strategy
 A strategy that is characterized by a business expanding into markets or industries, or the services or products. Usually you can make more money in these systems (more products, scale efficiency).  
+
+You can grow by diversification, concentration, vertical integration, horizatonal integration.
+
+Inorgantic growth is through acquisitions. Organic growth is through new Capabilities.
 
 ## Horizontal Integration
 Mergers or acquisitions where a company grabs a similar company within the industry. Could lead to the formation of a monopoly.
@@ -222,12 +243,18 @@ Hoping to reduce costs. Hoping not to lose core competencies.
 ### Forward/Backward Integration
 Forward integration is a business strategy that involves the form of a vertical integration to control the distribution / products. It is good when you don't have the ability to distribute very well and distributors make a lot of money.
 
+Forward = Distributor.
+
 Backward integration is vertical integration to control the demand and reactants and materials. Costco has a Nebraska supply chain for its $5 Rotisserie Chickens. This is useful when supplier prices are not stable, suppliers have big margins, the supplier is not reliable.
+
+In backward, you do make vs buy analysis. Do you make the stuff? Or should you just buy it?
 
 ## Diversification
 A firm enters a market or industry that is separate from their core business. Alphabet, Honeywell, Amazon, Disney all are diverse.
 
 Spanx, Roku, Crocs, and Tesla are all single product line firms.
+
+If you're +95%, you're a single line of business. If you're 70%-95%, then you're a dominant business. If you're under 70%, you're a diverse company.
 
 ## Geographic Scopes
 Local: Moxie Burger - 2 locations within a city
@@ -241,5 +268,7 @@ compete in an existing market, beat the competition, exploit existing demand, ma
 
 ### Blue Ocean:
 create an uncontested market, make competition irrelevant, create and capture new demand, innovation.
+
+It combines differentiation and cost leadership using *innovation*. Ignores the Porter forces. 
 
 You could be too early, too new, too different, give up too soon, misread the market

@@ -68,11 +68,50 @@ A complete data science company
 - Just one course on LinkedIn (how to do data science )
 - Cheat sheets, how to's, resources
 
+How To Learn Data Science Through Projects Course
+--------------------------------------------------------
+1 month long custom course designed to improve your data science career by doing an awesome personal project
+
+This course will improve your career. Don't want to sound too dramatic, but could change your life.
+
+Price Leader or Niche Differentiation? They're often contradictory. It ignores Porter's advice. If it works, it provides unique value in an efficient manner.
+
+Course Content (4 lectures):
+  - Why Data Science
+  - Why Projects
+  - How To Choose a Theme
+  - Finding Data
+  - How To Execute a Project
+  - Necessary Data Science Skills
+  - Deploying a Project
+  - Project Peer Symposium
+
+Course Goodies:
+  - Personal Resume Review
+  - Beginning and Ending 30-minute career chat with Avery
+  - Project Template PDF
+  - Slack channel access
+  - Obtaining Data Set Resources PDF
+  - Formal Certificate
+  - Data Science Path PDF
+  - Potential Written Recommendation
+  - Weekly office hours
+
+
+Course Benefits
+  - Learn data science hands on (the best way)
+  - Have tangible evidence that you rock to show employers
+  - Meet and work with link-minded peers
+  - 1:1 career coaching to get you on the right path
+  - Improved resume with new potential focal point
+
 ### Courses
 - MLS Stats
     - who is most underrated
     - can you predict salary
     - clustering players (most similar replacement)
+
+- Jupyter Notebook Exercises
 
 - Stocks + Python
     - Predicting stocks
@@ -126,4 +165,23 @@ There is no outlier detector.
 
 - Social Media Data Aggregator
   How have my customers done in the past little bit? Compared to me?
-  What are they doing different than me? 
+  What are they doing different than me?
+
+
+## Merch
+Stickers based on jupyter notebooks
+
+"DO PROJECTS" T Shirt
+
+
+Avery "Personal Projects" Smith
+
+Data cartoon about how you can get a job without experience using personal PROJECTS
+
+
+
+
+How to train your algorithm like the book how to train your dragon.
+
+
+Interesting company: https://forio.com/

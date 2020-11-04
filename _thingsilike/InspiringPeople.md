@@ -1,17 +1,67 @@
 ---
 title: "Inpsiring People"
-excerpt: "INSPIRE"
+excerpt: "People I look up to and am inspired by"
 ---
 
 # Business
 
+## Jesse Itzler
+
+This guy is incredible. Part rapper, part ultra-athelte, part NBA owner, part Dad, part coconut water, part Jet company, part husband; this guy does it all.
+
+Interview With Joe Rogan:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b0GIO4lYFls" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Interview with friend (and other guy who inspires me), Rich Roll.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/csZKIZ-_zXY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+How He Describes Happiness:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z3fyEAHbKAk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Interview with Tom Bilyeu:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jeOWjeY7XOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Highlights:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a3xzrY1pUt4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Mark Cuban
 
+## Garrett Gee
+Easily my favorite entrepreneur? Is the the richest? No. Is this business the most profitable? No. Is it the coolest product? Meh. But I love that he does whatever he wants.
+
+### His story:
+
+Part 1:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n9hoQsfL8qo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Part 2:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Wvb5lFdhYQ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Another clip:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NF1JBLVJNVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Traveling Around the World with His Family Now
+
+Traveling full time:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D9qjI7rbAwU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Elon Musk
+I just think this guy is insane. He tries to solve so many problems I can't keep up.
+
+
+
+## Rich Roll
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/khQgecnGzlc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Gary Vanurchuk
+
+
+This is my all time favorite motivational video. It starts with Joe Rogan but then has a bunch of Gary Vee.
+
+Should you quit your job?
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SZEo1KFjTn4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Jamie Siminoff
 Jamie Siminoff started [Ring](https://ring.com/) which he later sold to Amazon for $1 billion.
@@ -68,6 +118,10 @@ One of my favorite quotes Kayne gives:
 
 I just can't handle the confidence!
 
+To understand Kanye's standpoint and why he is the way he is, listen to his interview with Joe Rogan:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qxOeWuAHOiw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Justin Bieber
 I remember years ago when JB got started. iTunes was still a thing and they used to have weekly, free songs. I remember seeing *Baby* and getting it for free. I played it having no idea about the artist, and I thought "Wow, Justin is usually a name for a boy." But after his preteen years, Justin has become an absolute force. His album [Changes](https://www.google.com/search?safe=active&sxsrf=ALeKk01EsMvG8ZLj1yZOf9t-8U8KV2cPNA:1592056181215&q=justin+bieber+changes+songs&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwrKs6KrzLIU0LlaolmJ1vp55YWZybrJ-YkleZaFefnpRcvYpXOKi0uycxTSMpMTUotUkjOSMxLTy1WAMvuYGUEABTdIURYAAAA&sa=X&ved=2ahUKEwjs7pK59_7pAhUtSjABHblRDQ8QMTAfegQIBhAK&biw=1812&bih=892) is one of my all time favorite albums.
 
@@ -89,3 +143,5 @@ Queen of D3[https://wattenberger.com/]
 
 ## Peter Beshair
 [Dope Data Viz Wize](https://peterbeshai.com)
+
+## Kalle Hallden

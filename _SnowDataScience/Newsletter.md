@@ -43,6 +43,8 @@ Benford's Law
 
 ### Community Resources
 
+### Conferences
+
 ### New companies
 
 ### New Releases / Recently Published Articles
