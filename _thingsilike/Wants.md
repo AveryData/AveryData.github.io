@@ -26,7 +26,10 @@ excerpt: "New Additions I'm Thinking About"
 
 ### Monitor Mounts
 
-### Chair 
+
+### Proper cable management 
+
+### Chair
 
 
 ### Ergonomic keyboard
