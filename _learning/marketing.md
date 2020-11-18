@@ -2,7 +2,22 @@
 title: "Marketing"
 excerpt: "How much does a sale weigh? An insta-gram"
 ---
+## What Is Marketing?
+Marketing is the creation and satisfaction of demand for a product or service.
 
+Advertising is just a component of marketing.
+
+*Marketing and innovation produce results; all the rest are costs.* -- Peter Drucker
+
+*The aim of marketing is to know and understand the customer so well the product sells itself* -- Peter Drucker
+
+Marketing Strategy is specifying a target market and related marketing mix.
+
+
+## Bike Exercise
+Take 15 seconds to describe a bicycle. What would you point out?
+
+Why are there so many bicycles? To meet all the different consumer's needs.
 
 
 ## History of Text
@@ -10,6 +25,8 @@ excerpt: "How much does a sale weigh? An insta-gram"
 - 1452 CE: Johannes Gutenberg prints the Bible in German
 - 1501 CE: Pope Alexander VI declares permission required by church for printing
 - 1520 CE: Martin Luther spreads Calvinism
+- The internet
+- Facebook, Twitter, Instagram, Snapchat, TikTok
 
 ## Traditional Advertising
   - billboards
@@ -25,6 +42,47 @@ Traditional advertising is sold at cost per thousand.
 $CPM = Cost Per Mille (Thousand)$
 
 But it also has subgroups, usually by age.
+
+## 5 C's
+
+### Customers
+Potential buyers with wants and needs that the company aims to fulfill. They are the focal point.
+
+### Company
+Organization of business unit providing certain goods or services.
+
+### Competitors
+Organizations that try to fill the same needs of the same customers you are aiming for. Porter's Five Forces. Have to be different than others, otherwise you're a commodity and it is just the cheapest price.
+
+### Collaborators
+External business entities that work with the company to create value for the customers. Raw material suppliers, distributors, marketing agencies, retailers.  
+
+### Context
+Environment the business operates like laws, cultural, economic conditions. PESTEL analysis.
+
+
+
+## Life Line
+Awareness -> Engagement -> Acquisition -> Segmentation -> Retention -> Support
+
+You have to first learn about it. Understand why it's interesting. Start paying. Market to specific customers that you already have. Convince existing customers to buy again. Satisfy your customer so much they share and market for you.
+
+## Buyer Journey
+Discovery. Consideration. Decision.
+
+
+###### What brands do you advocate for? Why?
+
+## Customer Profile / Personas
+It's always good to come up with a person you're trying to sell to. Give them a name. Find their pain points.
+
+
+## Mass Marketing
+Everyone is the same and everyone is a potential Customer
+
+## Target Marketing
+Very specific.
+
 
 #### Rating
 Rating is the percentage of people who own TV's who are tuned into the program.
@@ -159,3 +217,39 @@ Everyone and their dog (literally) is on social media. Lots of eyes = lots of ad
 - Product/Services sale
 - Brand awareness
 - Lead generation
+
+## Customer Lifetime Value (LTV)
+How much a customer spends over a lifetime. This is very valuable! Some businesses might not be interested in one sale, but hundreds of sales from one person.
+
+## Marketing Mix - 4's
+The controllable variables the company provides to satisfy the target market.
+
+Product. Place. Promotion. Price.
+
+Product: What are the benefits of this product to a consumer
+
+Place: Get the right place to the right customer to the right place in the right quantity and right condition.  
+
+Promotion: Personal selling via direct to consumer communication. Mass selling is to everyone via advertising and publicity (earned media). Sales promotions are used to stimulate trial or interest.
+
+Price: Competition, discounts, flexibility, objectives.
+
+## Segmentation
+Segmentation is defining markets and knowing what dimensions to use. It's an aggregating process that clusters similar users to a group. The segment should be big enough to be profitable.
+
+Always think I am solving the customer's needs.
+
+Customer needs. Customer types. Geographic Area. Product type.
+
+Demographics are often the starting. Income is key, gender, age, family size, occupation, education, ethnicity, and social class.
+
+Geographic are also key. The region of the world, region in country, size of city, ect can be used.
+
+Behavioral dimensions are also used. What needs they have, the benefits sought, thoughts to survey questions, kind of shopping, ect.
+
+Qualifying Dimensions must be releveant to a customer type. Identify the core features that have to be available to everyone.
+
+Determining Dimensions affect the customer. Can be further segmented.
+
+
+CRM = Customer Relationship Managements. Predict the needs and desires of customers.

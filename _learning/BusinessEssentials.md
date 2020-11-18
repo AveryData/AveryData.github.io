@@ -34,3 +34,6 @@ Flat Icon is good, but most need attribution.
 ## Whiteboard Software to Explain Concepts
 
 - [Explain Everything](https://drive.explaineverything.com/) is a cool, free whiteboarding app where you can just explain ideas to others, or create a video an voice recording explaining something more complex.
+
+## Illustrations
+- [MixKit](https://mixkit.co/free-stock-art/discover/work/) has free illustrations, music, sound effects.

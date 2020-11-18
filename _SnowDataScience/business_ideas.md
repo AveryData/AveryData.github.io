@@ -160,6 +160,7 @@ There is no outlier detector.
 
 - Sports Viz
   Basketball cards with the tracking or shot location.
+  Could be hockey instaed.
 
 
 
@@ -168,10 +169,29 @@ There is no outlier detector.
   What are they doing different than me?
 
 
+- Build Your Life Resume Resume: The New Social Media
+If you met a stranger and wanted to know everything about them, where would you go and what would you do...not really curated for that.
+
+Think D3 scrollable for people's stories.
+
+Bar/Gannt to illustrate their life.
+
+Videos, pictures, mapping feature, colors.
+
+Search: Avery in Houston and shows pics I've taken here.
+Search: Orange, and shows all my orange pictures.
+
+- Give real estate properties a score or grade
+Like put down what you want.and then instead of "a new house has appear, make it ranked."
+
+
 ## Merch
 Stickers based on jupyter notebooks
 
 "DO PROJECTS" T Shirt
+"Think Before Graphing"
+"Distillation" concept - judith's daughter
+"Tell stories with data"
 
 
 Avery "Personal Projects" Smith
@@ -185,3 +205,21 @@ How to train your algorithm like the book how to train your dragon.
 
 
 Interesting company: https://forio.com/
+
+
+
+## Dog Park TV Show
+Sitcom (think Office, Parks&Recs, Superstore) based in a dog park. Maybe very typical couple (boy+girl, aged 30) have very typical dog (lab, golden retreiver). They visit the dog park and see old faces and new people.
+
+Plots:
+- Bullet the untrained husky who bites
+  - the lady that said hey maybe your dog could be trained
+- Dog sees little yorkie as squirrel and tries to eat it
+- The dude who just won't stop talking the whole time
+- People just talking at each other not listening.
+- LGBTQ dog owners
+- What happens when another doodle parent comes
+    - What's your groomer? do they shed? do they matt?
+- What do you do when no one is there
+- Bring your friends (the Dayton's) to the dog park
+- Digging a hole

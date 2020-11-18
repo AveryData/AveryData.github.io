@@ -230,4 +230,16 @@ Being able to visualize trends and time series is key. Human brains can understa
 
 ### ARIMA
 
+ARIMA is short for "Auto Regressive Integrated Moving Average". It attempts to use its own past values and the lagged errors to predict future values.
+
+There are three key values: *p, d, q*
+
+*p* is the order of the auto regressive term. It is the number of lags used to be predictors.
+
+*q* is the order of the moving average term. It is the number of lagged forecast errors that should go into the error.
+
+*d* is the number of differencing required. ARIMA models use linear regression and linear regression works best when the predictors are not correlated and are independent of each other. This is called making the time series stationary. Usually this is accomplished by taking a difference. Hence *d* is the minimum number of differencing needed to make the series stationary.
+
+### SARIMA
+
 ### GARCH

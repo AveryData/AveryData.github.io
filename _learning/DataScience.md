@@ -57,3 +57,27 @@ Diagnostic analytics would tell me they ran out because there was an enormous sp
 Predictive analytics would predict the likelihood of my nearest grocery store having sanitizer in stock.
 
 Prescriptive analytics would recommend a time, place, and plan to obtain the needed sanitizer.
+
+
+
+## Data Science Crash Course
+
+Broad topics:
+1) What questions can data science solve? How is it used?
+2) Where does data exist? What type of data?
+3) How do we get the data?
+4) Prep / cleaning
+5) Understanding the data: EDA + Viz
+6) Predictive models
+7) Deployment
+
+Evaluate what a career in data science might look like, and how to get there.
+
+What are the different aspects of data science? BI Machine learning AI
+
+What is Descriptive
+What is Predictive
+
+Data viz
+
+Vocabulary of data science
