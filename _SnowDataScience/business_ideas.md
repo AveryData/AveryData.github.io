@@ -211,7 +211,7 @@ Interesting company: https://forio.com/
 ## Dog Park TV Show
 Sitcom (think Office, Parks&Recs, Superstore) based in a dog park. Maybe very typical couple (boy+girl, aged 30) have very typical dog (lab, golden retreiver). They visit the dog park and see old faces and new people.
 
-Plots:
+Story Lines:
 - Bullet the untrained husky who bites
   - the lady that said hey maybe your dog could be trained
 - Dog sees little yorkie as squirrel and tries to eat it
@@ -223,3 +223,8 @@ Plots:
 - What do you do when no one is there
 - Bring your friends (the Dayton's) to the dog park
 - Digging a hole
+
+
+Analytics Vidhya Blackbelt course for $800.
+
+https://blackbelt.analyticsvidhya.com/?utm_source=sendinblue&utm_campaign=BlackBelt_Mentorship__Courses__BB__Paid_course__Nurturing__1222020&utm_medium=email

@@ -5,6 +5,15 @@ excerpt: "How is it?"
 
 {% include figure image_path="/Images/GaTech/GaTechBanner.png" alt="georgia tech banner"  url ="/Images/GaTech/GaTechBanner.png" %}
 
+## Update on My Opinion of The Degree
+
+After going deeper in the degree, I’ve found that half the courses are awesome and worth it. But half the courses are somewhat low quality and honestly a waste of time.
+
+If you’re doing it to get a masters degree, it is worth the investment. If you’re doing it to transition into data science, I think there are better, cheaper ways. Ones where you don’t have to pay to learn, but instead, get paid to learn.
+
+This really is a matter of gaining the skills from online resources, and then finding a stepping stone job that will further your skills, usually a data analyst role of some type. If you spend a year or two in one of these stepping stone jobs, and keep learning, and build up personal projects deployed online as a portfolio, you can go further to a data science role.
+
+
 ## Why I Choose to Get a Graduate Degree?
 
 The reason I chose to get a Master's really stems from choosing Chemical Engineering as my undergrad. About the end of my sophomore year  I really wasn't sure I enjoyed Chemical Engineering too much. By my junior year, I was pretty sure I didn't, and then by my senior year, I was positive I didn't. During that process, I debated switching my major but to what? I knew I loved programming and machine learning. Maybe majoring in computer science or math, could be a good fit, but didn't really seem quite what I was looking for.
@@ -61,3 +70,22 @@ The classes I enjoyed the most so far, you can actually take for free. They offe
 I explain my feelings and this opportunity in this LinkedIn post.
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6678289834487943168" height="536" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
+
+## What were my favorite classes?
+
+1) IYSE 6501 - Intro To Data Analytics
+
+2) CSE 6242 - Data Visualization
+
+3) CSE 6040 - Intro to Programming
+
+4) IYSE 6740 - Intro to Machine Learning
+
+5) IYSE 6644 - Simulation
+
+6) IYSE 6414 - Regression
+
+7) MGT 6203 - supply chain, marketing, regression
+
+8) MGT 8803 - finance, accounting, supply chain, and marketing

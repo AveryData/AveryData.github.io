@@ -158,3 +158,7 @@ People hate pie charts. Because it's hard to tell what the difference between th
 Use a log axis when the data is very separated and wide.
 
 Axis labels should also not have rotated text, if you need to rotate, try truncating or rotating one of the axis.
+
+
+## Great places to learn
+[The NY Times](https://www.nytimes.com/2020/06/10/learning/over-60-new-york-times-graphs-for-students-to-analyze.html)

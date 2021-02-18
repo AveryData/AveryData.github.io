@@ -12,10 +12,12 @@ I use Audacity to record my audio. I'm not in love with it...but I might have an
 ### 2) Load File to Host
 Your audio has to be hosted somewhere. I use SoundCloud. Once again, not in love, but it works. Upload your audio files to the hoster. Most have a free version and if you want a certain number of hosted hours, you'd have to more to premium.
 
+[Here's](https://blog.soundcloud.com/2018/05/30/host-podcast-soundcloud/) the how to of hosting on SoundCloud from SoundCloud themselves.
+
 Here's how my podcast for my old spirituality podcasts looks like:
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/310229426&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/avery-smith-478793378" title="Tender Mercies" target="_blank" style="color: #cccccc; text-decoration: none;">Tender Mercies</a></div>
 
-You might have to make an RSS feed, I can't quite remember.
+You'll have to go into your account's settings to find the RSS feed URL.
 
 ### 3) Go to Apple's [Submit a Podcast](https://help.apple.com/itc/podcasts_connect/#/itcd88ea40b9) page
 

@@ -25,7 +25,7 @@ Really, the most common commands I typicially use are *SELECT* , *JOIN* , and *U
 ### SELECT
 
 ### JOIN
-A "JOIN" command is used to combine columns from seperate tables.
+A "JOIN" command is used to combine columns from separate tables.
 
 #### INNER JOIN
 Selects records that have matching values between both tables

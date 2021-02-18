@@ -15,6 +15,36 @@ From my experience, this is what a real estate agent typically does:
 
 You can just use the seller's agent, but seller's agents has a fiduciary duty to help the seller.
 
+## Having trouble with your real estate agent?
+
+If you're having issues with your real estate agent, you'll want to read through [these steps](https://www.homelight.com/blog/buyer-how-to-fire-my-real-estate-agent/) before doing anything
+
+## Who Pays Commission
+Real estate commission is typically 5-6%. Usually the buying agent and selling agent split the commission to around 3% each.
+
+If you are buying a home, you don't have to pay the real estate agent commission.
+
+If you're selling the home, you pretty much need to pay 6% in commission.
+
+
+## Signing
+Do not sign everything until you understand what in the world is going on.
+
+## What's Included In Closing Costs?
+
+
+
+When you're buying, you typically have to pay the earnest money which lets you know you are interested.
+
+Then you get a home inspection (~$500). They tell you everything that is wrong with the house.
+
+Then you get an appraisal (~$500)
+
+
+
+
+## My Notes
+
 Lindon - 5 minutes
 Pleasant Grove - 10 minutes
 Orem - 10 minutes
@@ -187,4 +217,4 @@ https://www.zillow.com/homedetails/1659-E-12500-S-Draper-UT-84020/12929771_zpid/
 $515 - Quaint, green draper house with really pretty inside and nice mother in law
 
 https://www.zillow.com/homedetails/591-N-500-E-Lindon-UT-84042/11950155_zpid/?
-5 minutes from haley's parents 
+5 minutes from haley's parents
