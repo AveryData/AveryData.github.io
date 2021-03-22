@@ -1,4 +1,4 @@
----
+interestedFootwear---
 title: "Marketing"
 excerpt: "How much does a sale weigh? An insta-gram"
 ---
@@ -12,6 +12,8 @@ Advertising is just a component of marketing.
 *The aim of marketing is to know and understand the customer so well the product sells itself* -- Peter Drucker
 
 Marketing Strategy is specifying a target market and related marketing mix.
+
+
 
 
 ## Bike Exercise
@@ -36,6 +38,8 @@ Why are there so many bicycles? To meet all the different consumer's needs.
   - television
 
   Traditional advertising is decreasing while digital advertising is increasing.
+
+
 
 Traditional advertising is sold at cost per thousand.
 
@@ -129,10 +133,10 @@ Digital advertising is increasing, a lot! Programmatic Digital Advertising has d
 Advertising appears free to the consumer, but it is actually very valuable and costly to the company.
 
 #### PPC
-Pay per click (PPC) means the advertiser only pays for each click of their advertisement
+Pay per click (PPC) means the advertiser only pays for each click of their advertisement.
 
 #### CTR
-Click through Rate (CTR) is the total clicks divide by the total times the ad was shown
+Click through Rate (CTR) is the total clicks divide by the total times the ad was shown.
 
 #### Fixed Costs / Flat Rate
 Just one constant cost based on time interval.
@@ -175,6 +179,21 @@ Things that are tracked:
 - Device/OS
 - Region
 
+Low click through rates.
+
+You always want to advertise on a website that involves on what you are itnerested in.
+
+The top isn't the best place to have them. Research shows right at the folder.
+
+Taking all senses and using them in copy typically peform better.
+
+It's always goodto keep them interactive and excited.
+
+### Dynamic Creative Optimization:
+You can put the home team on the helmets for the NFL ad.
+
+### Contextual Ads
+This is when a display ad matches the text within the website.
 
 ### Search Engine Marketing
 Accounts for half of revenue of digital advertising spending. Bing, Google, Yahoo, Baidu are some examples.
@@ -184,10 +203,14 @@ You usually have a section dedicated to *paid* ads and then some *organic* links
 Ad formats usually have headline 1, headline 2, ad indicator, primary domain, description. Often these different ads are A/B tested with different versions. A lot of trial error / analytics / ad campaigns to find what works best.  
 
 ##### SERP = Search Engine Results Page
-Your position on the SERP really affects your click-through rate. Usually, if you're ranked 1, you have a rate ~20% and by the time you get to 6th, you fall to ~5%.
+The page that shows the results of a search on a search engine. Your position on the SERP really affects your click-through rate. Usually, if you're ranked 1, you have a CTR ~20% and by the time you get to 6th, you fall to ~5%.
 
 ##### Landing page
-Page the search engine takes you to
+The first page the search engine takes you to when clicking on a link. The goal is to have the best page content for the actual search.
+
+A good landing page is relevant to the search with a very visible call to action. Keep the goal on the user to convert at the front of their mind.
+
+You can create landing pages programmatically in an attempt to give very personalized pages for the thousands of keywords you may be using.
 
 ##### Keyword
 A word found in a search query that brings a page up
@@ -253,3 +276,143 @@ Determining Dimensions affect the customer. Can be further segmented.
 
 
 CRM = Customer Relationship Managements. Predict the needs and desires of customers.
+
+
+
+## Search Engine Optimization
+
+### Social and Mobil SEO
+Social media shares are important for SEO. Some estimates believe it can be up to 7% of the ranking algorithm.
+
+- How often your links are founds on social media helps your page rank.
+
+- Your social pages are usually boosted by the algorithm and gives the user multiple of your own listings on the first page.
+
+- Social search engines (think Pinterest)
+
+- Social Personalization: if you've or your friends have liked that stuff before, more likely to show for you.
+
+
+Note that mobile is now 60% of Google searches, and it is growing. Google has said previously that sites that didn't support mobile version would be penalized in all searches. Having a mobile site means you're a good site and you're dedicated to good browser experience. Previously, there were dual URLS, one for desktop and one for mobile. The mobile just added a "M." prefix to the URL. That was a big head ache to have to manage two sites, now dynamic serving is more common. Responsive design is the best option, it is where HTML and CSS is always the same. Responsive design is today's gold standard.
+
+Reducing page load time is also very important.
+
+Make sure that the text is easy to read. Big fonts, clear color contrast, lots of white space, and good pictures.
+
+Having social share buttons on the page encourage viewers to easly share with someone else.
+
+
+
+### Keyword Research
+How to select keywords to optimize for.
+
+1) Search Volume - how frequently these terms are searched.
+2) Relevant - likelihood someone might convert from visiting.
+3) Competitive Analysis
+
+
+
+### Paid Search
+
+Google is the dominant search engine.
+
+Paid ads have a:
+1) Headline (maybe Headline 2)
+
+2) Primary Domain
+
+3) Description
+
+URL's can be pretty complicated and lengthy, so sometimes you have a vanity URL that is more sleek.
+
+Descriptions should have a call to action.
+
+There are these things called Ad Extensions.
+Here are some examples:
+- Location Extensions: can list the business pysical address.
+- Call Extensions: adds the phone number of a business to encourage calls.
+- Site Links Extension: adds serveral page links of the site into the ad
+- Cal Out Extension: extra text for a call to action.
+- Price Extension: shows different card of prices to a specific product page.
+- App Extension: a link to the business app from within the SE.
+
+You can even have dynamic keyword insertion. For instance, if someone googles "Cheese Pizza", and you're a pizza company. You can put that word INSIDE your copy, automatically.
+
+To get an advertisement, you go through a bidding system. You give a maximum bid price. Your bid price is NOT your Cost Per Click. Your pay price is one cent off the second place finisher.
+
+Google makes money when people click the ads. That's why they're very convered about relevance and quality. That's why they made this term called quality score. It is based off of:
+1) Keyword Relevance: Is the site's keywords matched to the users Google search.This includes being in the broader context of the search...that's good, but the more specific, the higher you might rank.
+2) Ad Copy: The search engine is analyzing the actual text inside the ad to see how relevant it is. Exact or phrase matches are being checked.
+3) Landing Page: Search engine is checking the relavance on the landing page. It should have similar key words for the users search query.
+
+It is a secret the exact split, but it's pretty close to 33, 33, 33 splits.
+
+There are different categories of keywords. For instance, you can target:
+
+- **Branded Terms:** This is when you use an actual brand name in the key word. For instance, "Under Armour" or "Under Armour shoes".
+- **Generic Terms:** This is when you just use a very broad descriptor for the industry. For instance, "running shoes", or "performance apparel".
+- **Related Terms:** Terms that are related but not the term. These are searches where the people who search this would also be interested in your product. This is like "treadmills" or "running club".
+- **Competitor Terms:** Using a rival's word in your keyword campaign. Like "Nike Running Shoes", or "Adidas Footwear"
+
+### Volume
+You have to also think about Volume. You'll want to make decisions knowing how frequent a term is used.
+
+Long tails in search, or very specific Google searches, don't have many searches, but you could capitalize being VERY specifically answering their question.
+
+### Competitive Analysis
+Determine who the competitors are. Look at their ad copy and ad structure to try to see how they are reaching out to the customers.
+
+
+
+- Broad Match: Includes phrases containing our keyword, with any form of misspellings, stemming, and synonyms.
+- Broad Match Modifier: Basically the broad match, but we specify extra words. I.E. +shoes.
+- Phrase Match: Search phrases containing your keywords, in the same order, and other words.
+- Exact Match: Searches phrases with exact match in same order.
+- Negative Match: Words that won't be used. For instance, you are selling shoes, but they are running shoes, not church shoes.  
+
+### Targeting
+
+We can target on a few parameters.
+
+#### Location
+Location can be used via geo targeting.
+
+#### Language
+We can specify what language they are using
+
+#### Previous Behavior
+If they've visted out website beofre.
+
+#### Demographics
+Gender, age, income can be used to target certain users.
+
+
+## Launching a Campaign
+Usually there is the account which is the top umbrella that holds all things ads.
+
+Then there is the campaigns which represents different goals and strategies. With a campaign, there are Ad Groups and these have something in common, like a subject.
+
+### Steps in a Good Campaign
+
+1) Define business goals and conduct market research
+2) Define business objectives and metrics for success
+3) Create a budget that fits for the plan
+4) Conduct keyword research.
+5) Create ads (header, description, url path)
+6) Launch by placing bids
+7) Measure and analyze results
+
+## Customer Journey
+
+### Discovery
+
+### Consideration
+
+### Decision
+
+## Break Even Point
+Profitablity for a campaign depends on lots of points. We can use the provider's data, 3rd party data, or our own data. Or we can think through a large range of CTR so see if it still makes sense.
+
+Average CPC / Converstion Rate = Customer Acquisition cost.
+
+BEP CPC = Profit Margin * Converstion Rate
